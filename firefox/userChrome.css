@@ -1,1 +1,22 @@
 
+.tabbrowser-tab .tab-close-button {
+
+-moz-box-ordinal-group: 0 !important;
+
+  height: 24px !important;
+  width: 24px !important;
+  margin-right: 8px !important;
+  padding: 7px !important;
+
+}
+
+.tabbrowser-tab:hover .tab-close-button:hover {
+
+-moz-box-ordinal-group: 0 !important;
+
+  height: 24px !important;
+  width: 24px !important;
+  margin-right: 8px !important;
+  padding: 7px !important;
+
+}
