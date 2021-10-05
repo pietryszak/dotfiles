@@ -41,7 +41,7 @@ alert = #bd2c40
 
 [bar/polybar]
 ;==========================================================
-Make the bar appear below windows
+;Make the bar appear below windows
 ;==========================================================
 override-redirect = true
 wm-restack = i3
