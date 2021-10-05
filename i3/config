@@ -195,8 +195,7 @@ bar {
 
 #mod1=alt on keybord
 
-#################################
-# Lock screen
-#################################
-bindsym $mod+mod1+l exec i3lock-fancy-dualmonitor
-
+####################################################################
+# Polybar
+####################################################################
+exec_always --no-startup-id home/pietrysz/.config/polybar/launch.sh
