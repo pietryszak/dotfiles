@@ -4,10 +4,9 @@
 killall -q polybar
 
 if type "xrandr"; then
-for m in $(polybar --list-monitors | cut -d":" -f1); do
-    MONITOR=$m polybar --reload mainbar &
-done
-
+  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+    MONITOR=$m polybar --reload example &
+  done
 else
-  polybar --reload mainbar &
+  polybar --reload example &
 fi
