@@ -205,8 +205,13 @@ bindsym $mod+r mode "resize"
 ####################################################################
 exec_always --no-startup-id /home/pietrysz/.config/polybar/launch.sh
 
-
 ####################################################################
 # Betterlockscreen
 ####################################################################
 bindsym $mod+mod1+l exec betterlockscreen -l dim
+
+#################################
+# Disable title bar
+#################################
+for_window [class="^.*"] border pixel 1
+new_window 1pixel
