@@ -205,3 +205,8 @@ bindsym $mod+r mode "resize"
 ####################################################################
 exec_always --no-startup-id /home/pietrysz/.config/polybar/launch.sh
 
+
+####################################################################
+# Betterlockscreen
+####################################################################
+bindsym $mod+shift+x exec betterlockscreen -l dim
