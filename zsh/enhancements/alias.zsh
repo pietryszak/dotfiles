@@ -17,3 +17,9 @@ alias neo="neofetch"
 
 # Update
 alias update="sudo dnf update -y"
+
+# Mkdir
+alias md="mkdir"
+
+# Sudo
+alias root="sudo su"
