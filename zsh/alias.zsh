@@ -3,7 +3,7 @@ alias zshrc='nvim ~/.zshrc'
 alias rld='source ~/.zshrc'
 
 # Alias
-alias als="bat ~/.config/oh-my-zsh/custom/enhancements/alias.zsh"
+alias als="bat ~/.config/oh-my-zsh/custom/alias.zsh"
 
 # Neovim
 alias v="nvim"
