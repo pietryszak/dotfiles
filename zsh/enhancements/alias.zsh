@@ -11,3 +11,9 @@ alias vim="nvim"
 # Top
 alias top="htop"
 alias btop="bpytop"
+
+# Neofetch
+alias neo="neofetch"
+
+# Update
+alias update="sudo dnf update -y"
