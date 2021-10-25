@@ -12,7 +12,7 @@ alias neovim="nvim"
 alias vim="nvim"
 alias sv="sudo nvim"
 
-#Top
+# Top
 alias top="htop"
 alias btop="bpytop"
 
