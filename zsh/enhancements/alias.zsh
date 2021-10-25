@@ -31,7 +31,7 @@ alias mkp="mkdir -p"
 
 # Rmdir
 alias rd="rm -ir"
-
+#
 # Sudo
 alias root="sudo su"
 alias s='sudo'
@@ -44,3 +44,17 @@ alias ls="ls -alh"
 
 # BAT
 alias cat="bat"
+
+# Git
+alias gc="git clone"
+
+# Clear
+alias c="clear"
+
+# Command history
+alias h="history"
+
+# Cd 
+alias .='cd'
+alias ..='cd ..'
+alias ...='cd ../..'
