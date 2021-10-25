@@ -31,7 +31,7 @@ alias mkp="mkdir -p"
 
 # Rmdir
 alias rd="rm -ir"
-#
+
 # Sudo
 alias root="sudo su"
 alias s='sudo'
