@@ -2,13 +2,17 @@
 alias zshrc='nvim ~/.zshrc'
 alias rld='source ~/.zshrc'
 
+# Alias
+alias als="bat ~/.config/oh-my-zsh/custom/enhancements/alias.zsh"
+
 # Neovim
 alias v="nvim"
 alias vi="nvim"
 alias neovim="nvim"
 alias vim="nvim"
+alias sv="sudo nvim"
 
-# Top
+#Top
 alias top="htop"
 alias btop="bpytop"
 
@@ -18,8 +22,25 @@ alias neo="neofetch"
 # Update
 alias update="sudo dnf update -y"
 
+# Install
+alias install="sudo dnf install -y"
+
 # Mkdir
-alias md="mkdir"
+alias mk="mkdir"
+alias mkp="mkdir -p"
+
+# Rmdir
+alias rd="rm -ir"
 
 # Sudo
 alias root="sudo su"
+alias s='sudo'
+
+# Exit
+alias exi="exit"
+
+# Ls
+alias ls="ls -alh"
+
+# BAT
+alias cat="bat"
