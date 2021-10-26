@@ -12,7 +12,7 @@ alias neovim="nvim"
 alias vim="nvim"
 alias sv="sudo nvim"
 
-# Top
+#Top
 alias top="htop"
 alias btop="bpytop"
 
@@ -26,18 +26,18 @@ alias update="sudo dnf update -y"
 alias install="sudo dnf install -y"
 
 # Mkdir
-alias mk="mkdir"
-alias mkp="mkdir -p"
+alias md="mkdiI"
+alias mdp="mkdir -p"
 
 # Rmdir
-alias rd="rm -ir"
+alias rd="rm -Ir"
 
 # Sudo
 alias root="sudo su"
 alias s='sudo'
 
 # Exit
-alias exi="exit"
+alias ext="exit"
 
 # Ls
 alias ls="ls -alh"
@@ -54,7 +54,7 @@ alias c="clear"
 # Command history
 alias h="history"
 
-# Cd 
+# Cd
 alias .='cd'
 alias ..='cd ..'
 alias ...='cd ../..'
