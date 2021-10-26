@@ -35,6 +35,7 @@ alias rd="rm -Ir"
 # Sudo
 alias root="sudo su"
 alias s='sudo'
+alias srd="sudo rm -Ir"
 
 # Exit
 alias ext="exit"
