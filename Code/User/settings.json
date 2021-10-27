@@ -1,5 +1,6 @@
 { 
 "telemetry.telemetryLevel": "off",
+"workbench.colorTheme": "Gruvbox Dark Medium",
 "workbench.iconTheme": "gruvbox-material-icon-theme",
 "editor.suggestSelection": "first",
 "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -11,5 +12,5 @@
 "terminal.integrated.fontFamily": "MesloLGS NF",
 "editor.codeLensFontFamily": "'MesloLGS NF'",
 "editor.fontSize": 16,
-"terminal.integrated.fontSize": 16,
+"terminal.integrated.fontSize": 16
 }
