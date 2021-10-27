@@ -1,47 +1,56 @@
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plugins
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Specify a directory for plugins
-" - For Neovim: stdpath('data') . '/plugged'
-" - Avoid using standard Vim directory names like 'plugin'
-call plug#begin('~/.vim/plugged')
-
-" Make sure you use single quotes
-
-" Gruvbox color scheme
-Plug 'morhetz/gruvbox'
-
-" NerdTree
-Plug 'preservim/nerdtree'
-
-" Initialize plugin system
-call plug#end()
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plugins settings
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Open NERDTree on right ride
-let g:NERDTreeWinPos = "right"
-
-" Start NERDTree and put the cursor back in the other window.
-autocmd VimEnter * NERDTree | wincmd p
-
-" Exit Vim if NERDTree is the only window remaining in the only tab.
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-
-" Open the existing NERDTree on each new tab.
-autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" My settings
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Main Coloring Configurations
-syntax on
-
-" Colorscheme
-colorscheme gruvbox
-" Enable True Color Support (ensure you're using a 256-color enabled $TERM, e.g. xterm-256color)
-set termguicolors
-
-" Mouse 
-set mouse=a
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""                                                                                                                            │" Press ? for help             
+" Plugins                                                                                                                                                                                                                       │                               
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""                                                                                                                            │.. (up a dir)                  
+" Specify a directory for plugins                                                                                                                                                                                               │</.config/sway/scripts/        
+" - For Neovim: stdpath('data') . '/plugged'                                                                                                                                                                                    │  borders                      
+" - Avoid using standard Vim directory names like 'plugin'                                                                                                                                                                      │  float                        
+call plug#begin('~/.vim/plugged')                                                                                                                                                                                               │  gtk                          
+                                                                                                                                                                                                                                │  startup                      
+" Make sure you use single quotes                                                                                                                                                                                               │~                              
+                                                                                                                                                                                                                                │~                              
+" Gruvbox color scheme                                                                                                                                                                                                          │~                              
+Plug 'morhetz/gruvbox'                                                                                                                                                                                                          │~                              
+                                                                                                                                                                                                                                │~                              
+" NerdTree                                                                                                                                                                                                                      │~                              
+Plug 'preservim/nerdtree'                                                                                                                                                                                                       │~                              
+                                                                                                                                                                                                                                │~                              
+" Nerd Commenter                                                                                                                                                                                                                │~                              
+Plug 'preservim/nerdcommenter'                                                                                                                                                                                                  │~                              
+" Initialize plugin system                                                                                                                                                                                                      │~                              
+call plug#end()                                                                                                                                                                                                                 │~                              
+                                                                                                                                                                                                                                │~                              
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""                                                                                                                            │~                              
+" Plugins settings                                                                                                                                                                                                              │~                              
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""                                                                                                                            │~                              
+" Open NERDTree on right ride                                                                                                                                                                                                   │~                              
+let g:NERDTreeWinPos = "right"                                                                                                                                                                                                  │~                              
+                                                                                                                                                                                                                                │~                              
+" Show dotfiles in NERDTree                                                                                                                                                                                                     │~                              
+let NERDTreeShowHidden=1                                                                                                                                                                                                        │~                              
+                                                                                                                                                                                                                                │~                              
+" Start NERDTree and put the cursor back in the other window.                                                                                                                                                                   │~                              
+autocmd VimEnter * NERDTree | wincmd p                                                                                                                                                                                          │~                              
+                                                                                                                                                                                                                                │~                              
+" Exit Vim if NERDTree is the only window remaining in the only tab.                                                                                                                                                            │~                              
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif                                                                                                   │~                              
+                                                                                                                                                                                                                                │~                              
+" Open the existing NERDTree on each new tab.                                                                                                                                                                                   │~                              
+autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif                                                                                                                                                  │~                              
+                                                                                                                                                                                                                                │~                              
+" Shortcuts NERDTree                                                                                                                                                                                                            │~                              
+nnoremap <leader>n :NERDTreeFocus<CR>                                                                                                                                                                                           │~                              
+nnoremap <C-n> :NERDTree<CR>                                                                                                                                                                                                    │~                              
+nnoremap <C-t> :NERDTreeToggle<CR>                                                                                                                                                                                              │~                              
+nnoremap <C-f> :NERDTreeFind<CR>                                                                                                                                                                                                │~                              
+                                                                                                                                                                                                                                │~                              
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""                                                                                                                            │~                              
+" My settings                                                                                                                                                                                                                   │~                              
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""                                                                                                                            │~                              
+                                                                                                                                                                                                                                │~                              
+" Main Coloring Configurations                                                                                                                                                                                                  │~                              
+syntax on                                                                                                                                                                                                                       │~                              
+                                                                                                                                                                                                                                │~                              
+" Colorscheme                                                                                                                                                                                                                   │~                              
+colorscheme gruvbox                                                                                                                                                                                                             │~                              
+" Enable True Color Support (ensure you're using a 256-color enabled $TERM, e.g. xterm-256color)                                                                                                                                │~                              
+set termguicolors      
