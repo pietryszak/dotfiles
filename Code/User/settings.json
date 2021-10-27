@@ -1,9 +1,15 @@
 { 
 "telemetry.telemetryLevel": "off",
-"workbench.iconTheme": "vscode-icons",
+"workbench.iconTheme": "gruvbox-material-icon-theme",
 "editor.suggestSelection": "first",
 "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 "window.titleBarStyle": "custom",
 "vsicons.dontShowNewVersionMessage": true,
-"editor.fontSize": 16
+"security.workspace.trust.untrustedFiles": "open",
+"workbench.colorTheme": "Gruvbox Dark Medium",
+"editor.fontFamily": "'MesloLGS NF'",
+"terminal.integrated.fontFamily": "MesloLGS NF",
+"editor.codeLensFontFamily": "'MesloLGS NF'",
+"editor.fontSize": 16,
+"terminal.integrated.fontSize": 16,
 }
