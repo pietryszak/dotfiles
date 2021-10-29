@@ -14,8 +14,21 @@ Plug 'morhetz/gruvbox'
 " NerdTree
 Plug 'preservim/nerdtree'
 
+" NERDTree Git status
+Plug 'Xuyuanp/nerdtree-git-plugin'
 " Nerd Commenter
 Plug 'preservim/nerdcommenter'
+
+" Startpage on vim
+Plug 'mhinz/vim-startify'
+
+" Airline
+Plug 'vim-airline/vim-airline'
+ 	
+" Airline themes
+Plug 'vim-airline/vim-airline-themes'
+
+Plug 'powerline/powerline'
 
 " NERDTRee icons LOAD AT LAST !
 Plug 'ryanoasis/vim-devicons'
@@ -51,6 +64,16 @@ nnoremap <C-f> :NERDTreeFind<CR>
 
 " NERDTree icons settings
 set encoding=UTF-8
+
+" Airline theme
+let g:airline_theme='base16_gruvbox_dark_medium'
+
+" Airline smart tab line
+let g:airline#extensions#tabline#enabled = 1
+
+" Airline fonts
+let g:airline_powerline_fonts = 1
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " My settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
