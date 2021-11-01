@@ -16,6 +16,7 @@ Plug 'preservim/nerdtree'
 
 " NERDTree Git status
 Plug 'Xuyuanp/nerdtree-git-plugin'
+
 " Nerd Commenter
 Plug 'preservim/nerdcommenter'
 
@@ -28,7 +29,14 @@ Plug 'vim-airline/vim-airline'
 " Airline themes
 Plug 'vim-airline/vim-airline-themes'
 
-Plug 'powerline/powerline'
+" Vim-fugative git plugin
+Plug 'tpope/vim-fugitive'
+
+" Vim Coc
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" ctrlp 
+Plug '/ctrlpvim/ctrlp.vim'
 
 " NERDTRee icons LOAD AT LAST !
 Plug 'ryanoasis/vim-devicons'
