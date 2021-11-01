@@ -17,11 +17,14 @@ let g:airline#extensions#tabline#show_close_button = 0
 " Disable file paths in the tab                                           
 let g:airline#extensions#tabline#fnamemod = ':t'    
 
-" Don't show buffers in the tabline    
-let g:airline#extensions#tabline#show_buffers = 0   
-
 " Disable tab numbers 
 let g:airline#extensions#tabline#show_tab_nr = 0   
 
 " Disable info tabs
 let g:airline#extensions#tabline#show_tab_type = 0
+
+" Vim-fgative integration
+let g:airline#extensions#branch#enabled = 1
+
+" Vim coc integration
+let g:airline#extensions#coc#ebanled = 1 
