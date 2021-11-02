@@ -27,7 +27,7 @@ alias update="sudo dnf update -y"
 alias install="sudo dnf install -y"
 
 # Mkdir
-alias md="mkdiI"
+alias md="mkdir"
 alias mdp="mkdir -p"
 
 # Rmdir
