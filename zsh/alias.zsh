@@ -4,6 +4,7 @@ alias rld='source ~/.zshrc'
 
 # Alias
 alias als="bat ~/.config/oh-my-zsh/custom/alias.zsh"
+alias alse="nvim ~/.config/oh-my-zsh/custom/alias.zsh"
 
 # Neovim
 alias v="nvim"
@@ -31,14 +32,11 @@ alias mdp="mkdir -p"
 
 # Rmdir
 alias rd="rm -Ir"
+alias srd="sudo rm -Ir"
 
 # Sudo
 alias root="sudo su"
 alias s='sudo'
-alias srd="sudo rm -Ir"
-
-# Exit
-alias ext="exit"
 
 # Ls
 alias ls="ls -alh"
@@ -55,7 +53,19 @@ alias c="clear"
 # Command history
 alias h="history"
 
-# Cd
+# Cd 
 alias .='cd'
 alias ..='cd ..'
 alias ...='cd ../..'
+
+# Sway
+alias swe="nvim ~/.config/sway/config"
+
+# Logout
+alias pku="pkill -u $USER"
+
+# Exit
+alias ext="exit"
+
+# List of intalled rmps and search in fzf
+alias ins="dnf list installed | fzf"
