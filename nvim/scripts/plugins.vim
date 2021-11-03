@@ -39,7 +39,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dhruvasagar/vim-open-url'
 
 " Fzd finder for vim
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " NERDTRee icons LOAD AT LAST !
