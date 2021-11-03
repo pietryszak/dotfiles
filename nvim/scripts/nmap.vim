@@ -1,14 +1,11 @@
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Focus on NERDTRee
 noremap <leader>n :NERDTreeFocus<CR>
 " Show/hide NERDTree
-nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <leader>t :NERDTreeToggle<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Airline
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"  Airline
 
 " Tabs control
 let g:airline#extensions#tabline#buffer_idx_mode = 1
@@ -29,27 +26,25 @@ nmap <leader>0 <Plug>AirlineSelectTab0
 nmap <leader>- <Plug>AirlineSelectPrevTab
 nmap <leader>= <Plug>AirlineSelectNextTab
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Fzf
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Search Vim Buffers
 nnoremap <silent> <Leader>b :Buffers<CR>
 
 " Open Fzf
-nnoremap <silent> <C-f> :Files<CR>
+nnoremap <silent> <Leader>f :Files<CR>
 
 " Git files
 nnoremap <silent> <Leader>gf :GFiles <CR>
 
 " Ripgrep results
-nnoremap <silent> <Leader>f :Rg<CR>
+nnoremap <silent> <Leader>r :Rg<CR>
 
 " Lines in current buffer
 nnoremap <silent> <Leader>/ :BLines<CR>
 
 " Vim marks
-nnoremap <leader>m :Marks<CR>
+nnoremap <silent> <leader>m :Marks<CR>
 
 " Git commits
 nnoremap <silent> <Leader>g :Commits<CR>
@@ -68,3 +63,7 @@ nnoremap <silent> <Leader>h/ :History/<CR>
 
 "Search in all open tabs
 nnoremap <silent> <Leader>l :Lines<CR>
+" Neovim
+
+" Save vim folds
+nmap <Leader> fo :mkview
