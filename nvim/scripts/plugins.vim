@@ -8,22 +8,22 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 
-" Gruvbox color scheme
+" Gruvbox-  color scheme
 Plug 'morhetz/gruvbox'
 
-" NerdTree
+" NerdTree - file manager for vim
 Plug 'preservim/nerdtree'
 
-" NERDTree Git status
+" NERDTree - Git status on file manager
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
-" Nerd Commenter
+" Nerd Commenter - comments tools
 Plug 'preservim/nerdcommenter'
 
-" Startpage on vim
+" Startpage on vim 
 Plug 'mhinz/vim-startify'
 
-" Airline
+" Airline - statusbar
 Plug 'vim-airline/vim-airline'
  	
 " Airline themes
@@ -32,11 +32,15 @@ Plug 'vim-airline/vim-airline-themes'
 " Vim-fugative git plugin
 Plug 'tpope/vim-fugitive'
 
-" Vim Coc
+" Vim Coc - vscode like code language editing support
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" ctrlp 
-Plug '/ctrlpvim/ctrlp.vim'
+" Vim open url - open url in default browser
+Plug 'dhruvasagar/vim-open-url'
+
+" Fzd finder for vim
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " NERDTRee icons LOAD AT LAST !
 Plug 'ryanoasis/vim-devicons'
