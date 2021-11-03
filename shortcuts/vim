@@ -1,0 +1,78 @@
+ALL SHORTCUTS WITH LEADER AT FIRST ( \ )
+ADDNOTATION IF LEADER NOT REQUIRED
+
+NERDTree {{{
+
+Focus on NERDTRee
+n
+
+Show/hide NERDTree
+t
+
+}}}
+
+Airline {{{
+
+Tabs 1-10   
+1 Tab1
+2 Tab2
+3 Tab3
+4 Tab4
+5 Tab5
+6 Tab6
+7 Tab7
+8 Tab8
+9 Tab9
+0 Tab10
+
+Prev/Next Tab
+- PrevTab
+= NextTab
+
+}}}
+
+Fzf {{{
+
+Search Vim Buffers
+b
+
+Open Fzf
+f
+
+Git files
+gf
+
+Ripgrep results
+r
+
+Lines in current buffer
+/
+
+Vim marks
+m
+
+Git commit
+g
+
+Search in help files in system
+H
+
+Files history
+hh
+
+Command history
+h:
+
+Search history
+h/
+
+Search in all open tabs
+l/ 
+
+}}}
+
+Neovim {{{
+
+Close all open fold (NORMAL) 
+zM - no LEADER required
+}}}
