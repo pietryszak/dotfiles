@@ -66,4 +66,4 @@ nnoremap <silent> <Leader>l :Lines<CR>
 " Neovim
 
 " Save vim folds
-nmap <Leader> fo :mkview
+nnoremap <Leader>s :mkview<CR>
