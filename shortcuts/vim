@@ -1,69 +1,81 @@
-" NERDTree
+ALL SHORTCUTS WITH LEADER AT FIRST ( \ )
+ADDNOTATION IF LEADER NOT REQUIRED
 
-" Focus on NERDTRee
-noremap <leader>n :NERDTreeFocus<CR>
-" Show/hide NERDTree
-nnoremap <leader>t :NERDTreeToggle<CR>
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"  Airline
+NERDTree {{{
 
-" Tabs control
-let g:airline#extensions#tabline#buffer_idx_mode = 1
+Focus on NERDTRee
+n
 
-" Tabs 1-10   
-nmap <leader>1 <Plug>AirlineSelectTab1
-nmap <leader>2 <Plug>AirlineSelectTab2
-nmap <leader>3 <Plug>AirlineSelectTab3
-nmap <leader>4 <Plug>AirlineSelectTab4
-nmap <leader>5 <Plug>AirlineSelectTab5
-nmap <leader>6 <Plug>AirlineSelectTab6
-nmap <leader>7 <Plug>AirlineSelectTab7
-nmap <leader>8 <Plug>AirlineSelectTab8
-nmap <leader>9 <Plug>AirlineSelectTab9
-nmap <leader>0 <Plug>AirlineSelectTab0
+Show/hide NERDTree
+t
 
-" Prev/Next Tab
-nmap <leader>- <Plug>AirlineSelectPrevTab
-nmap <leader>= <Plug>AirlineSelectNextTab
+}}}
 
-"Fzf
+Airline {{{
 
-" Search Vim Buffers
-nnoremap <silent> <Leader>b :Buffers<CR>
+Tabs 1-10   
+1 Tab1
+2 Tab2
+3 Tab3
+4 Tab4
+5 Tab5
+6 Tab6
+7 Tab7
+8 Tab8
+9 Tab9
+0 Tab10
 
-" Open Fzf
-nnoremap <silent> <Leader>f :Files<CR>
+Prev/Next Tab
+- PrevTab
+= NextTab
 
-" Git files
-nnoremap <silent> <Leader>gf :GFiles <CR>
+}}}
 
-" Ripgrep results
-nnoremap <silent> <Leader>r :Rg<CR>
+Fzf {{{
 
-" Lines in current buffer
-nnoremap <silent> <Leader>/ :BLines<CR>
+Search Vim Buffers
+b
 
-" Vim marks
-nnoremap <silent> <leader>m :Marks<CR>
+Open Fzf
+f
 
-" Git commits
-nnoremap <silent> <Leader>g :Commits<CR>
+Git files
+gf
 
-" Search in help files in system
-nnoremap <silent> <Leader>H :Helptags<CR>
+Ripgrep results
+r
 
-" Files history
-nnoremap <silent> <Leader>hh :History<CR>
+Lines in current buffer
+/
 
-" Command history
-nnoremap <silent> <Leader>h: :History:<CR>
+Vim marks
+m
 
-" Search history
-nnoremap <silent> <Leader>h/ :History/<CR> 
+Git commit
+g
 
-"Search in all open tabs
-nnoremap <silent> <Leader>l :Lines<CR>
-" Neovim
+Search in help files in system
+H
 
-" Save vim folds
-nnoremap <Leader>s :mkview<CR>
+Files history
+hh
+
+Command history
+h:
+
+Search history
+h/
+
+Search in all open tabs
+l/ 
+
+}}}
+
+Neovim {{{
+
+Close all open fold (NORMAL) 
+zM - no LEADER required
+
+Save vim folds
+fs 
+}}}
