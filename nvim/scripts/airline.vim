@@ -1,5 +1,5 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plugins settings
+" Airline settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Airline theme
@@ -28,3 +28,6 @@ let g:airline#extensions#branch#enabled = 1
 
 " Vim coc integration
 let g:airline#extensions#coc#ebanled = 1 
+
+" Command shortcut to airline help
+command! AL help airline
