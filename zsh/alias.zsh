@@ -3,7 +3,6 @@ alias zshrc='nvim ~/.zshrc'
 alias rld='source ~/.zshrc'
 
 # Alias
-alias als="bat ~/.config/oh-my-zsh/custom/alias.zsh"
 alias alse="nvim ~/.config/oh-my-zsh/custom/alias.zsh"
 
 # Neovim
@@ -69,3 +68,8 @@ alias ext="exit"
 
 # List of intalled rmps and search in fzf
 alias ins="dnf list installed | fzf"
+
+# Shortcuts
+alias shv="nvim .config/shortcuts/vim"
+alias shs="nvim .config/shortcuts/sway"
+alias shz="nvim .config/shortcuts/zsh"
