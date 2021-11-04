@@ -1,72 +1,115 @@
-Top
+Top {{{
 
 top="htop"
 btop="bpytop"
 
-Neofetch
+}}}
+
+Neofetch {{{
 
 neo="neofetch"
-Update
+
+}}}
+
+Update {{{
 
 update="sudo dnf update -y"
-Install
+
+}}}
+
+Install {{{
 
 install="sudo dnf install -y"
 
-Mkdir
+}}}
+
+Mkdir {{{
 
 md="mkdir"
 mdp="mkdir -p"
 
-Rmdir
+}}}
+
+Rmdir {{{
 
 rd="rm -Ir"
 srd="sudo rm -Ir"
-Sudo
+
+}}}
+
+Sudo {{{
 
 root="sudo su"
 s='sudo'
 
-Ls
+}}}
+
+Ls {{{
 
 ls="ls -alh"
 
-BAT
+}}}
+
+BAT {{{
 
 cat="bat"
 
-Git
+}}}
+
+Git {{{ 
 
 gc="git clone"
 
-Clear
+}}}
+
+Clear {{{
 
 c="clear"
-History of used commands
+
+}}}
+
+History of used commands {{{
 
 h="history"
 
-Cd 
+}}} 
+
+Cd {{{ 
 
 .='cd'
 ..='cd ..'
 ...='cd ../..'
 
-Sway
+}}}
+
+Sway {{{
 
 swe="nvim ~/.config/sway/config"
-Logout
+
+}}}
+
+Logout {{{
 
 pku="pkill -u $USER"
 
-Exit
+}}}
+
+Exit {{{
 
 ext="exit"
 
-List of intalled apps
+}}}
+
+List of intalled apps {{{
 
 ins="dnf list installed | fzf"
 
-Shortcuts
+}}}
+
+Shortcuts {{{
 
 shv="nvim .config/shortcuts/vim"
+shs="nvim .config/shortcuts/sway"
+shz="nvim .config/shortcuts/zsh"
+
+}}}
