@@ -1,7 +1,7 @@
 ALL SHORTCUTS WITH LEADER AT FIRST ( \ )
 ADDNOTATION IF LEADER NOT REQUIRED
 
-NERDTree {{{
+NERDTree { {{
 
 Focus on NERDTRee
 n
@@ -71,11 +71,36 @@ l/
 
 }}}
 
+Vim-open-url {{{
+
+Open url under cursor in the default web browser
+gB - no LEADER required
+
+Search word under cursor using default search engine
+
+g<CR> - no LEADER required
+
+Google search word under cursor in the default web browser      
+gG - no LEADER required
+
+
+Wikipedia search word under cursor in the default web browser
+gW - no LEADER required
+
+}}}
+
 Neovim {{{
 
 Close all open fold (NORMAL) 
 zM - no LEADER required
 
 Save vim folds
-fs 
+s
+
+Open fold
+zo - no LEADER required
+
+Close all folds
+zM - no LEADER required
+
 }}}
