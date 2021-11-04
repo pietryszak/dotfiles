@@ -1,0 +1,72 @@
+Top
+
+top="htop"
+btop="bpytop"
+
+Neofetch
+
+neo="neofetch"
+Update
+
+update="sudo dnf update -y"
+Install
+
+install="sudo dnf install -y"
+
+Mkdir
+
+md="mkdir"
+mdp="mkdir -p"
+
+Rmdir
+
+rd="rm -Ir"
+srd="sudo rm -Ir"
+Sudo
+
+root="sudo su"
+s='sudo'
+
+Ls
+
+ls="ls -alh"
+
+BAT
+
+cat="bat"
+
+Git
+
+gc="git clone"
+
+Clear
+
+c="clear"
+History of used commands
+
+h="history"
+
+Cd 
+
+.='cd'
+..='cd ..'
+...='cd ../..'
+
+Sway
+
+swe="nvim ~/.config/sway/config"
+Logout
+
+pku="pkill -u $USER"
+
+Exit
+
+ext="exit"
+
+List of intalled apps
+
+ins="dnf list installed | fzf"
+
+Shortcuts
+
+shv="nvim .config/shortcuts/vim"
