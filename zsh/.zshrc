@@ -74,6 +74,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 ZSH_CUSTOM=~/.config/oh-my-zsh/custom/
 
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -112,3 +113,10 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export PAGER='most'
+
+source $HOME/.fzf/shell/key-bindings.zsh
+source $HOME/.fzf/shell/completion.zsh
