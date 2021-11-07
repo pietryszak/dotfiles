@@ -73,3 +73,9 @@ alias ins="dnf list installed | fzf"
 alias shv="nvim .config/shortcuts/vim"
 alias shs="nvim .config/shortcuts/sway"
 alias shz="nvim .config/shortcuts/zsh"
+
+# Virtualbox update
+alias vbu="bash -c "~/.gc/virtualbox/update.sh""
+
+#swayinfo
+alias swi="bash -c "~/.local/bin/swayinfo""
