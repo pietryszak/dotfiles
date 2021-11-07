@@ -10,8 +10,8 @@ theme:
   hovered: "177, 98, 134" # hovered pane border
   inactive: "168, 153, 132" # borders of inactive panes
   playbar_background: "40, 40, 40" # background of progress bar
-  playbar_progress: "131, 165, 152" # filled-in part of the progress bar
-  playbar_progress_text: "69, 133, 136" # song length and time played/left indicator in the progress bar
+  playbar_progress: "69, 133, 136" # filled-in part of the progress bar
+  playbar_progress_text: "235, 219, 178" # song length and time played/left indicator in the progress bar
   playbar_text: "214, 94, 14" # artist name in player pane
   selected: "104, 157, 106" # a) selected pane border, b) hovered item in list, & c) track title in player
   text: "235, 219, 178" # text in panes
@@ -19,7 +19,7 @@ theme:
 
 behavior:
   seek_milliseconds: 5000
-  volume_increment: 5
+  volume_increment: 10
   # The lower the number the higher the "frames per second". You can decrease this number so that the audio visualisation is smoother but this can be expensive!
   tick_rate_milliseconds: 250
   # Enable text emphasis (typically italic/bold text styling). Disabling this might be important if the terminal config is otherwise restricted and rendering text escapes interferes with the UI.
