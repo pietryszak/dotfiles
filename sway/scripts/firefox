@@ -1,0 +1,2 @@
+for_window [class="Firefox" title="Picture-in-Picture"] \
+    floating enable, move absolute position 1396 0, sticky enabled, border none
