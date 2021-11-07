@@ -116,7 +116,18 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+
+###############################################################################################
+# My settings
+###############################################################################################
+
+# PAGER for man help 
 export PAGER='most'
 
+# Add PATH
+path+=('~/.local/bin')
+export PATH
+
+# FZF for zsh
 source $HOME/.fzf/shell/key-bindings.zsh
 source $HOME/.fzf/shell/completion.zsh
