@@ -1,0 +1,154 @@
+###############################################################################################
+# Settings
+###############################################################################################
+
+# nerdfont
+use_nerdfont = true
+
+# cache
+audio_cache = true
+audio_cache_size = 1024
+
+# nofifications
+notify = true
+
+gapless = true
+
+#  By default the statusbar will show a play icon when a track is playing and a pause icon when playback is stopped. If this setting is enabled, the behavior is reversed.
+
+flip_status_indicators=true
+
+# My own shortcuts
+default_keybindings = false
+
+###############################################################################################
+# Theme
+###############################################################################################
+
+[theme]
+background = "black"
+primary = "light white"
+secondary = "light black"
+title = "green"
+playing = "green"
+playing_selected = "light green"
+playing_bg = "black"
+highlight = "light white"
+highlight_bg = "#484848"
+error = "light white"
+error_bg = "red"
+statusbar = "light white"
+statusbar_progress = "green"
+statusbar_bg = "black"
+cmdline = "light white"
+cmdline_bg = "black"
+search_match = "light red"
+
+###############################################################################################
+# Keybinding
+###############################################################################################
+
+[keybindings]
+######################################
+# Song controls
+######################################
+
+##################
+# Fast forward / rewind
+##################
+"b" = "seek -1000"
+"f" = "seek +1000"
+"B" = "seek -10000"
+"F" = "seek +10000"
+
+##################
+# Play / pause
+##################
+"p" = "playpause"
+"Enter" = "play"
+"s" = "stop"
+
+##################
+# Track manipulation
+##################
+"H" = "previous"
+"L" = "next"
+"r" = "repeat"
+"z" = "shuffle"
+"D" = "delete"
+"S" = "save"
+# Open context menu
+"O" = "open current"
+"o" = "open selected"
+"A" = "goto artist"
+"a" = "goto album"
+
+##################
+# Queue
+##################
+# Add to queue
+"E" = "queue"
+"Ctrl+s" = "save queue"
+# Move selected song up/down in the queue
+"J" = "shift down 1"
+"K" = "shift up 1"
+"C" = "clear"
+# Open the context menu for a Spotify link in the clipboard
+"Ctrl+v" = "insert"
+
+######################################
+# Sound
+######################################
+"=" = "volup 1"
+"-" = "voldown 1"
+"[" = "volup 5"
+"]" = "voldown 5"
+
+
+######################################
+# Movements
+######################################
+"F1" = "focus queue"
+"F2" = "focus library"
+"F3" = "focus search"
+"1" = "focus queue"
+"2" = "focus library"
+# Go to the playing track
+"." = "move playing"
+# Navigation
+"Down" = "move down 1"
+"G" = "move bottom"
+"g" = "move top"
+"Left" = "move left 1"
+"Right" = "move right 1"
+"Ctrl+d" = "move down 5"
+"Ctrl+u" = "move up 5"
+"Up" = "move up 1"
+"h" = "move left 1"
+"j" = "move down 1"
+"k" = "move up 1"
+"Ctrl+e" = "move down 1"
+"Ctrl+y" = "move up 1"
+"l" = "move right 1"
+"." = "move playing"
+"q" = "back"
+
+######################################
+# Sorting
+######################################
+"t" = "sort added d"
+"T" = "sort title a"
+
+######################################
+# Sharing
+######################################
+"Y" = "share selected"
+"y" = "share current"
+
+######################################
+# Other
+######################################
+"Q" = "quit"
+"Z" = "quit"
+"?" = "help"
+"U" = "update"
