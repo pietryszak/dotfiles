@@ -1,1 +1,5 @@
+# Numlock on startup
 input * xkb_numlock enable
+
+# Keybord layout
+input * xkb_layout pl
