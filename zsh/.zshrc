@@ -126,6 +126,7 @@ export PAGER='most'
 
 # Add PATH
 path+=('~/.local/bin')
+path+=('~/.cargo/bin')
 export PATH
 
 # FZF for zsh
