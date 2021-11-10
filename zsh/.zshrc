@@ -125,9 +125,8 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 export PAGER='most'
 
 # Add PATH
-path+=('~/.local/bin')
-path+=('~/.cargo/bin')
-export PATH
+export -U PATH=$HOME/.cargo/bin${PATH:+:$PATH}
+export -U PATH=$HOME/.local/bin${PATH:+:$PATH}
 
 # FZF for zsh
 source $HOME/.fzf/shell/key-bindings.zsh
