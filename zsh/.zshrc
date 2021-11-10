@@ -132,5 +132,3 @@ export PATH
 # FZF for zsh
 source $HOME/.gc/fzf/shell/key-bindings.zsh
 source $HOME/.gc/fzf/shell/completion.zsh
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
