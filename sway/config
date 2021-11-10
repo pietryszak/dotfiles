@@ -219,7 +219,7 @@ include @sysconfdir@/sway/config.d/*
 # My settings
 ###############################################################
 
-include ~/.config/sway/scripts/*    
+include $HOME/.config/sway/scripts/*    
 
 #################################
 # Workspaces
