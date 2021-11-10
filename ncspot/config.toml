@@ -14,7 +14,7 @@ notify = true
 
 gapless = true
 
-#  By default the statusbar will show a play icon when a track is playing and a pause icon when playback is stopped. If this setting is enabled, the behavior is reversed.
+# By default the statusbar will show a play icon when a track is playing and a pause icon when playback is stopped. If this setting is enabled, the behavior is reversed.
 
 flip_status_indicators=true
 
