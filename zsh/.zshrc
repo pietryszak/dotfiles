@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.gc/oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -130,5 +130,5 @@ path+=('~/.cargo/bin')
 export PATH
 
 # FZF for zsh
-source $HOME/.gc/fzf/shell/key-bindings.zsh
-source $HOME/.gc/fzf/shell/completion.zsh
+source $HOME/.fzf/shell/key-bindings.zsh
+source $HOME/.fzf/shell/completion.zsh
