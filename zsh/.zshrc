@@ -72,7 +72,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-ZSH_CUSTOM=$HOME/.config/zsh/
+#ZSH_CUSTOM=$HOME/.config/zsh/
 
 
 # Which plugins would you like to load?
