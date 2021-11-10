@@ -3,7 +3,7 @@ alias zshrc='nvim ~/.zshrc'
 alias rld='source ~/.zshrc'
 
 # Alias
-alias alse="nvim ~/.config/oh-my-zsh/custom/alias.zsh"
+alias alse="nvim $HOME/.oh-my-zsh/custom/alias.zsh"
 
 # Neovim
 alias v="nvim"
@@ -58,7 +58,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 
 # Sway
-alias swe="nvim ~/.config/sway/config"
+alias swe="nvim $HOME/.config/sway/config"
 
 # Logout
 alias pku="pkill -u $USER"
@@ -70,12 +70,12 @@ alias ext="exit"
 alias ins="dnf list installed | fzf"
 
 # Shortcuts
-alias shv="nvim .config/shortcuts/vim"
-alias shs="nvim .config/shortcuts/sway"
-alias shz="nvim .config/shortcuts/zsh"
+alias shv="nvim $HOME/.config/shortcuts/vim"
+alias shs="nvim $HOME/.config/shortcuts/sway"
+alias shz="nvim $HOME/.config/shortcuts/zsh"
 
 # Virtualbox update
-alias vbu="bash -c "~/.gc/virtualbox/update.sh""
+alias vbu="bash -c " $HOME/.config/VirtualBox/update.sh""
 
 #swayinfo
-alias swi="bash -c "~/.local/bin/swayinfo""
+alias swi="bash -c " $HOME/.local/bin/swayinfo""
