@@ -1,6 +1,6 @@
 # Zshrc
-alias zshrc='nvim ~/.zshrc'
-alias rld='source ~/.zshrc'
+alias zshrc='nvim $HOME/.zshrc'
+alias rld='source $HOME/.zshrc'
 
 # Alias
 alias alse="nvim $HOME/.oh-my-zsh/custom/alias.zsh"
