@@ -75,7 +75,7 @@ alias shs="nvim $HOME/.config/shortcuts/sway"
 alias shz="nvim $HOME/.config/shortcuts/zsh"
 
 # Virtualbox update
-alias vbu="bash -c " $HOME/.config/VirtualBox/update.sh""
+alias vbu="bash -c "$HOME/.config/VirtualBox/update.sh""
 
 #swayinfo
-alias swi="bash -c " $HOME/.local/bin/swayinfo""
+alias swi="bash -c "$HOME/.local/bin/swayinfo""
