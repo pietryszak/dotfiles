@@ -131,3 +131,6 @@ export -U PATH=$HOME/.local/bin${PATH:+:$PATH}
 # FZF for zsh
 source $HOME/.fzf/shell/key-bindings.zsh
 source $HOME/.fzf/shell/completion.zsh
+
+# Bash aliases
+source ~/.bash_aliases
