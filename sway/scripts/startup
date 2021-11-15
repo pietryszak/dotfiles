@@ -8,4 +8,4 @@ exec swaymsg "workspace $ws5; exec thunderbird; workspace $ws1;"
 # for_window [class="Code"] move window to workspace $ws6
 exec swaymsg "workspace $ws7; exec notorious; workspace $ws1"
 exec swaymsg "workspace $ws8; exec zenkit; workspace $ws1"
-exec swaymsg "workspace $ws9; exec terminator --no-dbus -e spt; workspace $ws1;"
+exec swaymsg "workspace $ws9; exec terminator --no-dbus -e ncspot; workspace $ws1;"
