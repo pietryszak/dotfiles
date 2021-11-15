@@ -21,5 +21,6 @@ workspace $ws2 output $output-primary
 workspace $ws3 output $output-primary
 workspace $ws4 output $output-secondary
 workspace $ws5 output $output-secondary
+workspace $ws7 output $output-secondary
 workspace $ws8 output $output-secondary
 workspace $ws9 output $output-secondary
