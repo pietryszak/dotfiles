@@ -9,7 +9,7 @@ set $gnome-schema org.gnome.desktop.interface
 
 exec_always {
     gsettings set $gnome-schema gtk-theme 'Gruvbox-Material-Dark'
-    gsettings set $gnome-schema icon-theme 'Gruvbox'
+    gsettings set $gnome-schema icon-theme 'Papirus-Dark'
     gsettings set $gnome-schema cursor-theme 'Adwaita'
     gsettings set $gnome-schema font-name 'Cantarell Regular 12'
 }
