@@ -57,9 +57,6 @@ alias .='cd'
 alias ..='cd ..'
 alias ...='cd ../..'
 
-# Sway
-alias swe="nvim $HOME/.config/sway/config"
-
 # Logout
 alias pku="pkill -u $USER"
 
@@ -77,5 +74,9 @@ alias shz="nvim $HOME/.config/shortcuts/zsh"
 # Virtualbox update
 alias vbu="bash -c "$HOME/.config/VirtualBox/update.sh""
 
-#swayinfo
+# Sway
+alias swe="nvim $HOME/.config/sway/config"
+alias sws="nvim $HOME/.config/sway/scripts/"
+
+# Swayinfo
 alias swi="bash -c "$HOME/.local/bin/swayinfo""
