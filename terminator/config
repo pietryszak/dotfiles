@@ -1,12 +1,13 @@
 [global_config]
   title_use_system_font = False
-  title_font = MesloLGS NF 14
+  title_font = MesloLGS NF 16
 [keybindings]
+  help = F12
 [profiles]
   [[default]]
     background_color = "#282828"
     cursor_color = "#aaaaaa"
-    font = MesloLGS NF 14
+    font = MesloLGS NF 16
     foreground_color = "#ebdbb2"
     show_titlebar = False
     scrollbar_position = hidden
