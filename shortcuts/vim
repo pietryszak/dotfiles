@@ -91,9 +91,6 @@ gW - no LEADER required
 
 Neovim {{{
 
-Close all open fold (NORMAL) 
-zM - no LEADER required
-
 Save vim folds
 s
 
