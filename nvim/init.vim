@@ -8,3 +8,4 @@ source $HOME/.config/nvim/scripts/fold.vim
 source $HOME/.config/nvim/scripts/mysettings.vim
 source $HOME/.config/nvim/scripts/nerdtree.vim
 source $HOME/.config/nvim/scripts/nmap.vim
+source $HOME/.config/nvim/scripts/autosave.vim
