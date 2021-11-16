@@ -1,36 +1,36 @@
 Dotfiles used in my Linux
 
+File structure and explanation whats file doing 
+
 ```bash
 dotfiles
-├── bashrc
-│   └── .bash_aliases
+├── bashrc 
+│   └── .bash_aliases - bash aliases for nvim editor for user and sudo/root
 ├── bat
-│   └── config
+│   └── config - bat  - cat command supports syntax highlighting for a large number of programming and markup languages - config with theme 
 ├── Caprine
-│   └── config.json
+│   └── config.json - caprine -  facebook messenger for  linux -  config with polish and english spell checking
 ├── Code
-│   └── settings.json
+│   └── settings.json - vscode - configuration like font, theme, icons   
 ├── gedit
-│   └── gruvbox-dark.xml
+│   └── gruvbox-dark.xml - gedit - gnome text editor - gruvbox theme
 ├── htop
-│   └── htoprc
-├── i3
-│   └── config
+│   └── htoprc - htop - better top command - config with gruvbox theme
 ├── kitty
-│   ├── kitty.conf
-│   └── themes
-│       └── gruvbox_dark.conf
+│   ├── kitty.conf - not used
+│   └── themes 
+│       └── gruvbox_dark.conf - not used
 ├── ncspot
-│   └── config.toml
+│   └── config.toml - ncspot - tui for spotify - config with colors
 ├── neofetch
-│   └── config.conf
+│   └── config.conf - neofetch - a command-line system information tool - config for faster startup wit every zsh session
 ├── nvim
-│   ├── init.vim
+│   ├── init.vim - nvim - new vim command - config for loading scripts
 │   └── scripts
-│       ├── airline.vim
-│       ├── autosave.vim
-│       ├── coc.vim
-│       ├── fold.vim
+│       ├── airline.vim - airline  status/tabline for vim - config file with theme, fonts, tabs in vim
+│       ├── autosave.vim - autosave a file with vim, autosave 10 second after change form Insert mode to Normal mode
+│       ├── coc.vim - nodejs extension host  neovim, load extensions like VSCode and host language servers. 
+│       ├── fold.vim - save and restore manual folds when we exit a file 
 │       ├── fzf.vim
 │       ├── mysettings.vim
 │       ├── nerdtree.vim
