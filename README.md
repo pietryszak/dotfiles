@@ -1,6 +1,6 @@
 Dotfiles used in my Linux
 
-File structure and explanation whats file doing 
+File structure and explanation what's files doing
 
 ```bash
 dotfiles
