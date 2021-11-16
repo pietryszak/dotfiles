@@ -1,3 +1,5 @@
+# Startup apps
+
 exec swaymsg "workspace $ws1; exec firefox; workspace $ws1;"
 exec swaymsg "workspace $ws2; exec terminator; workspace $ws1;" 
 exec swaymsg "workspace $ws3; exec terminator --no-dbus -e nnn; workspace $ws1;" 
