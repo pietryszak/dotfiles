@@ -1,7 +1,6 @@
-# dotfiles
 Dotfiles used in my Linux
 
-'''bash
+```bash
 dotfiles
 ├── bashrc
 ├── bat
@@ -72,4 +71,4 @@ dotfiles
     └── scripts
         ├── alias.zsh
         └── neofetch.zsh
-'''
+```
