@@ -63,9 +63,7 @@ dotfiles
 │       ├── startup - apps launched on first startup of sway 
 │       └── workspaces - workspace names and settings in sway 
 ├── terminator
-│   └── config
-├── ublock
-│   └── my-ublock-backup.txt
+│   └── config - terminator - advancet terminal with tabs, multiwinows. Config file with font, theme 
 ├── VirtualBox
 │   └── update.sh
 └── zsh
