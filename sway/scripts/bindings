@@ -13,3 +13,12 @@ bindsym $mod+Ctrl+p  exec grimshot save window
 # Move workspace to output
 bindsym $mod+Control+Shift+Right move workspace to $output-secondary
 bindsym $mod+Control+Shift+Left  move workspace to $output-primary
+
+# Switch between the current and the previously focused one
+bindsym $mod+mod1+b workspace back_and_forth
+
+# Move container to the previously focused
+bindsym $mod+Shift+b move container to workspace back_and_forth
+
+# Move firefox to current workspace
+bindsym $mod+F1 [class="Firefox"] move workspace current
