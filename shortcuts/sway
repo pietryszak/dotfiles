@@ -1,12 +1,3 @@
-Sway {{{
-
-Grimshot - screenshot tool
-bindsym Mod4+p       exec grimshot save active
-bindsym Mod4+Shift+p exec grimshot save area
-bindsym Mod4+Mod1+p  exec grimshot save output
-bindsym Mod4+Ctrl+p  exec grimshot save window
-
-}}
 Nautilus {{{
 
 Launch Nautilus
@@ -39,10 +30,104 @@ Mod4+Ctrl+p
  
 Sway {{{
 
+Start menu
+mod+d
+
+Start a terminal
+mod+Enter
+
+Change focus to left
+mod+h or mod+Left
+
+Change focus to down
+mod+j or mod+Down
+
+Change focus to up
+mod+k or mod+Up
+
+Change focus to right
+mod+l + mod+Right
+
+Kill focused window
+mod+Shift+q
+
+Switch to selected workspace
+mod+1 (numbers 0-9)
+
 Move workspace to secondary monitor
 mod+Control+Shift+Right
 
 Move workspace to primary monitor
 mod+Control+Shift+Left
+
+Move focused container to selected workspace
+mod+Shift+1 (numbers 0-9)
+
+Split in horizontal orientation
+mod+b
+
+Split in vertical orientation
+mod+v
+
+Move the focused window left
+mod+Shift+h or mod+Shift+Left
+
+Move the focused window down
+mod+Shift+j or mod Shift+Down
+
+Move the focused window up
+mod+Shift+k or mod+Shift+Up
+
+Move the focused windows right
+mod+Shift+l or mod+Shift+Right
+
+Switch the current container to stacking layout
+mod+s
+
+Switch the current container to tabbed layout
+mod+w layout tabbed
+
+Switch the current container to split layout
+mod+e
+
+Make the current focus fullscreen
+mod+f
+
+Toggle the current focus between tiling and floating mode
+mod+Shift+space
+
+Swap focus between the tiling area and the floating area
+mod+space
+
+Move focus to the parent container
+mod+a
+
+Move the currently focused window to the scratchpad
+mod+Shift+minus
+
+Show the next scratchpad window or hide the focused scratchpad window. If there are multiple scratchpad windows, this command cycles through them.
+mod+minus
+
+Resize containers
+mod+r
+
+mode "resize"
+h or Left resize shrink width 10px
+j or Down grow height 10px
+k or Up resize shrink height 10px
+l or Right grow width 10px
+
+
+Return to default mode from resize
+bindsym Enter or Esc
+
+Use Mouse+$mod to drag floating windows to their wanted position
+mod
+
+Reload the configuration file
+mod+Shift+c
+
+Exit sway (logs you out of your Wayland session)
+mod+Shift+e
 
 }}}
