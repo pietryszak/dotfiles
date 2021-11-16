@@ -60,6 +60,15 @@ mod+Control+Shift+Right
 Move workspace to primary monitor
 mod+Control+Shift+Left
 
+Switch between the current and the previously focused one
+bindsym $mod+mod1+b workspace back_and_forth
+
+Move container to the previously focused
+bindsym $mod+Shift+b move container to workspace back_and_forth
+
+Move firefox to current workspace
+mod+F1
+
 Move focused container to selected workspace
 mod+Shift+1 (numbers 0-9)
 
@@ -131,3 +140,4 @@ Exit sway (logs you out of your Wayland session)
 mod+Shift+e
 
 }}}
+
