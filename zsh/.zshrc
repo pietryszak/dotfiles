@@ -121,8 +121,10 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 # My settings
 ###############################################################################################
 
-# PAGER for man help 
+# PAGER settings
 export PAGER='most'
+export BAT_PAGER="less -RF"
+
 
 # Add PATH
 export -U PATH=$HOME/.cargo/bin${PATH:+:$PATH}
