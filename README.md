@@ -27,13 +27,13 @@ dotfiles
 ├── nvim
 │   ├── init.vim - nvim - new vim command - config for loading scripts
 │   └── scripts
-│       ├── airline.vim - airline  status/tabline for vim - config file with theme, fonts, tabs in vim
-│       ├── autosave.vim - autosave a file with vim, autosave 10 second after change form Insert mode to Normal mode
-│       ├── coc.vim - nodejs extension host  neovim, load extensions like VSCode and host language servers. 
-│       ├── fold.vim - save and restore manual folds when we exit a file 
-│       ├── fzf.vim
-│       ├── mysettings.vim
-│       ├── nerdtree.vim
+│       ├── airline.vim -config for  airline  status/tabline for vim - config file with theme, fonts, tabs in vim
+│       ├── autosave.vim - config for autosave a file with vim, autosave 10 second after change form Insert mode to Normal
+│       ├── coc.vim - coinfig for nodejs extension host  neovim, load extensions like VSCode and host language servers. 
+│       ├── fold.vim - script for save and restore manual folds when we exit a file 
+│       ├── fzf.vim - config for general-purpose command-line fuzzy finder for vim - fast searching
+│       ├── mysettings.vim - my settings not included in other scripts like colrsheme, font 
+│       ├── nerdtree.vim - config for tree explorer for vim 
 │       ├── nmap.vim
 │       ├── plugins.vim
 │       └── vimplug.vim
