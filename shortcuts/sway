@@ -7,3 +7,42 @@ bindsym Mod4+Mod1+p  exec grimshot save output
 bindsym Mod4+Ctrl+p  exec grimshot save window
 
 }}
+Nautilus {{{
+
+Launch Nautilus
+mod+shift+n
+
+}}}
+
+Calculator {{{
+
+Lauch Calculator
+mod+shift+mod1+c
+
+}}}
+
+Grimshot {{{
+
+Save active
+Mod4+p
+
+Save area
+Mod4+Shift+p
+
+Save output
+Mod4+Mod1+p
+
+Save window
+Mod4+Ctrl+p
+
+}}}
+ 
+Sway {{{
+
+Move workspace to secondary monitor
+mod+Control+Shift+Right
+
+Move workspace to primary monitor
+mod+Control+Shift+Left
+
+}}}
