@@ -5,7 +5,7 @@ File structure and explanation whats file doing
 ```bash
 dotfiles
 ├── bashrc 
-│   └── .bash_aliases - bash aliases for nvim editor for user and sudo/root
+│   └── .bash_aliases - bash aliases for nvim editor for user and sudo/root	
 ├── bat
 │   └── config - bat  - cat command supports syntax highlighting for a large number of programming and markup languages - config with theme 
 ├── Caprine
@@ -34,23 +34,23 @@ dotfiles
 │       ├── fzf.vim - config for general-purpose command-line fuzzy finder for vim - fast searching
 │       ├── mysettings.vim - my settings not included in other scripts like colrsheme, font 
 │       ├── nerdtree.vim - config for tree explorer for vim 
-│       ├── nmap.vim
-│       ├── plugins.vim
-│       └── vimplug.vim
+│       ├── nmap.vim - mapings a shortcuts userd in neovim
+│       ├── plugins.vim - all plugins installed automatically with vimplug
+│       └── vimplug.vim - plugin manager for neovim
 ├── qt5ct
-│   └── qt5ct.conf
+│   └── qt5ct.conf - theme for Qt5 apps
 ├── rofi
-│   ├── config
-│   └── rofi.rasi
-├── shortcuts
-│   ├── sway
-│   ├── vim
-│   └── zsh
+│   ├── config - not used
+│   └── rofi.rasi- not used
+├── shortcuts 
+│   ├── sway -  file with shortcuts used in sway. It's a just a list of shortcuts to fast look at it. It's not a config file!
+│   ├── vim -  file with shortcuts used in vim. It's a just a list of shortcuts to fast look at it. It's not a config file!
+│   └── zsh - file with shortcuts used in zsh. It's a just a list of shortcuts to fast look at it. It's not a config file!
 ├── spotifyd
-│   └── spotifyd.conf
+│   └── spotifyd.conf - used for spotify-tui. Daemon for sound. Username, password  must be added.
 ├── spotify-tui
-│   ├── client.yml
-│   └── config.yml
+│   ├── client.yml - confid for spotify  app, spotify secret id and secret id nmust be added.
+│   └── config.yml - another tui for spotify.  Less mature than ncspot, in development. Config file with colors
 ├── sway
 │   ├── config
 │   └── scripts
