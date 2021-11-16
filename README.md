@@ -65,11 +65,11 @@ dotfiles
 ├── terminator
 │   └── config - terminator - advancet terminal with tabs, multiwinows. Config file with font, theme 
 ├── VirtualBox
-│   └── update.sh
+│   └── update.sh - script for update virtualbox extension pack in Fedora Linux
 └── zsh
-    ├── .p10k.zsh
+    ├── .p10k.zsh - Powerlevel10k - zsh theme
     ├── scripts
-    │   ├── alias.zsh
-    │   └── neofetch.zsh
-    └── .zshrc
+    │   ├── alias.zsh - config file for all zsh aliases
+    │   └── neofetch.zsh - autostart neofetch on startup zsh session
+    └── .zshrc - main zsh config file
 ```
