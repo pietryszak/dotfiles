@@ -22,6 +22,3 @@ bindsym $mod+Shift+b move container to workspace back_and_forth
 
 # Move firefox to current workspace
 bindsym $mod+F1 [class="Firefox"] move workspace current
-
-# Get me to the next open NVIM instance
-bindsym mod1+a [app_id="terminator" title="nvim"] focus
