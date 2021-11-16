@@ -100,4 +100,7 @@ zo - no LEADER required
 Close all folds
 zM - no LEADER required
 
+Delete all folds
+zE - no LEADER required
+
 }}}
