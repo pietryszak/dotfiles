@@ -42,6 +42,7 @@ Plug 'dhruvasagar/vim-open-url'
 Plug 'Pocco81/AutoSave.nvim'
 
 " Fzd finder for vim
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " NERDTRee icons LOAD AT LAST !
