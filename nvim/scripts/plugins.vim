@@ -38,6 +38,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Vim open url - open url in default browser
 Plug 'dhruvasagar/vim-open-url'
 
+" AutoSave
+Plug 'Pocco81/AutoSave.nvim'
+
 " Fzd finder for vim
 Plug 'junegunn/fzf.vim'
 
