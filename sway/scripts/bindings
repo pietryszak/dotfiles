@@ -5,10 +5,10 @@ bindsym $mod+shift+n exec nautilus
 bindsym $mod+shift+mod1+c exec gnome-calculator
 
 # Grimshot - screenshot tool
-bindsym Mod4+p       exec grimshot save active
-bindsym Mod4+Shift+p exec grimshot save area
-bindsym Mod4+Mod1+p  exec grimshot save output
-bindsym Mod4+Ctrl+p  exec grimshot save window
+bindsym $mod+p       exec grimshot save active
+bindsym $mod+Shift+p exec grimshot save area
+bindsym $mod+mod1+p  exec grimshot save output
+bindsym $mod+Ctrl+p  exec grimshot save window
 
 # Move workspace to output
 bindsym $mod+Control+Shift+Right move workspace to $output-secondary
