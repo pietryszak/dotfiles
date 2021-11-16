@@ -1,3 +1,2 @@
 # Floating apps
-
 for_window [app_id="gnome-calculator"] floating enable
