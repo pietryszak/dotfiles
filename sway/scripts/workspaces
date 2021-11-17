@@ -1,24 +1,47 @@
 # Workspaces
-set $ws1 1: 
-set $ws2 2: 
-set $ws3 3: 
-set $ws4 4: 
-set $ws5 5: 﫮
-set $ws6 6: 
-set $ws7 7: 
-set $ws8 8: 
-set $ws9 9: 
-set $ws10 10: 
+
+set $primary1 1: 
+set $primary2 2: 
+set $primary3 3: 
+set $primary4 4:  
+set $primary5 5: 
+set $primary6 6:  
+set $primary7 7: 
+set $primary8 8: 
+set $primary9 9: 
+set $primary10 10: 
+set $secondary1 11: 
+set $secondary2 12: 﫮
+set $secondary3 13: 
+set $secondary4 14: 
+set $secondary5 15: 
+set $secondary6 16: 
+set $secondary7 17: 
+set $secondary8 18: 
+set $secondary9 19: 
+set $secondary10 20: 
 
 # Define outputs
 set $output-primary DP-3
 set $output-secondary HDMI-A-2
 
-workspace $ws1 output $output-primary
-workspace $ws2 output $output-primary
-workspace $ws3 output $output-primary
-workspace $ws4 output $output-secondary
-workspace $ws5 output $output-secondary
-workspace $ws7 output $output-secondary
-workspace $ws8 output $output-secondary
-workspace $ws9 output $output-secondary
+workspace $primary1 output $output-primary
+workspace $primary2 output $output-primary
+workspace $primary3 output $output-primary
+workspace $primary4 output $output-primary
+workspace $primary5 output $output-primary
+workspace $primary6 output $output-primary
+workspace $primary7 output $output-primary
+workspace $primary8 output $output-primary
+workspace $primary9 output $output-primary
+workspace $primary10 output $output-primary
+workspace $secondary1 output $output-secondary
+workspace $secondary2 output $output-secondary
+workspace $secondary3 output $output-secondary
+workspace $secondary4 output $output-secondary
+workspace $secondary5 output $output-secondary
+workspace $secondary6 output $output-secondary
+workspace $secondary7 output $output-secondary
+workspace $secondary8 output $output-secondary
+workspace $secondary9 output $output-secondary
+workspace $secondary0 output $output-secondary
