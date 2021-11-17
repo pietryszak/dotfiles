@@ -16,10 +16,6 @@ dotfiles
 │   └── gruvbox-dark.xml - gedit - gnome text editor - gruvbox theme
 ├── htop
 │   └── htoprc - htop - better top command - config with gruvbox theme
-├── kitty
-│   ├── kitty.conf - not used
-│   └── themes 
-│       └── gruvbox_dark.conf - not used
 ├── ncspot
 │   └── config.toml - ncspot - tui for spotify - config with colors
 ├── neofetch
