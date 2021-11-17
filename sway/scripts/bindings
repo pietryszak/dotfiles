@@ -1,5 +1,7 @@
-### Key bindings
-#
+##################################################################
+# Key bindings
+##################################################################
+
 # Basics:
 #
     # Start a terminal
@@ -51,27 +53,49 @@
 # Workspaces:
 #
     # Switch to workspace
-    bindsym $mod+1 workspace $ws1
-    bindsym $mod+2 workspace $ws2
-    bindsym $mod+3 workspace $ws3
-    bindsym $mod+4 workspace $ws4
-    bindsym $mod+5 workspace $ws5
-    bindsym $mod+6 workspace $ws6
-    bindsym $mod+7 workspace $ws7
-    bindsym $mod+8 workspace $ws8
-    bindsym $mod+9 workspace $ws9
-    bindsym $mod+0 workspace $ws10
+    bindsym $mod+1 workspace $primary1
+    bindsym $mod+2 workspace $primary2
+    bindsym $mod+3 workspace $primary3
+    bindsym $mod+4 workspace $primary4
+    bindsym $mod+5 workspace $primary5
+    bindsym $mod+6 workspace $primary6
+    bindsym $mod+7 workspace $primary7
+    bindsym $mod+8 workspace $primary8
+    bindsym $mod+9 workspace $primary9
+    bindsym $mod+0 workspace $primary10
+    bindsym $mod+F1 workspace $secondary1
+    bindsym $mod+F2 workspace $secondary2
+    bindsym $mod+F3 workspace $secondary3
+    bindsym $mod+F4 workspace $secondary4
+    bindsym $mod+F5 workspace $secondary5
+    bindsym $mod+F6 workspace $secondary6
+    bindsym $mod+F7 workspace $secondary7
+    bindsym $mod+F8 workspace $secondary8
+    bindsym $mod+F9 workspace $secondary9
+    bindsym $mod+F10 workspace $secondary10
+
     # Move focused container to workspace
-    bindsym $mod+Shift+1 move container to workspace $ws1
-    bindsym $mod+Shift+2 move container to workspace $ws2
-    bindsym $mod+Shift+3 move container to workspace $ws3
-    bindsym $mod+Shift+4 move container to workspace $ws4
-    bindsym $mod+Shift+5 move container to workspace $ws5
-    bindsym $mod+Shift+6 move container to workspace $ws6
-    bindsym $mod+Shift+7 move container to workspace $ws7
-    bindsym $mod+Shift+8 move container to workspace $ws8
-    bindsym $mod+Shift+9 move container to workspace $ws9
-    bindsym $mod+Shift+0 move container to workspace $ws10
+    bindsym $mod+mod1+1 move container to workspace $primary1
+    bindsym $mod+mod1+2 move container to workspace $primary2
+    bindsym $mod+mod1+3 move container to workspace $primary3
+    bindsym $mod+mod1+4 move container to workspace $primary4
+    bindsym $mod+mod1+5 move container to workspace $primary5
+    bindsym $mod+mod1+6 move container to workspace $primary6
+    bindsym $mod+mod1+7 move container to workspace $primary7
+    bindsym $mod+mod1+8 move container to workspace $primary8
+    bindsym $mod+mod1+9 move container to workspace $primary9
+    bindsym $mod+mod1+0 move container to workspace $primary10
+    bindsym $mod+mod1+F1 move container to workspace $secondary1
+    bindsym $mod+mod1+F2 move container to workspace $secondary2
+    bindsym $mod+mod1+F3 move container to workspace $secondary3
+    bindsym $mod+mod1+F4 move container to workspace $secondary4
+    bindsym $mod+mod1+F5 move container to workspace $secondary5
+    bindsym $mod+mod1+F6 move container to workspace $secondary6
+    bindsym $mod+mod1+F7 move container to workspace $secondary7
+    bindsym $mod+mod1+F8 move container to workspace $secondary8
+    bindsym $mod+mod1+F9 move container to workspace $secondary9
+    bindsym $mod+mod1+F10 move container to workspace $secondary10
+
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
 #
@@ -162,4 +186,4 @@ bindsym $mod+mod1+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth
 
 # Move firefox to current workspace
-bindsym $mod+F1 [class="Firefox"] move workspace current
+bindsym $mod+ctrl+1 [class="Firefox"] move workspace current
