@@ -1,19 +1,19 @@
 # Startup apps
 
-exec swaymsg "workspace $ws1; exec firefox;"
-exec swaymsg "workspace $ws2; exec terminator;" 
-exec swaymsg "workspace $ws3; exec terminator --no-dbus -e nnn;" 
-exec swaymsg "workspace $ws3; exec terminator --no-dbus -e htop;" 
-exec swaymsg "workspace $ws4; exec caprine;"
-exec swaymsg "workspace $ws7; exec notorious;"
-exec swaymsg "workspace $ws8; exec zenkit;"
-exec swaymsg "workspace $ws9; exec terminator --no-dbus -e ~/.cargo/bin/ncspot;"
-exec swaymsg "workspace $ws6; exec code;"
-for_window [class="Code"] move window to workspace $ws6
-exec swaymsg "workspace $ws5; exec thunderbird;"
+exec swaymsg "workspace $primary1; exec firefox;"
+exec swaymsg "workspace $primary2; exec terminator;" 
+exec swaymsg "workspace $primary3; exec terminator --no-dbus -e htop;" 
+exec swaymsg "workspace $primary4; exec terminator --no-dbus -e nnn;" 
+exec swaymsg "workspace $secondary1; exec caprine;"
+exec swaymsg "workspace $secondary3; exec notorious;"
+exec swaymsg "workspace $seondary4; exec zenkit;"
+exec swaymsg "workspace $secondary10; exec terminator --no-dbus -e ~/.cargo/bin/ncspot;"
+exec swaymsg "workspace $primary5; exec code;"
+for_window [class="Code"] move window to workspace $primary5
+exec swaymsg "workspace $secondary2; exec thunderbird;"
 
 # Startup apps in scrachpad
-exec swaymsg "workspace $ws1; exec foot -e bat ~/.config/shortcuts/sway;"
-exec swaymsg "workspace $ws1; exec foot -e bat ~/.config/shortcuts/vim;"
-exec swaymsg "workspace $ws1; exec foot -e bat ~/.config/shortcuts/zsh;"
+exec swaymsg "workspace $primary1; exec foot -e bat ~/.config/shortcuts/sway;"
+exec swaymsg "workspace $primary1; exec foot -e bat ~/.config/shortcuts/vim;"
+exec swaymsg "workspace $primary1; exec foot -e bat ~/.config/shortcuts/zsh;"
 for_window [app_id="foot" title="foot"] floating enable, resize set 1366 766, move scratchpad
