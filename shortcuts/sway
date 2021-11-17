@@ -30,6 +30,9 @@ Mod4+Ctrl+p
  
 Sway {{{
 
+$mod=opt/start
+mod1=cmd/alt
+
 Start menu
 mod+d
 
@@ -52,7 +55,8 @@ Kill focused window
 mod+Shift+q
 
 Switch to selected workspace
-mod+1 (numbers 0-9)
+mod+1 (numbers 0-9) - workspace 1-10 on primary monitor
+mod+F1 (F1-F10) - workspace 11-20 on secondary monitor
 
 Move workspace to secondary monitor
 mod+Control+Shift+Right
@@ -67,10 +71,11 @@ Move container to the previously focused
 bindsym $mod+Shift+b move container to workspace back_and_forth
 
 Move firefox to current workspace
-mod+F1
+mod+ctrl+1
 
 Move focused container to selected workspace
-mod+Shift+1 (numbers 0-9)
+mod+mod1+1 (numbers 0-9) - workspace 1-10 on primary monitor
+mod+mod1+F1 (F1-F10) - workspace 11-20 on secondary monitor
 
 Split in horizontal orientation
 mod+b
@@ -111,6 +116,7 @@ mod+space
 Move focus to the parent container
 mod+a
 
+
 Move the currently focused window to the scratchpad
 mod+Shift+minus
 
@@ -126,7 +132,6 @@ j or Down grow height 10px
 k or Up resize shrink height 10px
 l or Right grow width 10px
 
-
 Return to default mode from resize
 bindsym Enter or Esc
 
@@ -140,4 +145,3 @@ Exit sway (logs you out of your Wayland session)
 mod+Shift+e
 
 }}}
-
