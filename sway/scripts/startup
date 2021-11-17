@@ -6,7 +6,7 @@ exec swaymsg "workspace $primary3; exec terminator --no-dbus -e htop;"
 exec swaymsg "workspace $primary4; exec terminator --no-dbus -e nnn;" 
 exec swaymsg "workspace $secondary1; exec caprine;"
 exec swaymsg "workspace $secondary3; exec notorious;"
-exec swaymsg "workspace $seondary4; exec zenkit;"
+exec swaymsg "workspace $secondary4; exec zenkit;"
 exec swaymsg "workspace $secondary10; exec terminator --no-dbus -e ~/.cargo/bin/ncspot;"
 exec swaymsg "workspace $primary5; exec code;"
 for_window [class="Code"] move window to workspace $primary5
