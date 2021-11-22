@@ -190,3 +190,9 @@ bindsym $mod+ctrl+1 [class="Firefox"] move workspace current
 
 # Clipman
 bindsym $mod+mod1+h exec clipman pick -t wofi
+
+# Clipman remove item from history
+bindsym $mod+ctrl+h exec clipman clear -t wofi
+
+# Clipman remove all items from history
+bindsym $mod+mod1+ctrl+shift+h exec clipman clear --all
