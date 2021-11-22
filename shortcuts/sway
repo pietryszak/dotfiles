@@ -151,4 +151,10 @@ Clipman {{{
 Clipboard history
 mod+mod1+h
 
+Clipman remove item from history
+mod+ctrl+h
+
+Clipman remove all items from history
+mod+mod1+ctrl+shift+h
+
 }}}
