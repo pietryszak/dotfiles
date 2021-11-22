@@ -1,3 +1,11 @@
+# Clipman - clipboard history - always first on sway config
+
+exec wl-paste -t text --watch clipman store
+
+exec wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman-primary.json"
+
+exec clipman restore
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
