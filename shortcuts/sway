@@ -145,3 +145,10 @@ Exit sway (logs you out of your Wayland session)
 mod+Shift+e
 
 }}}
+
+Clipman {{{
+
+Clipboard history
+mod+mod1+h
+
+}}}
