@@ -187,3 +187,6 @@ bindsym $mod+Shift+b move container to workspace back_and_forth
 
 # Move firefox to current workspace
 bindsym $mod+ctrl+1 [class="Firefox"] move workspace current
+
+# Clipman
+bindsym $mod+mod1+h exec clipman pick -t wofi
