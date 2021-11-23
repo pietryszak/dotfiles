@@ -9,7 +9,7 @@ dotfiles
 ├── bat
 │   └── config - bat  - cat command supports syntax highlighting for  programming and markup languages - config with theme 
 ├── foot
-│   └── foot.ini - foot  - fast wayland terminal - config file - used to show shortcuts in sway
+│   └── foot.ini - - NOT USED YET -foot  - fast wayland terminal - config file - used to show shortcuts in sway
 ├── Caprine
 │   └── config.json - caprine -  facebook messenger for  linux -  config with polish and english spell checking
 ├── Code
@@ -41,7 +41,7 @@ dotfiles
 │   ├── config - not used
 │   └── rofi.rasi- not used
 ├── shortcuts 
-│   ├── sway -  file with shortcuts used in sway. It's a just a list of shortcuts to fast look at it. It's not a config file!
+│   ├── sway -  - NOT USED YET - file with shortcuts used in sway. It's a just a list of shortcuts to fast look at it. It's not a config file!
 │   ├── vim -  file with shortcuts used in vim. It's a just a list of shortcuts to fast look at it. It's not a config file!
 │   └── zsh - file with shortcuts used in zsh. It's a just a list of shortcuts to fast look at it. It's not a config file!
 ├── spotifyd
@@ -49,7 +49,7 @@ dotfiles
 ├── spotify-tui
 │   ├── client.yml - confid for spotify  app, spotify secret id and secret id nmust be added.
 │   └── config.yml - another tui for spotify.  Less mature than ncspot, in development. Config file with colors
-├── sway
+├── sway - NOT USED YET
 │   ├── config - main sway window manager config file
 │   └── scripts
 │       ├── bindings - bindings shortcuts used in sway 
