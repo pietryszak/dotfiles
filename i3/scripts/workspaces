@@ -14,7 +14,7 @@ set $secondary1 "11: "
 set $secondary2 "12: 﫮"
 set $secondary3 "13: "
 set $secondary4 "14: "
-set $secondary5 "15: "
+set $secondary5 "15: "
 set $secondary6 "16: "
 set $secondary7 "17: "
 set $secondary8 "18: "
@@ -137,6 +137,9 @@ for_window [class="Zenkit"] move to workspace $secondary4
 # VSCode
 exec --no-startup-id i3-msg 'workspace $primary5; exec code; workspace $primary1'
 for_window [class="Code"] move to workspace $primary5
+
+# VmWare
+exec --no-startup-id i3-msg 'workspace $secondary5; exec vmware; workspace $primary1'
 
 # Thunderbird
 exec --no-startup-id i3-msg 'workspace $secondary2; exec thunderbird; workspace $primary1'
