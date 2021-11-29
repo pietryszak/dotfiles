@@ -1,3 +1,5 @@
+# vim: filetype=i3config
+
 set $mode_gaps Gaps: Change 1px in (o)uter, (i)nner, (h)orizontal, (v)ertical, (t)op, (r)ight, (b)ottom, (l)eft
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
 set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
@@ -120,4 +122,4 @@ mode "$mode_gaps_left" {
 }
 
 gaps inner 4
-gaps outer 4  
+gaps outer 4
