@@ -111,6 +111,7 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id sleep 10 && megasync &
 exec --no-startup-id sleep 12 && megasync &
 
+
 # Vmware copy paste support for i3wm
 exec --no-startup-id vmware-user-suid-wrapper
 
@@ -124,7 +125,7 @@ exec --no-startup-id i3-msg 'workspace $primary1; exec firefox; workspace $prima
 exec --no-startup-id i3-msg 'workspace $primary2; exec kitty; workspace $primary1'
 exec --no-startup-id i3-msg 'workspace $primary3; exec kitty --title=htop -e htop; workspace $primary1' 
 exec --no-startup-id i3-msg 'workspace $primary4; exec kitty --title=nnn -e nnn;workspace $primary1'
-exec --no-startup-id i3-msg 'workspace $secondary10;  exec kitty --title=ncspot -e  ~/.cargo/bin/ncspot; workspace $primary1'
+exec --no-startup-id i3-msg 'workspace $secondary10;  exec kitty --title=spotify-tui -e spt; workspace $primary1'
 
 
 # Scratchpad
