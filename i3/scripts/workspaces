@@ -99,6 +99,12 @@ exec --no-startup-id compton
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/scripts/launch.sh --cuts
 
+# Blueman
+exec --no-startup-id blueman-applet
+
+# Megasync
+exec --no-startup-id megasync
+
 # Vmware copy paste support for i3wm
 exec --no-startup-id vmware-user-suid-wrapper
 
@@ -108,20 +114,20 @@ exec /usr/libexec/polkit-gnome-authentication-agent-1
 # FF
 exec --no-startup-id i3-msg 'workspace $primary1; exec firefox; workspace $primary1'
 
-# Terminator
-exec --no-startup-id i3-msg 'workspace $primary2; exec terminator --no-dbus; workspace $primary1'
-exec --no-startup-id i3-msg 'workspace $primary3; exec terminator --no-dbus --title=htop -e htop; workspace $primary1' 
-exec --no-startup-id i3-msg 'workspace $primary4; exec terminator --no-dbus --title=nnn -e nnn;workspace $primary1'
-exec --no-startup-id i3-msg 'workspace $secondary10;  exec terminator --no-dbus --title=ncspot -e  ~/.cargo/bin/ncspot; workspace $primary1'
+# Kitty
+exec --no-startup-id i3-msg 'workspace $primary2; exec kitty; workspace $primary1'
+exec --no-startup-id i3-msg 'workspace $primary3; exec kitty --title=htop -e htop; workspace $primary1' 
+exec --no-startup-id i3-msg 'workspace $primary4; exec kitty --title=nnn -e nnn;workspace $primary1'
+exec --no-startup-id i3-msg 'workspace $secondary10;  exec kitty --title=ncspot -e  ~/.cargo/bin/ncspot; workspace $primary1'
 
 
 # Scratchpad
-exec --no-startup-id i3-msg 'workspace $primary1; exec terminator --no-dbus --title=shortcuts-i3 --command="bat ~/.config/shortcuts/i3"; workspace $primary1' 
-for_window [title="shortcuts-i3"] floating enable, resize set 1366 766, move scratchpad
-exec --no-startup-id i3-msg 'workspace $primary1; exec terminator --no-dbus --title=shortcuts-vim --command="bat ~/.config/shortcuts/vim"; workspace $primary1' 
-for_window [title="shortcuts-vim"] floating enable, resize set 1366 766, move scratchpad
-exec --no-startup-id i3-msg 'workspace $primary1; exec terminator --no-dbus --title=shortcuts-zsh --command="bat ~/.config/shortcuts/zsh"; workspace $primary1' 
-for_window [title="shortcuts-zsh"] floating enable, resize set 1366 766, move scratchpad
+exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-i3 bat ~/.config/shortcuts/i3; workspace $primary1' 
+for_window [title="shortcuts-i3"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
+exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-vim bat ~/.config/shortcuts/vim; workspace $primary1' 
+for_window [title="shortcuts-vim"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
+exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-zsh bat ~/.config/shortcuts/zsh; workspace $primary1' 
+for_window [title="shortcuts-zsh"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
 
 # Caprine
 exec --no-startup-id i3-msg 'workspace $secondary1; exec caprine; workspace $primary1'
