@@ -24,6 +24,8 @@ for_window [title="Select local folder"] floating enable, border none
 # About popup
 for_window [title="About*"] floating enable, move position 1000 400, border none
 
+#FF
+for_window [title="Picture-in-Picture"] sticky enable, border none, resize set 1280 720, move position 1280 28
 
 
 # Border specific settings for apps 
