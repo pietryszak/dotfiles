@@ -103,3 +103,12 @@ bindsym $mod+Shift+minus move scratchpad
 
 # Show the first scratchpad window
 bindsym $mod+minus scratchpad show
+
+
+#########################################################
+# My settings
+#########################################################
+
+# Change monitor layout
+bindsym $mod+Shift+h exec ~/.screenlayout/horizontal.sh
+bindsym $mod+Shift+v exec ~/.screenlayout/vertical.sh
