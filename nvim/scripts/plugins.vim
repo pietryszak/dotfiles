@@ -42,6 +42,9 @@ Plug 'dhruvasagar/vim-open-url'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
+" i3config 
+Plug 'mboughaba/i3config.vim'
+
 " NERDTRee icons LOAD AT LAST !
 Plug 'ryanoasis/vim-devicons'
 
