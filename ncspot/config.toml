@@ -26,23 +26,23 @@ default_keybindings = false
 ###############################################################################################
 
 [theme]
-background = "black"
-primary = "light white"
-secondary = "light black"
-title = "green"
-playing = "green"
-playing_selected = "light green"
-playing_bg = "black"
-highlight = "light white"
+background = "#282828"
+primary = "#ebdbb2"
+secondary = "#a89984"
+title = "#98971a"
+playing = "#98971a"
+playing_selected = "#b8bb26"
+playing_bg = "#282828"
+highlight = "#ebdbb2"
 highlight_bg = "#484848"
-error = "light white"
-error_bg = "red"
-statusbar = "light white"
-statusbar_progress = "green"
-statusbar_bg = "black"
-cmdline = "light white"
-cmdline_bg = "black"
-search_match = "light red"
+error = "#ebdbb2"
+error_bg = "#cc241d"
+statusbar = "#ebdbb2"
+statusbar_progress = "#98971a"
+statusbar_bg = "#282828"
+cmdline = "#ebdbb2"
+cmdline_bg = "#282828"
+search_match = "#fb4934"
 
 ###############################################################################################
 # Keybinding
@@ -110,6 +110,8 @@ search_match = "light red"
 "F1" = "focus queue"
 "F2" = "focus library"
 "F3" = "focus search"
+"F8" = "focus cover"
+
 # Go to the playing track
 "." = "move playing"
 # Navigation
