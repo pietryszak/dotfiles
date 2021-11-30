@@ -4,10 +4,10 @@
 
 set $primary1 "1: "
 set $primary2 "2: "
-set $primary3 "3: "
+set $primary3 "3: "
 set $primary4 "4: " 
-set $primary5 "5: "
-set $primary6 "6: "
+set $primary5 "5: "
+set $primary6 "6: "
 set $primary7 "7: "
 set $primary8 "8: "
 set $primary9 "9: "
@@ -99,7 +99,7 @@ exec --no-startup-id ~/.screenlayout/horizontal.sh
 exec --no-startup-id compton
 
 # Polybar
-exec_always --no-startup-id $HOME/.config/polybar/scripts/launch.sh --cuts
+exec_always --no-startup-id $HOME/.config/polybar/scripts/launch.sh --cuts & 
 
 # Numlock at startup
 exec --no-startup-id numlockx &
@@ -109,7 +109,7 @@ exec --no-startup-id blueman-applet
 
 # Megasync
 exec --no-startup-id sleep 10 && megasync &
-exec --no-startup-id sleep 12 && megasync &
+exec --no-startup-id sleep 15 && megasync &
 
 
 # Vmware copy paste support for i3wm
@@ -123,10 +123,10 @@ exec --no-startup-id i3-msg 'workspace $primary1; exec firefox; workspace $prima
 
 # Terminator
 exec --no-startup-id i3-msg 'workspace $primary2; exec kitty; workspace $primary1'
-exec --no-startup-id i3-msg 'workspace $primary3; exec kitty --title=htop -e htop; workspace $primary1' 
+exec --no-startup-id i3-msg 'workspace $primary5; exec kitty --title=htop -e htop; workspace $primary1' 
 exec --no-startup-id i3-msg 'workspace $primary4; exec kitty --title=nnn -e nnn;workspace $primary1'
 exec --no-startup-id i3-msg 'workspace $secondary10;  exec kitty --title=spotify-tui -e spt; workspace $primary1'
-
+exec --no-startup-id i3-msg 'workspace $primary3; exec kitty --title=alsamixer -e alsamixer; workspace $primary1' 
 
 # Scratchpad
 exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-i3 bat ~/.config/shortcuts/i3; workspace $primary1' 
@@ -148,11 +148,14 @@ exec --no-startup-id i3-msg 'workspace $secondary4; exec zenkit; workspace $prim
 for_window [class="Zenkit"] move to workspace $secondary4
 
 # VSCode
-exec --no-startup-id i3-msg 'workspace $primary5; exec code; workspace $primary1'
-for_window [class="Code"] move to workspace $primary5
+exec --no-startup-id i3-msg 'workspace $primary6; exec code; workspace $primary1'
+for_window [class="Code"] move to workspace $primary6
 
 # VmWare
 exec --no-startup-id i3-msg 'workspace $secondary5; exec vmware; workspace $primary1'
 
 # Thunderbird
-exec --no-startup-id i3-msg 'workspace $secondary2; exec thunderbird; workspace $primary1'
+exec --no-startup-id i3-msg 'workspace $secondary2; exec thunderbird; workspace $primary1' 
+
+# Restart polybar for proper show workspaces
+exec --no-startup-id sleep 12 && exec i3-msg restart
