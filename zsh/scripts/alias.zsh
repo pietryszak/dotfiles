@@ -14,13 +14,13 @@ alias sv="sudo nvim"
 
 #Top
 alias top="htop"
-alias btop="bpytop"
+alias btop="/usr/local/bin/btop"
 
 # Neofetch
 alias neo="neofetch"
 
 # Update
-alias update="sudo dnf update -y"
+alias update="sudo dnf upgrade -y"
 
 # Install
 alias install="sudo dnf install -y"
@@ -58,7 +58,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 
 # Logout
-alias pku="exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'"
+alias pku="exec i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # Exit
 alias ext="exit"
@@ -73,6 +73,13 @@ alias shz="nvim $HOME/.config/shortcuts/zsh"
 
 # Virtualbox update
 alias vbu="bash -c "$HOME/.config/VirtualBox/update.sh""
+
+# Window properies
+alias xpr="bash -c xprop"
+
+################################################################
+# Sway
+################################################################ 
 
 # Sway
 alias swe="nvim $HOME/.config/sway/config"
