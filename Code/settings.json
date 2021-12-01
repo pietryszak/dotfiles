@@ -8,9 +8,15 @@
 "vsicons.dontShowNewVersionMessage": true,
 "security.workspace.trust.untrustedFiles": "open",
 "workbench.colorTheme": "Gruvbox Dark Medium",
-"editor.fontFamily": "'MesloLGS NF'",
-"terminal.integrated.fontFamily": "MesloLGS NF",
-"editor.codeLensFontFamily": "'MesloLGS NF'",
-"editor.fontSize": 16,
-"terminal.integrated.fontSize": 16
+"editor.fontFamily": "MesloLGS NF, Regular",
+"terminal.integrated.fontFamily": "MesloLGS NF, Regular",
+"editor.codeLensFontFamily": "MesloLGS NF, Regular",
+"editor.fontSize": 20,
+"terminal.integrated.fontSize": 20,
+"workbench.startupEditor": "none",
+"markdown.preview.fontSize": 20,
+"debug.console.fontSize": 20,
+"scm.inputFontSize": 20,
+"scm.inputFontFamily": "MesloLGS NF, Regular",
+"debug.console.fontFamily": "MesloLGS NF, Regular"
 }
