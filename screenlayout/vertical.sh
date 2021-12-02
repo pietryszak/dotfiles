@@ -24,7 +24,6 @@ launch_bar() {
 	fi
 }
 
-
 if [[ "$1" == "--cuts" ]]; then
 	style="cuts"
 	launch_bar
