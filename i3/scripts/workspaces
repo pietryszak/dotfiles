@@ -126,7 +126,7 @@ exec /usr/libexec/polkit-gnome-authentication-agent-1
 # FF
 exec --no-startup-id i3-msg 'workspace $primary1; exec firefox; workspace $primary1'
 
-# Terminator
+# Kitty
 exec --no-startup-id i3-msg 'workspace $primary2; exec kitty; workspace $primary1'
 exec --no-startup-id i3-msg 'workspace $primary3; exec kitty --title=btop -e /usr/local/bin/btop; workspace $primary1' 
 exec --no-startup-id i3-msg 'workspace $primary4; exec kitty --title=nnn -e nnn;workspace $primary1'
