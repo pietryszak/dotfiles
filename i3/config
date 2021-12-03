@@ -53,4 +53,4 @@ floating_modifier $mod
 # My settings
 ###############################################################
 
-include $HOME/.config/i3/scripts/*    
+include $HOME/.config/i3/scripts/*
