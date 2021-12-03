@@ -132,11 +132,11 @@ exec --no-startup-id i3-msg 'workspace $primary4; exec terminator --no-dbus --ti
 #exec --no-startup-id i3-msg 'workspace $secondary10;  exec terminator --no-dbus --title=spotify-tui -e spt; workspace $primary1'
 
 # Scratchpad
-exec --no-startup-id i3-msg 'workspace $primary1; exec terminator --no-dbus --title=shortcuts-i3 bat ~/.config/shortcuts/i3; workspace $primary1' 
+exec --no-startup-id i3-msg 'workspace $primary1; exec terminator --no-dbus --title=shortcuts-i3 --command="bat ~/.config/shortcuts/i3"; workspace $primary1' 
 for_window [title="shortcuts-i3"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
-exec --no-startup-id i3-msg 'workspace $primary1; exec terminator --no-dbus --title=shortcuts-vim bat ~/.config/shortcuts/vim; workspace $primary1' 
+exec --no-startup-id i3-msg 'workspace $primary1; exec terminator --no-dbus --title=shortcuts-vim --command="bat ~/.config/shortcuts/vim"; workspace $primary1' 
 for_window [title="shortcuts-vim"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
-exec --no-startup-id i3-msg 'workspace $primary1; exec terminator --no-dbus --title=shortcuts-zsh bat ~/.config/shortcuts/zsh; workspace $primary1' 
+exec --no-startup-id i3-msg 'workspace $primary1; exec terminator --no-dbus --title=shortcuts-zsh --command="bat ~/.config/shortcuts/zsh"; workspace $primary1' 
 for_window [title="shortcuts-zsh"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
 
 # Caprine
@@ -159,7 +159,7 @@ for_window [title="shortcuts-zsh"] floating enable, resize set 1366 766, move sc
 
 # Spotify
 #exec --no-startup-id sleep 15 && i3-msg 'workspace $secondary10; exec snap run spotify; workspace $primary1'
-for_window [class="Spotify"] move to workspace $secondary10
+#for_window [class="Spotify"] move to workspace $secondary10
 
 # Thunderbird
 #exec --no-startup-id sleep 17 && i3-msg 'workspace $secondary2; exec thunderbird; workspace $primary1' 
