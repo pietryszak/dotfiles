@@ -4,10 +4,10 @@
 
 set $primary1 "1: "
 set $primary2 "2: "
-set $primary3 "3: "
+set $primary3 "3: "
 set $primary4 "4: " 
-set $primary5 "5: "
-set $primary6 "6: "
+set $primary5 "5: " 
+set $primary6 "6: "
 set $primary7 "7: "
 set $primary8 "8: "
 set $primary9 "9: "
@@ -96,7 +96,7 @@ bindsym $mod+mod1+F10 move container to workspace $secondary10
 exec --no-startup-id ~/.screenlayout/horizontal.sh
 
 # Compton
-exec --no-startup-id compton
+exec --no-startup-id picom &
 
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/scripts/launch.sh --cuts & 
@@ -111,7 +111,11 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id sleep 10 && megasync &
 exec --no-startup-id sleep 15 && megasync &
 
+# Redshift
 exec --no-startup-id redshift-gtk
+
+# Dunst
+exec_always --no-startup-id dunst
 
 # Vmware copy paste support for i3wm
 exec --no-startup-id vmware-user-suid-wrapper
@@ -124,10 +128,9 @@ exec --no-startup-id i3-msg 'workspace $primary1; exec firefox; workspace $prima
 
 # Terminator
 exec --no-startup-id i3-msg 'workspace $primary2; exec kitty; workspace $primary1'
-exec --no-startup-id i3-msg 'workspace $primary5; exec kitty --title=btop -e /usr/local/btop; workspace $primary1' 
+exec --no-startup-id i3-msg 'workspace $primary3; exec kitty --title=btop -e /usr/local/bin/btop; workspace $primary1' 
 exec --no-startup-id i3-msg 'workspace $primary4; exec kitty --title=nnn -e nnn;workspace $primary1'
 #exec --no-startup-id i3-msg 'workspace $secondary10;  exec kitty --title=spotify-tui -e spt; workspace $primary1'
-exec --no-startup-id  sleep 4 && i3-msg 'workspace $primary3; exec kitty --title=alsamixer -e alsamixer; workspace $primary1' 
 
 # Scratchpad
 exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-i3 bat ~/.config/shortcuts/i3; workspace $primary1' 
@@ -149,8 +152,8 @@ exec --no-startup-id i3-msg 'workspace $secondary4; exec zenkit; workspace $prim
 for_window [class="Zenkit"] move to workspace $secondary4
 
 # VSCode
-exec --no-startup-id i3-msg 'workspace $primary6; exec code; workspace $primary1'
-for_window [class="Code"] move to workspace $primary6
+exec --no-startup-id i3-msg 'workspace $primary5; exec code; workspace $primary1'
+for_window [class="Code"] move to workspace $primary5
 
 # VmWare
 exec --no-startup-id i3-msg 'workspace $secondary5; exec vmware; workspace $primary1'
@@ -158,7 +161,6 @@ exec --no-startup-id i3-msg 'workspace $secondary5; exec vmware; workspace $prim
 # Spotify
 exec --no-startup-id sleep 15 && i3-msg 'workspace $secondary10; exec snap run spotify; workspace $primary1'
 for_window [class="Spotify"] move to workspace $secondary10
-
 
 # Thunderbird
 exec --no-startup-id sleep 17 && i3-msg 'workspace $secondary2; exec thunderbird; workspace $primary1' 
