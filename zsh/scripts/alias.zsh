@@ -21,6 +21,7 @@ alias neo="neofetch"
 
 # Update
 alias update="sudo dnf upgrade -y"
+alias upgrade="sudo dnf upgrade -y"
 
 # Install
 alias install="sudo dnf install -y"
@@ -76,6 +77,19 @@ alias vbu="bash -c "$HOME/.config/VirtualBox/update.sh""
 
 # Window properies
 alias xpr="bash -c xprop"
+
+# Alsamixer
+alias alx="bash -c alsamixer"
+
+# Folders
+alias dwn="cd Downloads"
+
+# i3
+alias i3="cd ~/.config/i3"
+alias i3c="vim ~/.config/i3/config"
+alias i3s="vim ~/.config/i3/scripts"
+alias i3w="vim ~/.config/i3/scripts/workspaces"
+alias i3wp="vim ~/.config/i3/scripts/windows-properties"
 
 ################################################################
 # Sway
