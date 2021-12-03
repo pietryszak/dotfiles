@@ -18,5 +18,6 @@
 "debug.console.fontSize": 20,
 "scm.inputFontSize": 20,
 "scm.inputFontFamily": "MesloLGS NF, Regular",
-"debug.console.fontFamily": "MesloLGS NF, Regular"
+"debug.console.fontFamily": "MesloLGS NF, Regular",
+"window.zoomLevel": 1.2
 }
