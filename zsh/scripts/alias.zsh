@@ -92,7 +92,7 @@ alias i3w="vim ~/.config/i3/scripts/workspaces"
 alias i3wp="vim ~/.config/i3/scripts/windows-properties"
 
 # Monitor settings
-alias mst="sh ~/.screenlayout/menu.sh"
+alias mst="~/.screenlayout/menu.sh"
 
 ################################################################
 # Sway
