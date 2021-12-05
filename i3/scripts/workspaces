@@ -92,14 +92,11 @@ bindsym $mod+mod1+F8 move container to workspace $secondary8
 bindsym $mod+mod1+F9 move container to workspace $secondary9
 bindsym $mod+mod1+F10 move container to workspace $secondary10
 
-# Screens layout
+# Screens and polybar layout
 exec --no-startup-id ~/.screenlayout/horizontal.sh
 
-# Compton
-exec --no-startup-id picom &
-
-# Polybar
-exec --no-startup-id $HOME/.config/polybar/scripts/launch.sh --cuts & 
+# Picom
+exec_always --no-startup-id picom &
 
 # Numlock at startup
 exec --no-startup-id numlockx &
@@ -159,11 +156,8 @@ for_window [class="Code"] move to workspace $primary5
 exec --no-startup-id i3-msg 'workspace $secondary5; exec vmware; workspace $primary1'
 
 # Spotify
-exec --no-startup-id sleep 15 && i3-msg 'workspace $secondary10; exec snap run spotify; workspace $primary1'
+exec --no-startup-id sleep 24 && i3-msg 'workspace $secondary10; exec snap run spotify; workspace $primary1'
 for_window [class="Spotify"] move to workspace $secondary10
 
 # Thunderbird
-exec --no-startup-id sleep 17 && i3-msg 'workspace $secondary2; exec thunderbird; workspace $primary1' 
-
-# Restart polybar for proper show workspaces
-exec --no-startup-id sleep 25 && exec i3-msg restart
+exec --no-startup-id sleep 28 && i3-msg 'workspace $secondary2; exec thunderbird; workspace $primary1'
