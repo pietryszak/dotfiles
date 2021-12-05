@@ -111,4 +111,4 @@ bindsym $mod+minus scratchpad show
 #########################################################
 
 # Change monitor layout
-bindsym $mod+mod1+m exec kitty --title="Monitor settings" -e sh ~/.screenlayout/menu.sh
+bindsym $mod+mod1+m exec --no-startup-id kitty --title="Monitor Menu" -e ~/.screenlayout/menu.sh
