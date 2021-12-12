@@ -1,0 +1,169 @@
+# vim: filetype=i3config
+
+# Workspaces
+
+set $primary1 "1: "
+set $primary2 "2: "
+set $primary3 "3: "
+set $primary4 "4: " 
+set $primary5 "5: " 
+set $primary6 "6: "
+set $primary7 "7: "
+set $primary8 "8: "
+set $primary9 "9: "
+set $primary10 "10: "
+set $secondary1 "11: "
+set $secondary2 "12: 﫮"
+set $secondary3 "13: "
+set $secondary4 "14: "
+set $secondary5 "15: "
+set $secondary6 "16: "
+set $secondary7 "17: "
+set $secondary8 "18: "
+set $secondary9 "19: "
+set $secondary10 "20: "
+
+# Define outputs
+set $output-primary DP-1-8
+set $output-secondary HDMI-2
+
+workspace $primary1 output $output-primary
+workspace $primary2 output $output-primary
+workspace $primary3 output $output-primary
+workspace $primary4 output $output-primary
+workspace $primary5 output $output-primary
+workspace $primary6 output $output-primary
+workspace $primary7 output $output-primary
+workspace $primary8 output $output-primary
+workspace $primary9 output $output-primary
+workspace $primary10 output $output-primary
+workspace $secondary1 output $output-secondary
+workspace $secondary2 output $output-secondary
+workspace $secondary3 output $output-secondary
+workspace $secondary4 output $output-secondary
+workspace $secondary5 output $output-secondary
+workspace $secondary6 output $output-secondary
+workspace $secondary7 output $output-secondary
+workspace $secondary8 output $output-secondary
+workspace $secondary9 output $output-secondary
+workspace $secondary10 output $output-secondary
+
+# Switch to workspace
+bindsym $mod+1 workspace $primary1
+bindsym $mod+2 workspace $primary2
+bindsym $mod+3 workspace $primary3
+bindsym $mod+4 workspace $primary4
+bindsym $mod+5 workspace $primary5
+bindsym $mod+6 workspace $primary6
+bindsym $mod+7 workspace $primary7
+bindsym $mod+8 workspace $primary8
+bindsym $mod+9 workspace $primary9
+bindsym $mod+0 workspace $primary10
+bindsym $mod+F1 workspace $secondary1
+bindsym $mod+F2 workspace $secondary2
+bindsym $mod+F3 workspace $secondary3
+bindsym $mod+F4 workspace $secondary4
+bindsym $mod+F5 workspace $secondary5
+bindsym $mod+F6 workspace $secondary6
+bindsym $mod+F7 workspace $secondary7
+bindsym $mod+F8 workspace $secondary8
+bindsym $mod+F9 workspace $secondary9
+bindsym $mod+F10 workspace $secondary10
+
+# Move focused container to workspace
+bindsym $mod+mod1+1 move container to workspace $primary1
+bindsym $mod+mod1+2 move container to workspace $primary2
+bindsym $mod+mod1+3 move container to workspace $primary3
+bindsym $mod+mod1+4 move container to workspace $primary4
+bindsym $mod+mod1+5 move container to workspace $primary5
+bindsym $mod+mod1+6 move container to workspace $primary6
+bindsym $mod+mod1+7 move container to workspace $primary7
+bindsym $mod+mod1+8 move container to workspace $primary8
+bindsym $mod+mod1+9 move container to workspace $primary9
+bindsym $mod+mod1+0 move container to workspace $primary10
+bindsym $mod+mod1+F1 move container to workspace $secondary1
+bindsym $mod+mod1+F2 move container to workspace $secondary2
+bindsym $mod+mod1+F3 move container to workspace $secondary3
+bindsym $mod+mod1+F4 move container to workspace $secondary4
+bindsym $mod+mod1+F5 move container to workspace $secondary5
+bindsym $mod+mod1+F6 move container to workspace $secondary6
+bindsym $mod+mod1+F7 move container to workspace $secondary7
+bindsym $mod+mod1+F8 move container to workspace $secondary8
+bindsym $mod+mod1+F9 move container to workspace $secondary9
+bindsym $mod+mod1+F10 move container to workspace $secondary10
+
+# Screens and polybar layout
+exec --no-startup-id ~/.screenlayout/horizontal.sh
+
+# Picom
+exec_always --no-startup-id picom 
+
+# Numlock at startup
+exec --no-startup-id numlockx 
+
+# Blueman
+exec --no-startup-id blueman-applet
+
+# Megasync
+exec --no-startup-id sleep 10 && megasync 
+exec --no-startup-id sleep 15 && megasync 
+
+# Redshift
+exec --no-startup-id redshift-gtk
+
+# Volume control
+exec --no-startup-id volumeicon 
+
+# Caffeine
+exec --no-startup-id caffeine
+
+# Dunst
+exec_always --no-startup-id dunst
+
+# Vmware copy paste support for i3wm
+exec --no-startup-id vmware-user-suid-wrapper
+
+# Gnome polkit for password popup
+exec /usr/libexec/polkit-gnome-authentication-agent-1
+
+# FF
+exec --no-startup-id i3-msg 'workspace $primary1; exec firefox; workspace $primary1'
+
+# Kitty
+exec --no-startup-id i3-msg 'workspace $primary2; exec kitty; workspace $primary1'
+exec --no-startup-id i3-msg 'workspace $primary3; exec kitty --title=btop -e /usr/local/bin/btop; workspace $primary1' 
+exec --no-startup-id i3-msg 'workspace $primary4; exec kitty --title=nnn -e nnn;workspace $primary1'
+#exec --no-startup-id i3-msg 'workspace $secondary10;  exec kitty --title=spotify-tui -e spt; workspace $primary1'
+
+# Scratchpad
+exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-i3 bat ~/.config/shortcuts/i3; workspace $primary1' 
+for_window [title="shortcuts-i3"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
+exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-vim bat ~/.config/shortcuts/vim; workspace $primary1' 
+for_window [title="shortcuts-vim"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
+exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-zsh bat ~/.config/shortcuts/zsh; workspace $primary1' 
+for_window [title="shortcuts-zsh"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
+
+# Caprine
+exec --no-startup-id i3-msg 'workspace $secondary1; exec caprine; workspace $primary1'
+for_window [class="Caprine"] move to workspace $secondary1
+
+# Notorious
+exec --no-startup-id i3-msg 'workspace $secondary3; exec notorious; workspace $primary1'
+
+# Zenkit
+exec --no-startup-id i3-msg 'workspace $secondary4; exec zenkit; workspace $primary1'
+for_window [class="Zenkit"] move to workspace $secondary4
+
+# VSCode
+exec --no-startup-id i3-msg 'workspace $primary5; exec code; workspace $primary1'
+for_window [class="Code"] move to workspace $primary5
+
+# VmWare
+exec --no-startup-id i3-msg 'workspace $secondary5; exec vmware; workspace $primary1'
+
+# Spotify
+exec --no-startup-id sleep 24 && i3-msg 'workspace $secondary10; exec snap run spotify; workspace $primary1'
+for_window [class="Spotify"] move to workspace $secondary10
+
+# Thunderbird
+exec --no-startup-id sleep 28 && i3-msg 'workspace $secondary2; exec thunderbird; workspace $primary1' 
