@@ -26,11 +26,15 @@ alias upgrade="sudo dnf upgrade -y"
 # Install
 alias install="sudo dnf install -y"
 
+# Remove
+alias remove="sudo dnf remove -y"
+
 # Mkdir
 alias md="mkdir"
 alias mdp="mkdir -p"
 
 # Rmdir
+
 alias rd="rm -Ir"
 alias srd="sudo rm -Ir"
 
