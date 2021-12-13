@@ -1,80 +1,96 @@
+# Echo colors
+red=`tput setaf 1`
+bold=`tput bold`
+reset=`tput sgr0`
+
 # Update system
-sudo dnf upgrade --refresh
-sudo dnf upgrade -y
+echo "${red}${bold}UPDATE SYSTEM${reset}"
+sudo dnf upgrade --refresh > /dev/null
+sudo dnf upgrade -y > /dev/null
 
 # Remove unnecessary packets
-sudo dnf autoremove -y
-
-# Update Virtualbox guest tools
-cd ~/.gc/VirtualBox &&
-LatestVirtualBoxVersion=$(wget -qO - https://download.virtualbox.org/virtualbox/LATEST-STABLE.TXT) && wget "https://download.virtualbox.org/virtualbox/${LatestVirtualBoxVersion}/Oracle_VM_VirtualBox_Extension_Pack-${LatestVirtualBoxVersion}.vbox-extpack" &&
-yes | sudo VBoxManage extpack install --replace Oracle_VM_VirtualBox_Extension_Pack-${LatestVirtualBoxVersion}.vbox-extpack &&
-rm Oracle_VM_VirtualBox_Extension_Pack*.vbox-extpack
-cd
-
-# Update Vmware Workstation
-cd ~/.gc
-wget --user-agent="Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/94.0" https://www.vmware.com/go/getworkstation-linux
-chmod a+x getworkstation-linux
-sudo ./getworkstation-linux  --console --required --eulas-agreed    
-rm getworkstation-linux
-cd
+echo "${red}${bold}REMOVE UNNECESSARY PACKETS${reset}"
+sudo dnf autoremove -y > /dev/null
 
 # Update Github desktop
+echo "${red}${bold}UPDATE GITHUB DESKTOP${reset}"
 cd ~/.gc
-curl -fSL https://api.github.com/repos/shiftkey/desktop/releases/latest | jq -r '.assets[] | select(.name | test("GitHubDesktop.*linux1\\.rpm")) | .browser_download_url' | xargs curl -fsSL -o GitHubDesktop.rpm && sudo dnf install -y GitHubDesktop.rpm && rm GitHubDesktop.rpm 
+curl -fsSL https://api.github.com/repos/shiftkey/desktop/releases/latest | jq -r '.assets[] | select(.name | test("GitHubDesktop.*linux1\\.rpm")) | .browser_download_url' | xargs curl -fsSL -o GitHubDesktop.rpm 
+sudo dnf install -y GitHubDesktop.rpm > /dev/null
+rm GitHubDesktop.rpm 
 cd
 
 # Update Git btop
+echo "${red}${bold}UPDATE BTOP${reset}"
 cd ~/.gc
 sudo rm -rf btop
-git clone https://github.com/aristocratos/btop.git
+git clone --quiet https://github.com/aristocratos/btop.git 
 cd btop
-make
-sudo make install
+make > /dev/null
+sudo make install > /dev/null
 cd
 
 # Update zsh syntax highlighting
+echo "${red}${bold}UPDATE ZSH SYNTAX HIGHLIGHTING${reset}"
 rm -rf ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone --quiet https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # Update zsh syntax autosuggestions
+echo "${red}${bold}UPDATE ZSH AUTOSUGGESTIONS${reset}"
 rm -rf ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone --quiet https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # Update powerlevel10k
+echo "${red}${bold}UPDATE POWERLEVEL10K${reset}"
 rm -rf ~/.oh-my-zsh/custom/themes/powerlevel10k
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-
-# Update Caffeine ng
-cd ~/.gc
-sudo rm -rf caffeine-ng 
-git clone https://github.com/caffeine-ng/caffeine-ng.git
-cd caffeine-ng
-python setup.py build
-sudo python setup.py install
-sudo glib-compile-schemas /usr/share/glib-2.0/schemas
-sudo rm  /usr/share/applications/caffeine-preferences.desktop 
+git clone --quiet --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # Update Polybar Spotify
 cd ~/.gc
 sudo rm -rf polybar-spotify
-git clone https://github.com/Jvanrhijn/polybar-spotify.git
+git clone --quiet https://github.com/Jvanrhijn/polybar-spotify.git
 cp ~/.gc/polybar-spotify/spotify_status.py ~/.config/polybar/scripts/
 sed -i -e '/play_pause/s/25B6/F909/' ~/.config/polybar/scripts/spotify_status.py 
 sed -i -e '/play_pause/s/23F8/F8E3/' ~/.config/polybar/scripts/spotify_status.py 
 cd
 
+# Update Vmware Workstation
+echo "${red}${bold}UPDATE VMWARE WORKSTATION${reset}"
+cd ~/.gc
+wget -q --user-agent="Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/94.0" https://www.vmware.com/go/getworkstation-linux
+chmod a+x getworkstation-linux
+sudo ./getworkstation-linux  --console --required --eulas-agreed
+rm getworkstation-linux
+cd
+
+# Update Virtualbox guest tools
+echo "${red}${bold}UPDATE VIRTUALBOX GUEST TOOLS${reset}"
+cd ~/.gc/VirtualBox 
+LatestVirtualBoxVersion=$(wget -qO - https://download.virtualbox.org/virtualbox/LATEST-STABLE.TXT)
+wget -q "https://download.virtualbox.org/virtualbox/${LatestVirtualBoxVersion}/Oracle_VM_VirtualBox_Extension_Pack-${LatestVirtualBoxVersion}.vbox-extpack"
+yes | sudo VBoxManage extpack install --replace Oracle_VM_VirtualBox_Extension_Pack-${LatestVirtualBoxVersion}.vbox-extpack > /dev/null
+rm Oracle_VM_VirtualBox_Extension_Pack*.vbox-extpack
+cd
+
+# Update Caffeine ng
+echo "${red}${bold}UPDATE CAFFEINE-NG${reset}"
+cd ~/.gc
+sudo rm -rf caffeine-ng 
+git clone --quiet https://github.com/caffeine-ng/caffeine-ng.git
+cd caffeine-ng
+python setup.py -q build
+sudo python setup.py -q install
+sudo glib-compile-schemas /usr/share/glib-2.0/schemas > /dev/null 2>&1
+sudo rm  /usr/share/applications/caffeine-preferences.desktop 
 
 #######################################################################
 # My dotfiles update
 #######################################################################
 
+echo "${red}${bold}UPDATE ALL MY DOTFILES${reset}"
 rm -rf ~/.gc/dotfiles
-
-# My dotfiles
 cd ~/.gc
-git clone https://github.com/pietryszak/dotfiles.git
+git clone --quiet https://github.com/pietryszak/dotfiles.git
 cd
 
 # Copy bat  config to proper folder
