@@ -48,10 +48,19 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 # Update Caffeine ng
 cd ~/.gc
-sudo rm -f caffeine-ng 
+sudo rm -rf caffeine-ng 
 git clone https://github.com/caffeine-ng/caffeine-ng.git
 cd caffeine-ng
 python setup.py build
 sudo python setup.py install
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas
 sudo rm  /usr/share/applications/caffeine-preferences.desktop 
+
+# Update Polybar Spotify
+cd ~/.gc
+sudo rm -rf polybar-spotify
+git clone https://github.com/Jvanrhijn/polybar-spotify.git
+cp ~/.gc/polybar-spotify/spotify_status.py ~/.config/polybar/scripts/
+sed -i -e '/play_pause/s/25B6/F909/' ~/.config/polybar/scripts/spotify_status.py 
+sed -i -e '/play_pause/s/23F8/F8E3/' ~/.config/polybar/scripts/spotify_status.py 
+cd
