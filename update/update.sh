@@ -1,5 +1,6 @@
 # Echo colors
 red=`tput setaf 1`
+green=`tput setaf 2`
 bold=`tput bold`
 reset=`tput sgr0`
 
@@ -46,7 +47,7 @@ sed -i -e '/play_pause/s/23F8/F8E3/' ~/.config/polybar/scripts/spotify_status.py
 cd
 
 # Update Vmware Workstation
-echo "${red}${bold}UPDATE VMWARE WORKSTATION.IT'S TAKE TIME. PLEASE WAIT!${reset}"
+echo "${red}${bold}UPDATE VMWARE WORKSTATION. IT'S TAKE TIME. PLEASE WAIT!${reset}"
 cd ~/.gc
 wget -q --user-agent="Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/94.0" https://www.vmware.com/go/getworkstation-linux
 chmod a+x getworkstation-linux
@@ -177,7 +178,6 @@ sed -i -e '/play_pause/s/25B6/F909/' ~/.config/polybar/scripts/spotify_status.py
 sed -i -e '/play_pause/s/23F8/F8E3/' ~/.config/polybar/scripts/spotify_status.py 
 
 # Copy volumeicon config to to proper folder
-rm -rf ~/.config/volumeicon
 \cp -r ~/.gc/dotfiles/volumeicon/* ~/.config
 
 # Copy bpytop config to to proper folder
@@ -186,3 +186,5 @@ rm -rf ~/.config/volumeicon
 # Copy update script to to proper folder
 \cp -r ~/.gc/dotfiles/update/* ~/.scripts
 chmod +x ~/.scripts/update.sh
+
+echo "${green}${bold}UPDATE COMPLETE${reset}"
