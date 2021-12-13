@@ -21,16 +21,6 @@ sudo dnf install -y GitHubDesktop.rpm > /dev/null
 rm GitHubDesktop.rpm 
 cd
 
-# Update Git btop
-echo "${red}${bold}UPDATE BTOP${reset}"
-cd ~/.gc
-sudo rm -rf btop
-git clone --quiet https://github.com/aristocratos/btop.git 
-cd btop
-make > /dev/null
-sudo make install > /dev/null
-cd
-
 # Update zsh syntax highlighting
 echo "${red}${bold}UPDATE ZSH SYNTAX HIGHLIGHTING${reset}"
 rm -rf ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
