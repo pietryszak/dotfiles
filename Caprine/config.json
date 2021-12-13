@@ -5,10 +5,10 @@
 	"vibrancy": "none",
 	"zoomFactor": 1,
 	"lastWindowState": {
-		"x": 880,
-		"y": 420,
-		"width": 800,
-		"height": 600,
+		"x": 2570,
+		"y": 66,
+		"width": 2540,
+		"height": 1364,
 		"isMaximized": true
 	},
 	"menuBarMode": false,
@@ -39,5 +39,7 @@
 	"spellCheckerLanguages": [
 		"pl",
 		"en-US"
-	]
+	],
+	"alwaysOnTop": false,
+	"showAlwaysOnTopPrompt": true
 }
