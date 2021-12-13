@@ -22,6 +22,8 @@ alias neo="neofetch"
 # Update
 alias update="sudo dnf upgrade -y"
 alias upgrade="sudo dnf upgrade -y"
+alias bigupdate="~/.scripts/update.sh"
+alias bigupgrade="~/.scripts/update.sh"
 
 # Install
 alias install="sudo dnf install -y"
