@@ -138,7 +138,7 @@ exec --no-startup-id i3-msg 'workspace $primary1; exec firefox; workspace $prima
 
 # Kitty
 exec --no-startup-id i3-msg 'workspace $primary2; exec kitty; workspace $primary1'
-exec --no-startup-id i3-msg 'workspace $primary3; exec kitty --title=btop -e /usr/local/bin/btop; workspace $primary1' 
+exec --no-startup-id i3-msg 'workspace $primary3; exec kitty --title=bpytop -e bpytop; workspace $primary1' 
 exec --no-startup-id i3-msg 'workspace $primary4; exec kitty --title=nnn -e nnn;workspace $primary1'
 #exec --no-startup-id i3-msg 'workspace $secondary10;  exec kitty --title=spotify-tui -e spt; workspace $primary1'
 
