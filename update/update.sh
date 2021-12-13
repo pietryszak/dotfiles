@@ -60,7 +60,7 @@ echo "${red}${bold}UPDATE VMWARE WORKSTATION.IT'S TAKE TIME. PLEASE WAIT!${reset
 cd ~/.gc
 wget -q --user-agent="Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/94.0" https://www.vmware.com/go/getworkstation-linux
 chmod a+x getworkstation-linux
-sudo ./getworkstation-linux  --console --required --eulas-agreed
+sudo ./getworkstation-linux  --console --required --eulas-agreed > /dev/null
 rm getworkstation-linux
 cd
 
