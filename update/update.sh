@@ -56,7 +56,7 @@ sed -i -e '/play_pause/s/23F8/F8E3/' ~/.config/polybar/scripts/spotify_status.py
 cd
 
 # Update Vmware Workstation
-echo "${red}${bold}UPDATE VMWARE WORKSTATION${reset}"
+echo "${red}${bold}UPDATE VMWARE WORKSTATION.IT'S TAKE TIME. PLEASE WAIT!${reset}"
 cd ~/.gc
 wget -q --user-agent="Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/94.0" https://www.vmware.com/go/getworkstation-linux
 chmod a+x getworkstation-linux
