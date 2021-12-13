@@ -1,0 +1,43 @@
+# Update system
+sudo dnf upgrade --refresh
+sudo dnf upgrade -y
+
+# Remove unnecessary packets
+sudo dnf autoremove -y
+
+# Update Virtualbox guest tools
+cd ~/.gc/VirtualBox &&
+LatestVirtualBoxVersion=$(wget -qO - https://download.virtualbox.org/virtualbox/LATEST-STABLE.TXT) && wget "https://download.virtualbox.org/virtualbox/${LatestVirtualBoxVersion}/Oracle_VM_VirtualBox_Extension_Pack-${LatestVirtualBoxVersion}.vbox-extpack" &&
+yes | sudo VBoxManage extpack install --replace Oracle_VM_VirtualBox_Extension_Pack-${LatestVirtualBoxVersion}.vbox-extpack &&
+rm Oracle_VM_VirtualBox_Extension_Pack*.vbox-extpack
+cd
+
+# Update Vmware Workstation
+cd ~/.gc
+wget --user-agent="Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/94.0" https://www.vmware.com/go/getworkstation-linux
+chmod a+x getworkstation-linux
+sudo ./getworkstation-linux  --console --required --eulas-agreed    
+rm getworkstation-linux
+cd
+
+# Update Github desktop
+cd ~/.gc
+curl -fSL https://api.github.com/repos/shiftkey/desktop/releases/latest | jq -r '.assets[] | select(.name | test("GitHubDesktop.*linux1\\.rpm")) | .browser_download_url' | xargs curl -fsSL -o GitHubDesktop.rpm && sudo dnf install -y GitHubDesktop.rpm && rm GitHubDesktop.rpm 
+cd
+
+# Update Git btop
+cd ~/.gc
+sudo rm -rf btop
+git clone https://github.com/aristocratos/btop.git
+cd btop
+make
+sudo make install
+cd
+
+# Update zsh syntax highlighting
+rm -rf ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# Update zsh syntax autosuggestions
+rm -rf ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
