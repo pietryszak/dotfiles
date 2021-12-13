@@ -16,8 +16,8 @@ set $secondary1 "11: "
 set $secondary2 "12: 﫮"
 set $secondary3 "13: "
 set $secondary4 "14: "
-set $secondary5 "15: "
-set $secondary6 "16: "
+set $secondary5 "15: "
+set $secondary6 "16: "
 set $secondary7 "17: "
 set $secondary8 "18: "
 set $secondary9 "19: "
@@ -165,12 +165,15 @@ for_window [class="Zenkit"] move to workspace $secondary4
 exec --no-startup-id i3-msg 'workspace $primary5; exec code; workspace $primary1'
 for_window [class="Code"] move to workspace $primary5
 
+# GitHub Desktop
+exec --no-startup-id i3-msg 'workspace $secondary5; exec github-desktop; workspace $primary1'
+
 # VmWare
-exec --no-startup-id i3-msg 'workspace $secondary5; exec vmware; workspace $primary1'
+exec --no-startup-id i3-msg 'workspace $secondary6; exec vmware; workspace $primary1'
 
 # Spotify
-exec --no-startup-id sleep 24 && i3-msg 'workspace $secondary10; exec snap run spotify; workspace $primary1'
+exec --no-startup-id sleep 24 && i3-msg 'workspace $secondary10; exec flatpak run com.spotify.Client; workspace $primary1'
 for_window [class="Spotify"] move to workspace $secondary10
 
 # Thunderbird
-exec --no-startup-id sleep 28 && i3-msg 'workspace $secondary2; exec thunderbird; workspace $primary1'
+exec --no-startup-id sleep 28 && i3-msg 'workspace $secondary2; exec thunderbird; workspace $primary1' 
