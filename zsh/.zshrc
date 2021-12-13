@@ -82,6 +82,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
+zstyle ':omz:update' mode auto
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
