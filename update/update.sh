@@ -4,8 +4,9 @@ bold=`tput bold`
 reset=`tput sgr0`
 
 # Update system
-echo "${red}${bold}UPDATE SYSTEM${reset}"
+echo "${red}${bold}CHECK LIST OF UPDATES${reset}"
 sudo dnf upgrade --refresh > /dev/null
+echo "${red}${bold}UPDATE SYSTEM${reset}"
 sudo dnf upgrade -y > /dev/null
 
 # Remove unnecessary packets
