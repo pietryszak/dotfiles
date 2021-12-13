@@ -180,6 +180,9 @@ sed -i -e '/play_pause/s/23F8/F8E3/' ~/.config/polybar/scripts/spotify_status.py
 rm -rf ~/.config/volumeicon
 \cp -r ~/.gc/dotfiles/volumeicon/* ~/.config
 
+# Copy bpytop config to to proper folder
+\cp -r ~/.gc/dotfiles/bpytop/themes/ ~/.config
+
 # Copy update script to to proper folder
 \cp -r ~/.gc/dotfiles/update/* ~/.scripts
 chmod +x ~/.scripts/update.sh
