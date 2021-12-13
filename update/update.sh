@@ -45,3 +45,13 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # Update powerlevel10k
 rm -rf ~/.oh-my-zsh/custom/themes/powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+# Update Caffeine ng
+cd ~/.gc
+sudo rm -f caffeine-ng 
+git clone https://github.com/caffeine-ng/caffeine-ng.git
+cd caffeine-ng
+python setup.py build
+sudo python setup.py install
+sudo glib-compile-schemas /usr/share/glib-2.0/schemas
+sudo rm  /usr/share/applications/caffeine-preferences.desktop 
