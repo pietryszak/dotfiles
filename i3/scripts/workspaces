@@ -163,7 +163,7 @@ exec --no-startup-id i3-msg 'workspace $primary5; exec code; workspace $primary1
 for_window [class="Code"] move to workspace $primary5
 
 # GitHub Desktop
-exec --no-startup-id i3-msg 'workspace $secondary5; exec github-desktop; workspace $primary1'
+exec --no-startup-id i3-msg 'workspace $secondary5; exec flatpak run io.github.shiftey.Desktop; workspace $primary1'
 for_window [class="GitHub Desktop"] move to workspace $secondary5
 
 # VmWare
