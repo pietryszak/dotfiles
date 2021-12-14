@@ -187,4 +187,7 @@ sed -i -e '/play_pause/s/23F8/F8E3/' ~/.config/polybar/scripts/spotify_status.py
 \cp -r ~/.gc/dotfiles/update/* ~/.scripts
 chmod +x ~/.scripts/update.sh
 
+# Copy caffeine-ng config to to proper folder
+\cp -r ~/.gc/dotfiles/caffeine/* ~/.config/caffeine
+
 echo "${green}${bold}UPDATE COMPLETE${reset}"
