@@ -178,4 +178,4 @@ exec --no-startup-id sleep 18 && i3-msg 'workspace $secondary10; exec flatpak ru
 for_window [class="Spotify"] move to workspace $secondary10
 
 # Thunderbird
-exec --no-startup-id sleep 22 && i3-msg 'workspace $secondary2; exec thunderbird; workspace $primary1' 
+exec --no-startup-id sleep 22 && i3-msg 'workspace $secondary2; exec thunderbird; workspace $primary1'
