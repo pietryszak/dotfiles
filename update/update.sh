@@ -77,7 +77,7 @@ cd
 
 # Update flatpaks
 echo "${red}${bold}UPDATE FLATPAKS${reset}"
-flatpak update 
+flatpak update -y > /dev/null
 
 #######################################################################
 # My dotfiles update
