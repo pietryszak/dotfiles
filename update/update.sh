@@ -67,6 +67,14 @@ sudo python setup.py -q install
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas > /dev/null 2>&1
 sudo rm  /usr/share/applications/caffeine-preferences.desktop 
 
+# Zenkit
+echo "${red}${bold}UPDATE ZENKIT${reset}"
+cd ~/.gc
+wget -q https://static.zenkit.com/downloads/desktop-apps/base/zenkit-base-linux.rpm
+sudo rpm -i zenkit-base-linux.rpm > /dev/null
+rm zenkit-base-linux.rpm
+cd
+
 # Update flatpaks
 echo "${red}${bold}UPDATE FLATPAKS${reset}"
 flatpak update 
