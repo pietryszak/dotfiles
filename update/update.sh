@@ -14,14 +14,6 @@ sudo dnf upgrade -y > /dev/null
 echo "${red}${bold}REMOVE UNNECESSARY PACKETS${reset}"
 sudo dnf autoremove -y > /dev/null
 
-# Update Github desktop
-echo "${red}${bold}UPDATE GITHUB DESKTOP${reset}"
-cd ~/.gc
-curl -fsSL https://api.github.com/repos/shiftkey/desktop/releases/latest | jq -r '.assets[] | select(.name | test("GitHubDesktop.*linux1\\.rpm")) | .browser_download_url' | xargs curl -fsSL -o GitHubDesktop.rpm 
-sudo dnf install -y GitHubDesktop.rpm > /dev/null
-rm GitHubDesktop.rpm 
-cd
-
 # Update zsh syntax highlighting
 echo "${red}${bold}UPDATE ZSH SYNTAX HIGHLIGHTING${reset}"
 rm -rf ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
