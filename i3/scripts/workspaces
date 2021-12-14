@@ -154,8 +154,8 @@ for_window [title="shortcuts-zsh"] floating enable, resize set 1366 766, move sc
 exec --no-startup-id i3-msg 'workspace $secondary1; exec caprine; workspace $primary1'
 for_window [class="Caprine"] move to workspace $secondary1
 
-# Notorious
-exec --no-startup-id i3-msg 'workspace $secondary3; exec flatpak run org.gabmus.notorious; workspace $primary1'
+# Joplin
+exec --no-startup-id i3-msg 'workspace $secondary3; exec flatpak run net.cozic.joplin_desktop; workspace $primary1'
 
 # Zenkit
 exec --no-startup-id i3-msg 'workspace $secondary4; exec zenkit; workspace $primary1'
@@ -177,4 +177,4 @@ exec --no-startup-id sleep 18 && i3-msg 'workspace $secondary10; exec flatpak ru
 for_window [class="Spotify"] move to workspace $secondary10
 
 # Thunderbird
-exec --no-startup-id sleep 22 && i3-msg 'workspace $secondary2; exec thunderbird; workspace $primary1'
+exec --no-startup-id sleep 22 && i3-msg 'workspace $secondary2; exec thunderbird; workspace $primary1' 
