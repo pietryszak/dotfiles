@@ -155,7 +155,7 @@ exec --no-startup-id i3-msg 'workspace $secondary1; exec caprine; workspace $pri
 for_window [class="Caprine"] move to workspace $secondary1
 
 # Notorious
-exec --no-startup-id i3-msg 'workspace $secondary3; exec flathub org.gabmus.notorious; workspace $primary1'
+exec --no-startup-id i3-msg 'workspace $secondary3; exec flatpak run org.gabmus.notorious; workspace $primary1'
 
 # Zenkit
 exec --no-startup-id i3-msg 'workspace $secondary4; exec zenkit; workspace $primary1'
@@ -173,8 +173,8 @@ for_window [class="GitHub Desktop"] move to workspace $secondary5
 exec --no-startup-id i3-msg 'workspace $secondary6; exec vmware; workspace $primary1'
 
 # Spotify
-exec --no-startup-id sleep 24 && i3-msg 'workspace $secondary10; exec flatpak run com.spotify.Client; workspace $primary1'
+exec --no-startup-id sleep 18 && i3-msg 'workspace $secondary10; exec flatpak run com.spotify.Client; workspace $primary1'
 for_window [class="Spotify"] move to workspace $secondary10
 
 # Thunderbird
-exec --no-startup-id sleep 28 && i3-msg 'workspace $secondary2; exec thunderbird; workspace $primary1' 
+exec --no-startup-id sleep 22 && i3-msg 'workspace $secondary2; exec thunderbird; workspace $primary1'
