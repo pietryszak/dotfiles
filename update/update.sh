@@ -29,6 +29,17 @@ echo "${red}${bold}UPDATE POWERLEVEL10K${reset}"
 rm -rf ~/.oh-my-zsh/custom/themes/powerlevel10k
 git clone --quiet --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
+# Papirus gtk icons for gruvbox 
+echo "${red}${bold}UPDATE PAPIRUS ICONS${reset}"
+cd ~/.gc
+sudo wget -q O- https://git.io/papirus-icon-theme-install | sh  > /dev/null
+
+# Papirus folders
+echo "${red}${bold}UPDATE PAPIRUS FOLDER ICONS${reset}"
+wget -q O- https://git.io/papirus-folders-install | sh > /dev/null
+papirus-folders -C brown --theme Papirus-Dark > /dev/null
+cd
+
 # Update Polybar Spotify
 cd ~/.gc
 sudo rm -rf polybar-spotify
