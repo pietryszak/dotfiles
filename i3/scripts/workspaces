@@ -156,6 +156,7 @@ for_window [class="Caprine"] move to workspace $secondary1
 
 # Joplin
 exec --no-startup-id i3-msg 'workspace $secondary3; exec flatpak run net.cozic.joplin_desktop; workspace $primary1'
+for_window [class="Joplin"] move to workspace $secondary3
 
 # Zenkit
 exec --no-startup-id i3-msg 'workspace $secondary4; exec zenkit; workspace $primary1'
