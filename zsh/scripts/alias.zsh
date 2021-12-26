@@ -100,6 +100,9 @@ alias i3wp="vim ~/.config/i3/scripts/windows-properties"
 # Monitor settings
 alias mst="~/.screenlayout/menu.sh"
 
+# Ssh in kitty
+alias ssh="kitty +kitten ssh"
+
 ################################################################
 # Sway
 ################################################################ 
