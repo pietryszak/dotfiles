@@ -126,3 +126,8 @@ bindsym $mod+mod1+c exec gnome-calculator
 
 # Firefox
 bindsym $mod+mod1+f exec firefox
+
+# i3 shortcuts scratchpad
+bindsym $mod+mod1+i [title="shortcuts-i3"] scratchpad show
+bindsym $mod+mod1+v [title="shortcuts-vim"] scratchpad show
+bindsym $mod+mod1+z [title="shortcuts-zsh"] scratchpad show
