@@ -1,0 +1,18 @@
+# set primary gruvbox colorscheme colors
+set $bg #282828
+set $red #cc241d
+set $green #98971a
+set $yellow #d79921
+set $blue #458588
+set $purple #b16286
+set $aqua #689d68
+set $gray #a89984
+set $darkgray #1d2021
+set $fg #ebdbb2
+set $orange #d65d0e
+
+# set window colors     	border          backgr.        	text       	indicator    	child_border
+client.focused          	$green 		    $orange  	    $fg 		$yellow	 	    $green
+client.focused_inactive 	$darkgray 	    $purple 	    $fg	 	    $yellow	 	    $darkgray
+client.unfocused        	$darkgray 	    $bg	 	        $fg 		$yellow	 	    $darkgray
+client.urgent           	$red 		    $red 		    $white 		$yellow 	    $red    
