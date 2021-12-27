@@ -98,6 +98,9 @@ bindsym $mod+mod1+l workspace next
 # Back and forth
 bindsym $Mod+Tab workspace back_and_forth
 
+# Screens and polybar layout
+exec --no-startup-id ~/.screenlayout/vmware.sh
+
 # Picom
 exec_always --no-startup-id picom 
 
