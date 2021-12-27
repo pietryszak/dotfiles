@@ -1,46 +1,47 @@
 # Echo colors
-red=`tput setaf 1`
+magenta=`tput setaf 5`
 green=`tput setaf 2`
 bold=`tput bold`
 reset=`tput sgr0`
 
 # Update system
-echo "${red}${bold}CHECK LIST OF UPDATES${reset}"
+echo "${green}${bold}CHECK LIST OF UPDATES${reset}"
 sudo dnf upgrade --refresh > /dev/null
-echo "${red}${bold}UPDATE SYSTEM${reset}"
+echo "${green}${bold}UPDATE SYSTEM${reset}"
 sudo dnf upgrade -y > /dev/null
 
 # Remove unnecessary packets
-echo "${red}${bold}REMOVE UNNECESSARY PACKETS${reset}"
+echo "${green}${bold}REMOVE UNNECESSARY PACKETS${reset}"
 sudo dnf autoremove -y > /dev/null
 
 # Update zsh syntax highlighting
-echo "${red}${bold}UPDATE ZSH SYNTAX HIGHLIGHTING${reset}"
+echo "${green}${bold}UPDATE ZSH SYNTAX HIGHLIGHTING${reset}"
 rm -rf ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 git clone --quiet https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # Update zsh syntax autosuggestions
-echo "${red}${bold}UPDATE ZSH AUTOSUGGESTIONS${reset}"
+echo "${green}${bold}UPDATE ZSH AUTOSUGGESTIONS${reset}"
 rm -rf ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone --quiet https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # Update powerlevel10k
-echo "${red}${bold}UPDATE POWERLEVEL10K${reset}"
+echo "${green}${bold}UPDATE POWERLEVEL10K${reset}"
 rm -rf ~/.oh-my-zsh/custom/themes/powerlevel10k
 git clone --quiet --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # Papirus gtk icons for gruvbox 
-echo "${red}${bold}UPDATE PAPIRUS ICONS${reset}"
+echo "${green}${bold}UPDATE PAPIRUS ICONS${reset}"
 cd ~/.gc
 sudo wget -q O- https://git.io/papirus-icon-theme-install | sh  > /dev/null
 
 # Papirus folders
-echo "${red}${bold}UPDATE PAPIRUS FOLDER ICONS${reset}"
+echo "${green}${bold}UPDATE PAPIRUS FOLDER ICONS${reset}"
 wget -q O- https://git.io/papirus-folders-install | sh > /dev/null
 papirus-folders -C brown --theme Papirus-Dark > /dev/null
 cd
 
 # Update Polybar Spotify
+echo "${green}${bold}UPDATE POLYBAR SPOTIFY${reset}"
 cd ~/.gc
 sudo rm -rf polybar-spotify
 git clone --quiet https://github.com/Jvanrhijn/polybar-spotify.git
@@ -50,7 +51,7 @@ sed -i -e '/play_pause/s/23F8/F8E3/' ~/.config/polybar/scripts/spotify_status.py
 cd
 
 # Update Vmware Workstation
-echo "${red}${bold}UPDATE VMWARE WORKSTATION. IT'S TAKE TIME. PLEASE WAIT!${reset}"
+echo "${green}${bold}UPDATE VMWARE WORKSTATION. IT'S TAKE TIME. PLEASE WAIT!${reset}"
 cd ~/.gc
 wget -q --user-agent="Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/94.0" https://www.vmware.com/go/getworkstation-linux
 chmod a+x getworkstation-linux
@@ -59,7 +60,7 @@ rm getworkstation-linux
 cd
 
 # Update Virtualbox guest tools
-echo "${red}${bold}UPDATE VIRTUALBOX GUEST TOOLS${reset}"
+echo "${green}${bold}UPDATE VIRTUALBOX GUEST TOOLS${reset}"
 cd ~/.gc/VirtualBox 
 LatestVirtualBoxVersion=$(wget -qO - https://download.virtualbox.org/virtualbox/LATEST-STABLE.TXT)
 wget -q "https://download.virtualbox.org/virtualbox/${LatestVirtualBoxVersion}/Oracle_VM_VirtualBox_Extension_Pack-${LatestVirtualBoxVersion}.vbox-extpack"
@@ -68,7 +69,7 @@ rm Oracle_VM_VirtualBox_Extension_Pack*.vbox-extpack
 cd
 
 # Update Caffeine ng
-echo "${red}${bold}UPDATE CAFFEINE-NG${reset}"
+echo "${green}${bold}UPDATE CAFFEINE-NG${reset}"
 cd ~/.gc
 sudo rm -rf caffeine-ng 
 git clone --quiet https://github.com/caffeine-ng/caffeine-ng.git
@@ -79,7 +80,7 @@ sudo glib-compile-schemas /usr/share/glib-2.0/schemas > /dev/null 2>&1
 sudo rm  /usr/share/applications/caffeine-preferences.desktop 
 
 # Zenkit
-echo "${red}${bold}UPDATE ZENKIT${reset}"
+echo "${green}${bold}UPDATE ZENKIT${reset}"
 cd ~/.gc
 wget -q https://static.zenkit.com/downloads/desktop-apps/base/zenkit-base-linux.rpm
 sudo rpm -i zenkit-base-linux.rpm > /dev/null
@@ -87,14 +88,14 @@ rm zenkit-base-linux.rpm
 cd
 
 # Update flatpaks
-echo "${red}${bold}UPDATE FLATPAKS${reset}"
+echo "${green}${bold}UPDATE FLATPAKS${reset}"
 flatpak update -y > /dev/null
 
 #######################################################################
 # My dotfiles update
 #######################################################################
 
-echo "${red}${bold}UPDATE ALL MY DOTFILES${reset}"
+echo "${green}${bold}UPDATE ALL MY DOTFILES${reset}"
 rm -rf ~/.gc/dotfiles
 cd ~/.gc
 git clone --quiet https://github.com/pietryszak/dotfiles.git
@@ -205,4 +206,4 @@ chmod +x ~/.scripts/update.sh
 # Copy caffeine-ng config to to proper folder
 \cp -r ~/.gc/dotfiles/caffeine/* ~/.config/caffeine
 
-echo "${green}${bold}UPDATE COMPLETE${reset}"
+echo "${magenta}${bold}UPDATE COMPLETE${reset}"
