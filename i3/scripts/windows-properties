@@ -2,8 +2,8 @@
 
 # Window borders to pixel 1
 
-new_window pixel 4
-new_float pixel 4
+new_window pixel 6
+new_float pixel 6
 
 # Floating apps
 
