@@ -24,7 +24,7 @@ set $secondary9 "19: "
 set $secondary10 "20: "
 
 # Define outputs
-set $output-primary Screen 0
+set $output-primary Virtual1
 
 workspace $primary1 output $output-primary
 workspace $primary2 output $output-primary
