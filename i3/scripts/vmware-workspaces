@@ -91,8 +91,12 @@ bindsym $mod+mod1+F8 move container to workspace $secondary8
 bindsym $mod+mod1+F9 move container to workspace $secondary9
 bindsym $mod+mod1+F10 move container to workspace $secondary10
 
-# Screens and polybar layout
-exec --no-startup-id ~/.screenlayout/horizontal.sh
+# Next/Previous Workspace
+bindsym $mod+mod1+h workspace prev
+bindsym $mod+mod1+l workspace next
+
+# Back and forth
+bindsym $Mod+Tab workspace back_and_forth
 
 # Picom
 exec_always --no-startup-id picom 
@@ -100,18 +104,8 @@ exec_always --no-startup-id picom
 # Numlock at startup
 exec --no-startup-id numlockx 
 
-# Blueman
-#exec --no-startup-id blueman-applet
-
-# Megasync
-#exec --no-startup-id sleep 10 && megasync 
-#exec --no-startup-id sleep 15 && megasync 
-
-# Redshift
-#exec --no-startup-id redshift-gtk
-
 # Volume control
-exec --no-startup-id volumeicon 
+exec --no-startup-id sleep 10 && volumeicon
 
 # Caffeine
 #exec --no-startup-id caffeine
@@ -126,11 +120,11 @@ exec --no-startup-id vmware-user-suid-wrapper
 exec /usr/libexec/polkit-gnome-authentication-agent-1
 
 # FF
-#exec --no-startup-id i3-msg 'workspace $primary1; exec firefox; workspace $primary1'
+exec --no-startup-id i3-msg 'workspace $primary1; exec firefox; workspace $primary1'
 
 # Kitty
 exec --no-startup-id i3-msg 'workspace $primary2; exec kitty; workspace $primary1'
-exec --no-startup-id i3-msg 'workspace $primary3; exec kitty --title=btop -e /usr/local/bin/btop; workspace $primary1' 
+exec --no-startup-id i3-msg 'workspace $primary3; exec kitty --title=bpytop -e bpytop; workspace $primary1' 
 exec --no-startup-id i3-msg 'workspace $primary4; exec kitty --title=nnn -e nnn;workspace $primary1'
 #exec --no-startup-id i3-msg 'workspace $secondary10;  exec kitty --title=spotify-tui -e spt; workspace $primary1'
 
@@ -141,28 +135,3 @@ exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-v
 for_window [title="shortcuts-vim"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
 exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-zsh bat ~/.config/shortcuts/zsh; workspace $primary1' 
 for_window [title="shortcuts-zsh"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
-
-# Caprine
-#exec --no-startup-id i3-msg 'workspace $secondary1; exec #caprine; workspace $primary1'
-#for_window [class="Caprine"] move to workspace $secondary1
-
-# Notorious
-#exec --no-startup-id i3-msg 'workspace $secondary3; exec #notorious; workspace $primary1'
-
-# Zenkit
-#exec --no-startup-id i3-msg 'workspace $secondary4; exec zenkit; workspace $primary1'
-#for_window [class="Zenkit"] move to workspace $secondary4
-
-# VSCode
-#exec --no-startup-id i3-msg 'workspace $primary5; exec code; workspace $primary1'
-#for_window [class="Code"] move to workspace $primary5
-
-# VmWare
-#exec --no-startup-id i3-msg 'workspace $secondary5; exec vmware; workspace $primary1'
-
-# Spotify
-#exec --no-startup-id sleep 24 && i3-msg 'workspace $secondary10; exec snap run spotify; #workspace $primary1'
-#for_window [class="Spotify"] move to workspace $secondary10
-
-# Thunderbird
-exec --no-startup-id sleep 28 && i3-msg 'workspace $secondary2; exec thunderbird; workspace $primary1' 
