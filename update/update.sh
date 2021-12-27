@@ -14,6 +14,16 @@ sudo dnf upgrade -y > /dev/null
 echo "${green}${bold}REMOVE UNNECESSARY PACKETS${reset}"
 sudo dnf autoremove -y > /dev/null
 
+# Update fzf
+echo "${green}${bold}UPDATE FZF${reset}"
+rm -rf ~/.fzf
+rm  ~/.fzf.bash
+rm ~/.fzf.zsh
+cd .gc
+git clone --quiet --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+yes | ~/.fzf/install > /dev/null 2>&1
+cd
+
 # Update zsh syntax highlighting
 echo "${green}${bold}UPDATE ZSH SYNTAX HIGHLIGHTING${reset}"
 rm -rf ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
