@@ -1,0 +1,48 @@
+{
+	"$schema": "https://joplinapp.org/schema/settings.json",
+	"locale": "en_US",
+	"api.token": "c408bd0bd15e32a569d9c94547cee51efa1673ce1bdb4711edce7435957c08e833e64a7972867d5fab9616244cecd23e5baf6450185ad1676c3a3e7a8a7ab1c4",
+	"markdown.plugin.softbreaks": false,
+	"markdown.plugin.typographer": false,
+	"spellChecker.language": "en-US",
+	"ui.layout": {
+		"key": "root",
+		"children": [
+			{
+				"key": "sideBar",
+				"width": 250,
+				"visible": true
+			},
+			{
+				"key": "noteList",
+				"width": 250,
+				"visible": true
+			},
+			{
+				"key": "tempContainer-S2MkYH1Wv1DKWCGA6FjL9k",
+				"children": [
+					{
+						"key": "plugin-view-joplin.plugin.note.tabs-note.tabs.panel",
+						"context": {
+							"pluginId": "joplin.plugin.note.tabs"
+						},
+						"visible": true,
+						"height": 40
+					},
+					{
+						"key": "editor",
+						"visible": true
+					}
+				],
+				"visible": true
+			}
+		],
+		"visible": true
+	},
+	"noteVisiblePanes": [
+		"editor",
+		"viewer"
+	],
+	"theme": 2,
+	"sync.target": 7
+}
