@@ -45,4 +45,5 @@
 	],
 	"theme": 2,
 	"sync.target": 7
+	"sync.interval": 600
 }
