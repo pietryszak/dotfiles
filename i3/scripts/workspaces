@@ -2,7 +2,7 @@
 
 # Workspaces
 
-set $primary1 "1: "
+set $primary1 "1: "
 set $primary2 "2: "
 set $primary3 "3: "
 set $primary4 "4: " 
@@ -129,8 +129,8 @@ exec --no-startup-id vmware-user-suid-wrapper
 # Gnome polkit for password popup
 exec /usr/libexec/polkit-gnome-authentication-agent-1
 
-# FF
-exec --no-startup-id i3-msg 'workspace $primary1; exec firefox; workspace $primary1'
+# Vivaldi
+exec --no-startup-id i3-msg 'workspace $primary1; exec vivaldi; workspace $primary1'
 
 # Kitty
 exec --no-startup-id i3-msg 'workspace $primary2; exec kitty; workspace $primary1'
