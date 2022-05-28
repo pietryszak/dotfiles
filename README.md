@@ -8,8 +8,6 @@ dotfiles
 │   └── .bash_aliases - bash aliases for nvim editor for user and sudo/root	
 ├── bat
 │   └── config - bat  - cat command supports syntax highlighting for  programming and markup languages - config with theme 
-├── foot
-│   └── foot.ini - - NOT USED YET -foot  - fast wayland terminal - config file - used to show shortcuts in sway
 ├── Caprine
 │   └── config.json - caprine -  facebook messenger for  linux -  config with polish and english spell checking
 ├── Code
