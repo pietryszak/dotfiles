@@ -123,3 +123,5 @@ mode "$mode_gaps_left" {
 
 gaps inner 4
 gaps outer 4
+hide_edge_borders smart
+smart_gaps on
