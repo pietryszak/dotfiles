@@ -8,8 +8,6 @@ dotfiles
 │   └── .bash_aliases - bash aliases for nvim editor for user and sudo/root	
 ├── bat
 │   └── config - bat  - cat command supports syntax highlighting for  programming and markup languages - config with theme 
-├── foot
-│   └── foot.ini - - NOT USED YET -foot  - fast wayland terminal - config file - used to show shortcuts in sway
 ├── Caprine
 │   └── config.json - caprine -  facebook messenger for  linux -  config with polish and english spell checking
 ├── Code
@@ -49,17 +47,6 @@ dotfiles
 ├── spotify-tui
 │   ├── client.yml - confid for spotify  app, spotify secret id and secret id nmust be added.
 │   └── config.yml - another tui for spotify.  Less mature than ncspot, in development. Config file with colors
-├── sway - NOT USED YET
-│   ├── config - main sway window manager config file
-│   └── scripts
-│       ├── bindings - bindings shortcuts used in sway 
-│       ├── borders - remove borders od apps used in sway
-│       ├── firefox - picture-in-picture settings of window used in sway 
-│       ├── floating - floating mode for apps used in sway 
-│       ├── gtk  - faster statup of gtk based apps in sway
-│       ├── keyboard - polish keyboard layout for sway - change to other if need 
-│       ├── startup - apps launched on first startup of sway 
-│       └── workspaces - workspace names and settings in sway 
 ├── terminator
 │   └── config - terminator - advancet terminal with tabs, multiwinows. Config file with font, theme 
 ├── VirtualBox
