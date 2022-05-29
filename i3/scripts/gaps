@@ -109,7 +109,7 @@ mode "$mode_gaps_bottom" {
         bindsym Escape mode "default"
 }
 mode "$mode_gaps_left" {
-        bindsymplus  gaps left current plus 1
+        bindsymplus   gaps left current plus 1
         bindsym minus gaps left current minus 1
         bindsym 0     gaps left current set 0
 
