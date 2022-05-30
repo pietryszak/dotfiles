@@ -2,8 +2,8 @@ ALL i3 SHORTCUTS
 
 Nautilus {{{
 
-Launch Nautilus
-mod+shift+n
+Launch thunar file manager
+mod+shift+f
 
 }}}
 
@@ -128,20 +128,6 @@ mod
 Reload the configuration file
 mod+Shift+c
 
-Exit sway (logs you out of your Wayland session)
+Exit i3 (logs you out of your Wayland session)
 mod+Shift+e
-
-}}}
-
-Clipman {{{
-
-Clipboard history
-mod+mod1+h
-
-Clipman remove item from history
-mod+ctrl+h
-
-Clipman remove all items from history
-mod+mod1+ctrl+shift+h
-
 }}}

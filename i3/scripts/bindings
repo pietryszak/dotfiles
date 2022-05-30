@@ -118,14 +118,14 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-# Nautilus
-bindsym $mod+mod1+n exec nautilus
+# Thunar
+bindsym $mod+shift+mod1+f exec thunar
 
 # Calculator
 bindsym $mod+mod1+c exec gnome-calculator
 
 # Firefox
-bindsym $mod+mod1+f exec firefox
+bindsym $mod+shift+mod1+v:wallpapers exec vivaldi
 
 # i3 shortcuts scratchpad
 bindsym $mod+mod1+i [title="shortcuts-i3"] scratchpad show
