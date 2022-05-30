@@ -100,7 +100,7 @@ bindsym $mod+mod1+l workspace next
 bindsym $Mod+Tab workspace back_and_forth
 
 # Screens and polybar layout
-exec --no-startup-id ~/.screenlayout/horizontal.sh
+exec --no-startup-id ~/.screenlayout/pc/horizontal.sh
 
 # Picom
 exec_always --no-startup-id picom 
