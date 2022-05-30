@@ -126,8 +126,8 @@ exec_always --no-startup-id dunst
 # Vmware copy paste support for i3wm
 exec --no-startup-id vmware-user-suid-wrapper
 
-# Gnome polkit for password popup
-exec /usr/libexec/polkit-gnome-authentication-agent-1
+# Xfce polkit for password popup
+exec --no-startup-id /usr/libexec/xfce-polkit
 
 # Vivaldi
 exec --no-startup-id i3-msg 'workspace $primary1; exec vivaldi; workspace $primary1'

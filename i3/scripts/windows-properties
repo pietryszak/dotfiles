@@ -10,18 +10,6 @@ new_float pixel 6
 # Calculator
 for_window [class="Gnome-calculator"] floating enable, move position 900 400
 
-# MegaSync
-for_window [title="MEGAsync"] floating enable, move position 4720 55, border none
-
-# MegaSync Setup
-for_window [title="Setup Assistant - MEGAsync"] floating enable,move position 4160 55, border none
-
-# MegaSync Settings
-for_window [title="Settings - MEGAsync"] floating enable,move position 4220 55, border none
-
-# Megasyn Upload
-for_window [title="Upload to MEGA"] floating enable, border none
-
 # Picture in picture
 for_window [title="Picture-in-Picture"] sticky enable, border none, resize set 1280 720, move position 1280 28
 for_window [title="Picture in picture"] sticky enable, border none, move position 1280 28
