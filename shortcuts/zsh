@@ -84,12 +84,6 @@ Cd {{{
 
 }}}
 
-Sway {{{
-
-swe="nvim ~/.config/sway/config"
-
-}}}
-
 Logout {{{
 
 pku="pkill -u $USER"

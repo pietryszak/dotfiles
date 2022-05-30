@@ -1,6 +1,6 @@
 ALL i3 SHORTCUTS
 
-Nautilus {{{
+Thunar {{{
 
 Launch thunar file manager
 mod+shift+f
@@ -102,7 +102,6 @@ mod+space
 
 Move focus to the parent container
 mod+a
-
 
 Move the currently focused window to the scratchpad
 mod+Shift+minus
