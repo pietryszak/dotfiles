@@ -54,6 +54,9 @@ wget -q O- https://git.io/papirus-folders-install | sh >> ~/.gc/update/install-l
 papirus-folders -C brown --theme Papirus-Dark >> ~/.gc/update/install-log 2>> ~/.gc/update/warnings-log
 cd
 
+# Hardcoded icons 
+sudo -E hardcode-tray --apply --conversion-tool RSVGConvert --size 22 --theme Papirus >> ~/.gc/update/install-log 2>> ~/.gc/update/warnings-log
+
 # Update Polybar Spotify
 echo "${green}${bold}UPDATE POLYBAR SPOTIFY${reset}"
 cd ~/.gc
