@@ -122,14 +122,13 @@ exec --no-startup-id vmware-user-suid-wrapper
 # Xfce polkit for password popup
 exec --no-startup-id /usr/libexec/xfce-polkit
 
-# Vivaldi
-exec --no-startup-id i3-msg 'workspace $primary1; exec vivaldi; workspace $primary1'
+# Firefox
+exec --no-startup-id i3-msg 'workspace $primary1; exec firefox; workspace $primary1'
 
 # Kitty
 exec --no-startup-id i3-msg 'workspace $primary2; exec kitty; workspace $primary1'
 exec --no-startup-id i3-msg 'workspace $primary3; exec kitty --title=bpytop -e bpytop; workspace $primary1' 
 exec --no-startup-id i3-msg 'workspace $primary4; exec kitty --title=nnn -e nnn;workspace $primary1'
-#exec --no-startup-id i3-msg 'workspace $secondary10;  exec kitty --title=spotify-tui -e spt; workspace $primary1'
 
 # Scratchpad
 exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-i3 bat ~/.config/shortcuts/i3; workspace $primary1' 
