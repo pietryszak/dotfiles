@@ -18,7 +18,7 @@ set $secondary3 "13: "
 set $secondary4 "14: "
 set $secondary5 "15: "
 set $secondary6 "16: "
-set $secondary7 "17: "
+set $secondary7 "17: "
 set $secondary8 "18: "
 set $secondary9 "19: "
 set $secondary10 "20: "
@@ -137,6 +137,7 @@ exec --no-startup-id i3-msg 'workspace $primary2; exec kitty; workspace $primary
 exec --no-startup-id i3-msg 'workspace $primary3; exec kitty --title=bpytop -e bpytop; workspace $primary1' 
 exec --no-startup-id i3-msg 'workspace $primary4; exec kitty --title=nnn -e nnn;workspace $primary1'
 #exec --no-startup-id i3-msg 'workspace $secondary10;  exec kitty --title=spotify-tui -e spt; workspace $primary1'
+exec --no-startup-id i3-msg 'workspace $secondary7; exec kitty; workspace $primary1'
 
 # Scratchpad
 exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-i3 bat ~/.config/shortcuts/i3; workspace $primary1' 
