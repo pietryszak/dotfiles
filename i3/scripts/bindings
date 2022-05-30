@@ -122,7 +122,7 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym $mod+shift+mod1+f exec thunar
 
 # Calculator
-bindsym $mod+mod1+c exec gnome-calculator
+bindsym $mod+mod1+c exec galculator
 
 # Firefox
 bindsym $mod+shift+mod1+v:wallpapers exec vivaldi
