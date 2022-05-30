@@ -11,13 +11,13 @@
     "editor.fontFamily": "MesloLGS NF, Regular",
     "terminal.integrated.fontFamily": "MesloLGS NF, Regular",
     "editor.codeLensFontFamily": "MesloLGS NF, Regular",
-    "editor.fontSize": 18,
-    "terminal.integrated.fontSize": 18,
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
     "workbench.startupEditor": "none",
-    "markdown.preview.fontSize": 18,
-    "debug.console.fontSize": 18,
-    "scm.inputFontSize": 18,
+    "markdown.preview.fontSize": 16,
+    "debug.console.fontSize": 16,
+    "scm.inputFontSize": 16,
     "scm.inputFontFamily": "MesloLGS NF, Regular",
     "debug.console.fontFamily": "MesloLGS NF, Regular",
     "window.zoomLevel": 1.8
-    }    
+    }
