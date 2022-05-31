@@ -147,9 +147,9 @@ for_window [title="shortcuts-vim"] floating enable, resize set 1366 766, move sc
 exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-zsh bat ~/.config/shortcuts/zsh; workspace $primary1' 
 for_window [title="shortcuts-zsh"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
 
-# Caprine
-exec --no-startup-id i3-msg 'workspace $secondary1; exec caprine; workspace $primary1'
-for_window [class="Caprine"] move to workspace $secondary1
+# Ferdi
+exec --no-startup-id i3-msg 'workspace $secondary1; exec flatpak run com.getferdi.Ferdi; workspace $primary1'
+for_window [class="Ferdi"] move to workspace $secondary1
 
 # Joplin
 exec --no-startup-id i3-msg 'workspace $secondary3; exec flatpak run net.cozic.joplin_desktop; workspace $primary1'
