@@ -102,14 +102,3 @@ alias mst="~/.screenlayout/menu.sh"
 
 # Ssh in kitty
 alias ssh="kitty +kitten ssh"
-
-################################################################
-# Sway
-################################################################ 
-
-# Sway
-alias swe="nvim $HOME/.config/sway/config"
-alias sws="nvim $HOME/.config/sway/scripts/"
-
-# Swayinfo
-alias swi="bash -c "$HOME/.local/bin/swayinfo""
