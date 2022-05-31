@@ -103,7 +103,7 @@ bindsym $Mod+Tab workspace back_and_forth
 exec --no-startup-id ~/.screenlayout/pc/horizontal.sh
 
 # Picom
-exec_always --no-startup-id picom 
+exec_always --no-startup-id picom --config ~/.config/picom.conf
 
 # Numlock at startup
 exec --no-startup-id numlockx 
