@@ -2,5 +2,8 @@
 # script by phon31x & pietryszak
 #! /bin/bash
 
+killall -q dropbox
+	dropbox start &
+
 u=$(xprop -name "Polybar tray window" _NET_WM_PID | grep -o '[[:digit:]]*')
 kill $u
