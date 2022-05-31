@@ -1,7 +1,7 @@
 {
 	"$schema": "https://joplinapp.org/schema/settings.json",
 	"locale": "en_US",
-	"api.token": "c408bd0bd15e32a569d9c94547cee51efa1673ce1bdb4711edce7435957c08e833e64a7972867d5fab9616244cecd23e5baf6450185ad1676c3a3e7a8a7ab1c4",
+	"api.token": "199d60b8b4370ab5242952b9cceffeb2259fb42088175866b6d2f3c60ae363be15be4c3179b2d747df6ee9cbf869baf6bc4aacea1ad2c308b0d158c13a846789",
 	"markdown.plugin.softbreaks": false,
 	"markdown.plugin.typographer": false,
 	"spellChecker.language": "en-US",
@@ -10,16 +10,16 @@
 		"children": [
 			{
 				"key": "sideBar",
-				"width": 250,
+				"width": 174,
 				"visible": true
 			},
 			{
 				"key": "noteList",
-				"width": 250,
+				"width": 231,
 				"visible": true
 			},
 			{
-				"key": "tempContainer-S2MkYH1Wv1DKWCGA6FjL9k",
+				"key": "tempContainer-COQwCg0gNKROA3Nq8BTUEu",
 				"children": [
 					{
 						"key": "plugin-view-joplin.plugin.note.tabs-note.tabs.panel",
@@ -40,10 +40,12 @@
 		"visible": true
 	},
 	"noteVisiblePanes": [
-		"editor",
 		"viewer"
 	],
 	"theme": 2,
 	"sync.target": 7,
-	"sync.interval": 3600
+	"sync.interval": 3600,
+	"style.editor.fontSize": 16,
+	"windowContentZoomFactor": 140,
+	"clipperServer.autoStart": true
 }
