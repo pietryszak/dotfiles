@@ -8,4 +8,4 @@ xrandr --output DisplayPort-0 --mode 2560x1440 --pos 2560x0 --rotate right --out
 		polybar -q second-vertical -c "~/.config/polybar/cuts/config.ini" &
 
 	killall -q picom && sleep 1
-	picom &
+	picom --config ~/.config/picom.conf
