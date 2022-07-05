@@ -102,3 +102,14 @@ alias mst="~/.screenlayout/menu.sh"
 
 # Ssh in kitty
 alias ssh="kitty +kitten ssh"
+
+# Docker
+alias drut="sudo docker run -ti"
+alias dru="sudo docker run"
+alias dps="sudo docker ps"
+alias dpsa="sudo docker ps -a"
+alias dsta="sudo docker start"
+alias dsto="sudo docker stop"
+alias drm="sudo docker rm"
+alias dext="sudo docker exec -ti"
+alias datt="sudo docker attach"
