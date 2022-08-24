@@ -85,17 +85,6 @@ yes | sudo VBoxManage extpack install --replace Oracle_VM_VirtualBox_Extension_P
 rm Oracle_VM_VirtualBox_Extension_Pack*.vbox-extpack
 cd
 
-# Update Caffeine ng
-echo "${green}${bold}UPDATE CAFFEINE-NG${reset}"
-cd ~/.gc
-sudo rm -rf caffeine-ng 
-git clone --quiet https://github.com/caffeine-ng/caffeine-ng.git
-cd caffeine-ng
-python setup.py -q build
-sudo python setup.py -q install
-sudo glib-compile-schemas /usr/share/glib-2.0/schemas >> ~/.gc/update/install-log 2>> ~/.gc/update/warnings-log
-sudo rm  /usr/share/applications/caffeine-preferences.desktop 
-
 # Zenkit
 echo "${green}${bold}UPDATE ZENKIT${reset}"
 cd ~/.gc
