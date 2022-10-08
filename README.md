@@ -10,12 +10,8 @@ dotfiles
 │   └── config - bat  - cat command supports syntax highlighting for  programming and markup languages - config with theme 
 ├── Code
 │   └── settings.json - vscode - configuration like font, theme, icons   
-├── gedit
-│   └── gruvbox-dark.xml - gedit - gnome text editor - gruvbox theme
 ├── htop
 │   └── htoprc - htop - better top command - config with gruvbox theme
-├── ncspot
-│   └── config.toml - ncspot - tui for spotify - config with colors
 ├── neofetch
 │   └── config.conf - neofetch - a command-line system information tool - config for faster startup wit every zsh session
 ├── nvim
@@ -37,14 +33,8 @@ dotfiles
 │   ├── config - not used
 │   └── rofi.rasi- not used
 ├── shortcuts 
-│   ├── sway -  - NOT USED YET - file with shortcuts used in sway. It's a just a list of shortcuts to fast look at it. It's not a config file!
 │   ├── vim -  file with shortcuts used in vim. It's a just a list of shortcuts to fast look at it. It's not a config file!
 │   └── zsh - file with shortcuts used in zsh. It's a just a list of shortcuts to fast look at it. It's not a config file!
-├── spotifyd
-│   └── spotifyd.conf - used for spotify-tui. Daemon for sound. Username, password  must be added.
-├── spotify-tui
-│   ├── client.yml - confid for spotify  app, spotify secret id and secret id nmust be added.
-│   └── config.yml - another tui for spotify.  Less mature than ncspot, in development. Config file with colors
 ├── terminator
 │   └── config - terminator - advancet terminal with tabs, multiwinows. Config file with font, theme 
 ├── VirtualBox
