@@ -123,11 +123,8 @@ exec --no-startup-id caffeine
 # Dunst
 exec --no-startup-id dunst
 
-# Vmware copy paste support for i3wm
-exec --no-startup-id vmware-user-suid-wrapper
-
-# Xfce polkit for password popup
-exec --no-startup-id /usr/libexec/xfce-polkit
+# Gnome polkit for password popup
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 
 # Flameshot
 exec --no-startup-id flameshot
@@ -158,10 +155,6 @@ for_window [class="Ferdi"] move to workspace $secondary1
 exec --no-startup-id i3-msg 'workspace $secondary3; exec flatpak run net.cozic.joplin_desktop; workspace $primary1'
 for_window [class="Joplin"] move to workspace $secondary3
 
-# Zenkit
-exec --no-startup-id i3-msg 'workspace $secondary4; exec zenkit; workspace $primary1'
-for_window [class="Zenkit"] move to workspace $secondary4
-
 # VSCode
 exec --no-startup-id i3-msg 'workspace $primary5; exec code; workspace $primary1'
 for_window [class="Code"] move to workspace $primary5
@@ -169,9 +162,6 @@ for_window [class="Code"] move to workspace $primary5
 # GitHub Desktop
 exec --no-startup-id i3-msg 'workspace $secondary5; exec flatpak run io.github.shiftey.Desktop; workspace $primary1'
 for_window [class="GitHub Desktop"] move to workspace $secondary5
-
-# VmWare
-exec --no-startup-id i3-msg 'workspace $secondary6; exec vmware; workspace $primary1'
 
 # Spotify
 exec --no-startup-id sleep 18 && i3-msg 'workspace $secondary10; exec flatpak run com.spotify.Client; workspace $primary1'
