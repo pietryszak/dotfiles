@@ -140,3 +140,7 @@ source $HOME/.fzf/shell/completion.zsh
 
 # Bash aliases
 source ~/.bash_aliases
+
+# Setting for the UTF-8 terminal support
+LC_CTYPE=en_US.UTF-8
+LC_ALL=en_US.UTF-8
