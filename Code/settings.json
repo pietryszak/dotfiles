@@ -7,7 +7,6 @@
     "window.titleBarStyle": "custom",
     "vsicons.dontShowNewVersionMessage": true,
     "security.workspace.trust.untrustedFiles": "open",
-    "workbench.colorTheme": "Gruvbox Dark Medium",
     "editor.fontFamily": "MesloLGS NF, Regular",
     "terminal.integrated.fontFamily": "MesloLGS NF, Regular",
     "editor.codeLensFontFamily": "MesloLGS NF, Regular",
