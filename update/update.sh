@@ -67,15 +67,6 @@ sed -i -e '/play_pause/s/25B6/F909/' ~/.config/polybar/scripts/spotify_status.py
 sed -i -e '/play_pause/s/23F8/F8E3/' ~/.config/polybar/scripts/spotify_status.py 
 cd
 
-# Update Vmware Workstation
-echo "${green}${bold}UPDATE VMWARE WORKSTATION. IT'S TAKE TIME. PLEASE WAIT!${reset}"
-cd ~/.gc
-wget -q --user-agent="Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/94.0" https://www.vmware.com/go/getworkstation-linux
-chmod a+x getworkstation-linux
-sudo ./getworkstation-linux  --console --required --eulas-agreed >> ~/.gc/update/install-log 2>> ~/.gc/update/warnings-log
-rm getworkstation-linux
-cd
-
 # Update Virtualbox guest tools
 echo "${green}${bold}UPDATE VIRTUALBOX GUEST TOOLS${reset}"
 cd ~/.gc/VirtualBox 
@@ -83,14 +74,6 @@ LatestVirtualBoxVersion=$(wget -qO - https://download.virtualbox.org/virtualbox/
 wget -q "https://download.virtualbox.org/virtualbox/${LatestVirtualBoxVersion}/Oracle_VM_VirtualBox_Extension_Pack-${LatestVirtualBoxVersion}.vbox-extpack"
 yes | sudo VBoxManage extpack install --replace Oracle_VM_VirtualBox_Extension_Pack-${LatestVirtualBoxVersion}.vbox-extpack >> ~/.gc/update/install-log 2>> ~/.gc/update/warnings-log
 rm Oracle_VM_VirtualBox_Extension_Pack*.vbox-extpack
-cd
-
-# Zenkit
-echo "${green}${bold}UPDATE ZENKIT${reset}"
-cd ~/.gc
-wget -q https://static.zenkit.com/downloads/desktop-apps/base/zenkit-base-linux.rpm
-sudo rpm -i zenkit-base-linux.rpm >> ~/.gc/update/install-log 2>> ~/.gc/update/warnings-log
-rm zenkit-base-linux.rpm
 cd
 
 # Update flatpaks

@@ -45,7 +45,7 @@
 	"theme": 2,
 	"sync.target": 7,
 	"sync.interval": 3600,
-	"style.editor.fontSize": 16,
+	"style.editor.fontSize": 18,
 	"windowContentZoomFactor": 140,
 	"clipperServer.autoStart": true
 }
