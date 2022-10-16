@@ -86,18 +86,24 @@ exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agen
 exec --no-startup-id flameshot
 
 # Vivaldi
-exec --no-startup-id i3-msg 'workspace $primary1; exec vivaldi; workspace $primary1'
+exec --no-startup-id i3-msg 'workspace $primary1; exec firefox; workspace $primary1'
 
-# Kitty
-exec --no-startup-id i3-msg 'workspace $primary2; exec kitty; workspace $primary1'
-exec --no-startup-id i3-msg 'workspace $primary3; exec kitty --title=bpytop -e bpytop; workspace $primary1' 
-exec --no-startup-id i3-msg 'workspace $primary4; exec kitty --title=nnn -e nnn;workspace $primary1'
-exec --no-startup-id i3-msg 'workspace $secondary7; exec kitty; workspace $primary1'
+# Alacritty
+exec --no-startup-id i3-msg 'workspace $primary2; exec alacritty --class="terminal" --title="terminal";'
+for_window [class="terminal" title="terminal"] move to workspace $primary2;
+
+exec --no-startup-id i3-msg 'workspace $primary3; exec alacritty --class="bpytop" --title="bpytop" -e bpytop;' 
+for_window [class="bpytop" title="bpytop"] move to workspace $primary3;
+
+exec --no-startup-id i3-msg 'workspace $primary4; exec alacritty --class="nnn" --title="nnn" -e nnn;'
+for_window [class="nnn" title="nnn"] move to workspace $primary4;
 
 # Scratchpad
-exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-i3 bat ~/.config/shortcuts/i3; workspace $primary1' 
+exec --no-startup-id i3-msg 'workspace $primary1; exec alacritty --class="shortcuts-i3" --title="shortcuts-i3" bat ~/.config/shortcuts/i3;' 
 for_window [title="shortcuts-i3"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
-exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-vim bat ~/.config/shortcuts/vim; workspace $primary1' 
+
+exec --no-startup-id i3-msg 'workspace $primary1; exec alacritty --class="shortcuts-vim" --title="shortcuts-vim" bat ~/.config/shortcuts/vim;' 
 for_window [title="shortcuts-vim"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
-exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-zsh bat ~/.config/shortcuts/zsh; workspace $primary1' 
+
+exec --no-startup-id i3-msg 'workspace $primary1; exec alacritty --class="shortcuts-zsh" --title="shortcuts-zsh" bat ~/.config/shortcuts/zsh;' 
 for_window [title="shortcuts-zsh"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
