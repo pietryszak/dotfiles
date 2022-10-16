@@ -6,7 +6,7 @@ bold=`tput bold`
 reset=`tput sgr0`
 
 PS3='Please enter your choice: '
-options=("Monitors Horizontal" "Benq Vertical" "Only Dell turn on" "Only Benq turn on" "Vmware screen" "Quit")
+options=("Monitors Horizontal" "Benq Vertical" "Only Dell turn on" "Only Benq turn on" "Virtualbox screen" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -18,8 +18,8 @@ do
 	    nohup  ~/.screenlayout/one-monitor-dell.sh &>/dev/null & ;;
      	"Only Benq turn on")
 	    nohup  ~/.screenlayout/one-monitor-benq.sh &>/dev/null & ;;
-        "Vmware screen")
-	    nohup  ~/.screenlayout/vmware.sh &>/dev/null & ;;    
+        "Virtualbox screen")
+	    nohup  ~/.screenlayout/virtualbox.sh &>/dev/null & ;;    
         "Quit")
             break
             ;;
