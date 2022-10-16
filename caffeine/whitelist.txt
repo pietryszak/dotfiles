@@ -1,3 +1,0 @@
-firefox
-kitty
-thunderbird

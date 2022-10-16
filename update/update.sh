@@ -193,7 +193,4 @@ chmod +x ~/.scripts/update.sh
 # Copy lightdm script to to proper folder
 sudo cp -r ~/.gc/dotfiles/lightdm/* /etc/lightdm/
 
-# Copy caffeine-ng config to to proper folder
-\cp -r ~/.gc/dotfiles/caffeine/* ~/.config/caffeine
-
 echo "${magenta}${bold}UPDATE COMPLETE${reset}"

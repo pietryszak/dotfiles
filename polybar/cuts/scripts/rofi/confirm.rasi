@@ -5,7 +5,7 @@
 * {
     background-color:       @bga;
     text-color:             @fg;
-    font:	            "MesloLGS NF Regular 16";
+    font:	            "MesloLGS NF Regular 18";
 }
 
 window {

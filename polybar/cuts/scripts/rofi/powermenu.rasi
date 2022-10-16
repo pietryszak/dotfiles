@@ -9,7 +9,7 @@
  */
 
 configuration {
-    font:		            "MesloLGS NF Regular 16";
+    font:		            "MesloLGS NF Regular 18";
     show-icons:                     true;
     icon-theme: 		    "Papirus-Dark";
     display-drun: 	            "";
@@ -48,7 +48,7 @@ textbox-prompt-colon {
     text-color: 		    @ac;
     expand: 			    false;
     str:  			    "";
-    font:	 		    "MesloLGS NF Regular 16";
+    font:	 		    "MesloLGS NF Regular 18";
 }
 
 entry {
