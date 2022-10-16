@@ -15,4 +15,4 @@ set mouse=a
 set clipboard+=unnamedplus
 
 " Font 
-set guifont=MesloLGS_NF:h18
+set guifont=Ubuntu Regular:h18
