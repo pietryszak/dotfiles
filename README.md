@@ -35,10 +35,6 @@ dotfiles
 ├── shortcuts 
 │   ├── vim -  file with shortcuts used in vim. It's a just a list of shortcuts to fast look at it. It's not a config file!
 │   └── zsh - file with shortcuts used in zsh. It's a just a list of shortcuts to fast look at it. It's not a config file!
-├── terminator
-│   └── config - terminator - advancet terminal with tabs, multiwinows. Config file with font, theme 
-├── VirtualBox
-│   └── update.sh - script for update virtualbox extension pack in Fedora Linux
 └── zsh
     ├── .p10k.zsh - Powerlevel10k - zsh theme
     ├── scripts
