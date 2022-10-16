@@ -9,15 +9,15 @@
  */
 
 configuration {
-    font:			    "MesloLGS NF Regular 18";
+    font:			                "Ubuntu Regular 18";
     show-icons:                     true;
-    icon-theme: 		    "Papirus-Dark";
-    display-drun: 	            "";
+    icon-theme: 		            "Papirus-Dark";
+    display-drun: 	                "";
     drun-display-format:            "{name}";
     disable-history:                false;
     fullscreen:                     false;
-    hide-scrollbar: 		    true;
-    sidebar-mode: 	            false;
+    hide-scrollbar: 		        true;
+sidebar-mode: 	                    false;
 }
 
 @import "colors.rasi"
@@ -27,21 +27,21 @@ window {
     background-color:               @bg;
     text-color:                     @fg;
     border:                         0px;
-    border-color:		    @ac;
+    border-color:		            @ac;
     border-radius:                  0px;
     width:                          600px;
-    height:	                    500px;			
+    height:	                        500px;			
     location:                       center;
     x-offset:                       0;
     y-offset:                       0;
 }
 
 prompt {
-   enabled: 		            true;
-   padding: 			    0px;
+   enabled: 		                true;
+   padding: 			            0px;
    background-color: 	            @al;
-   text-color: 			    @ac;
-   font:              	            "MesloLGS NF Regular 18";
+   text-color: 			            @ac;
+   font:              	            "Ubuntu Regular 18";
 }
 
 entry {
@@ -60,7 +60,7 @@ inputbar {
     background-color:               @bga;
     text-color:                     @fg;
     expand:                         false;
-    border:		            0px 0px 0px 0px;
+    border:		                    0px 0px 0px 0px;
     border-radius:                  0px;
     border-color:		            @ac;
     margin:                         0px;
@@ -80,7 +80,7 @@ listview {
 
 mainbox {
     background-color:               @al;
-    border:		            0px;
+    border:		                    0px;
     border-radius:                  0px;
     border-color:                   @ac;
     children:                       [ inputbar, listview ];
