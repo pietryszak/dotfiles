@@ -13,7 +13,6 @@ for_window [class="calculator"] floating enable, resize set 600 800, move positi
 # Printer settings
 for_window [title="Printers - localhost"] floating enable, resize set 600 800, move position 900 400
 
-
 # Picture in picture
 for_window [title="Picture-in-Picture"] sticky enable, border none, resize set 1280 720, move position 1280 28
 for_window [title="Picture in picture"] sticky enable, border none, move position 1280 28
