@@ -20,16 +20,14 @@ alias btop="/usr/local/bin/btop"
 alias neo="neofetch"
 
 # Update
-alias update="sudo dnf upgrade -y"
-alias upgrade="sudo dnf upgrade -y"
-alias bigupdate="~/.scripts/update.sh"
-alias bigupgrade="~/.scripts/update.sh"
+alias update="sudo apt update"
+alias upgrade="sudo apt full-upgrade -y"
 
 # Install
-alias install="sudo dnf install -y"
+alias install="sudo apt install -y"
 
 # Remove
-alias remove="sudo dnf remove -y"
+alias remove="sudo apt remove -y"
 
 # Mkdir
 alias md="mkdir"
@@ -71,15 +69,12 @@ alias pku="exec i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you r
 alias ext="exit"
 
 # List of intalled rmps and search in fzf
-alias ins="dnf list installed | fzf"
+alias ins="apt list --installed | fzf"
 
 # Shortcuts
 alias shv="nvim $HOME/.config/shortcuts/vim"
-alias shs="nvim $HOME/.config/shortcuts/sway"
+alias shis="nvim $HOME/.config/shortcuts/i3"
 alias shz="nvim $HOME/.config/shortcuts/zsh"
-
-# Virtualbox update
-alias vbu="bash -c "$HOME/.config/VirtualBox/update.sh""
 
 # Window properies
 alias xpr="bash -c xprop"
@@ -99,9 +94,6 @@ alias i3wp="vim ~/.config/i3/scripts/windows-properties"
 
 # Monitor settings
 alias mst="~/.screenlayout/menu.sh"
-
-# Ssh in kitty
-alias ssh="kitty +kitten ssh"
 
 # Docker
 alias drut="sudo docker run -ti"
