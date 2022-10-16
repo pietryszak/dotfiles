@@ -1,0 +1,104 @@
+# vim: filetype=i3config
+
+# Workspaces
+
+set $primary1 "1: "
+set $primary2 "2: "
+set $primary3 "3: "
+set $primary4 "4: " 
+set $primary5 "5: " 
+set $primary6 "6: "
+set $primary7 "7: "
+set $primary8 "8: "
+set $primary9 "9: "
+set $primary10 "10: "
+
+# Define outputs
+set $output-primary Virtual1
+
+workspace $primary1 output $output-primary
+workspace $primary2 output $output-primary
+workspace $primary3 output $output-primary
+workspace $primary4 output $output-primary
+workspace $primary5 output $output-primary
+workspace $primary6 output $output-primary
+workspace $primary7 output $output-primary
+workspace $primary8 output $output-primary
+workspace $primary9 output $output-primary
+workspace $primary10 output $output-primary
+
+# Switch to workspace
+bindsym $mod+1 workspace $primary1
+bindsym $mod+2 workspace $primary2
+bindsym $mod+3 workspace $primary3
+bindsym $mod+4 workspace $primary4
+bindsym $mod+5 workspace $primary5
+bindsym $mod+6 workspace $primary6
+bindsym $mod+7 workspace $primary7
+bindsym $mod+8 workspace $primary8
+bindsym $mod+9 workspace $primary9
+bindsym $mod+0 workspace $primary10
+
+# Move focused container to workspace
+bindsym $mod+mod1+1 move container to workspace $primary1
+bindsym $mod+mod1+2 move container to workspace $primary2
+bindsym $mod+mod1+3 move container to workspace $primary3
+bindsym $mod+mod1+4 move container to workspace $primary4
+bindsym $mod+mod1+5 move container to workspace $primary5
+bindsym $mod+mod1+6 move container to workspace $primary6
+bindsym $mod+mod1+7 move container to workspace $primary7
+bindsym $mod+mod1+8 move container to workspace $primary8
+bindsym $mod+mod1+9 move container to workspace $primary9
+bindsym $mod+mod1+0 move container to workspace $primary10
+
+# Next/Previous Workspace
+bindsym $mod+mod1+h workspace prev
+bindsym $mod+mod1+l workspace next
+
+# Back and forth
+bindsym $Mod+Tab workspace back_and_forth
+
+# Screens and polybar layout
+exec --no-startup-id ~/.screenlayout/virtualbox.sh
+
+# Picom
+exec_always --no-startup-id picom --config ~/.config/picom.conf
+
+# Numlock at startup
+exec --no-startup-id numlockx 
+
+# Blueman
+exec --no-startup-id blueman-applet
+
+# Redshift
+exec --no-startup-id redshift-gtk
+
+# Volume control
+exec --no-startup-id sleep 10 && volumeicon
+
+# Dunst
+exec --no-startup-id dunst
+
+# Gnome polkit for password popup
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+
+# Flameshot
+exec --no-startup-id flameshot
+
+# Vivaldi
+exec --no-startup-id i3-msg 'workspace $primary1; exec vivaldi; workspace $primary1'
+
+# Kitty
+exec --no-startup-id i3-msg 'workspace $primary2; exec kitty; workspace $primary1'
+exec --no-startup-id i3-msg 'workspace $primary3; exec kitty --title=bpytop -e bpytop; workspace $primary1' 
+exec --no-startup-id i3-msg 'workspace $primary4; exec kitty --title=nnn -e nnn;workspace $primary1'
+#exec --no-startup-id i3-msg 'workspace $secondary10;  exec kitty --title=spotify-tui -e spt; workspace $primary1'
+exec --no-startup-id i3-msg 'workspace $secondary7; exec kitty; workspace $primary1'
+
+# Scratchpad
+exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-i3 bat ~/.config/shortcuts/i3; workspace $primary1' 
+for_window [title="shortcuts-i3"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
+exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-vim bat ~/.config/shortcuts/vim; workspace $primary1' 
+for_window [title="shortcuts-vim"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
+exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-zsh bat ~/.config/shortcuts/zsh; workspace $primary1' 
+for_window [title="shortcuts-zsh"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
