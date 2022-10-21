@@ -1,8 +1,8 @@
 ALL i3 SHORTCUTS
 
-Thunar {{{
+Nemo {{{
 
-Launch thunar file manager
+Launch Nemo file manager
 mod+shift+f
 
 }}}
