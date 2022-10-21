@@ -3,4 +3,4 @@
 killall -q dropbox
 	dropbox start &
 
-polybar -q tray-virtualbox -c "$HOME/.config/polybar/cuts/config.ini" &
+polybar -q tray -c "$HOME/.config/polybar/cuts/config.ini" &
