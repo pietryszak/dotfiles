@@ -92,8 +92,8 @@ exec --no-startup-id i3-msg 'workspace $primary1; exec firefox; workspace $prima
 exec --no-startup-id i3-msg 'workspace $primary2; exec alacritty --class="terminal" --title="terminal";'
 for_window [class="terminal" title="terminal"] move to workspace $primary2;
 
-exec --no-startup-id i3-msg 'workspace $primary3; exec alacritty --class="bpytop" --title="bpytop" -e bpytop;' 
-for_window [class="bpytop" title="bpytop"] move to workspace $primary3;
+exec --no-startup-id i3-msg 'workspace $primary3; exec alacritty --class="btop" --title="btop" -e btop;' 
+for_window [class="btop" title="btop"] move to workspace $primary3;
 
 exec --no-startup-id i3-msg 'workspace $primary4; exec alacritty --class="nnn" --title="nnn" -e nnn;'
 for_window [class="nnn" title="nnn"] move to workspace $primary4;
