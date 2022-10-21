@@ -38,3 +38,4 @@ for_window [title="Preferences"] floating enable, border none
 for_window [title="Save As"] floating enable, border none
 for_window [title="Info"] floating enable, border none
 for_window [title="Select local folder"] floating enable, border none
+for_window [class="Yad" title="yad-calendar"] floating enable
