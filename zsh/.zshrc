@@ -120,7 +120,6 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-
 ###############################################################################################
 # My settings
 ###############################################################################################
@@ -129,14 +128,9 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 export PAGER='most'
 export BAT_PAGER="less -RF"
 
-
 # Add PATH
 export -U PATH=$HOME/.cargo/bin${PATH:+:$PATH}
 export -U PATH=$HOME/.local/bin${PATH:+:$PATH}
-
-# FZF for zsh
-source $HOME/.fzf/shell/key-bindings.zsh
-source $HOME/.fzf/shell/completion.zsh
 
 # Bash aliases
 source ~/.bash_aliases
