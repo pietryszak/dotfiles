@@ -139,11 +139,11 @@ exec --no-startup-id i3-msg 'workspace $primary4; exec kitty --title=nnn -e nnn;
 exec --no-startup-id i3-msg 'workspace $secondary7; exec kitty; workspace $primary1'
 
 # Scratchpad
-exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-i3 bat ~/.config/shortcuts/i3; workspace $primary1' 
+exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-i3 -e bat ~/.config/shortcuts/i3; workspace $primary1' 
 for_window [title="shortcuts-i3"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
-exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-vim bat ~/.config/shortcuts/vim; workspace $primary1' 
+exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-vim -e bat ~/.config/shortcuts/vim; workspace $primary1' 
 for_window [title="shortcuts-vim"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
-exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-zsh bat ~/.config/shortcuts/zsh; workspace $primary1' 
+exec --no-startup-id i3-msg 'workspace $primary1; exec kitty --title=shortcuts-zsh -e bat ~/.config/shortcuts/zsh; workspace $primary1' 
 for_window [title="shortcuts-zsh"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
 
 # Ferdi
