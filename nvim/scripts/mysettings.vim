@@ -13,6 +13,3 @@ set termguicolors
 " Mouse and clipboard settings
 set mouse=a
 set clipboard+=unnamedplus
-
-" Font 
-set guifont=Ubuntu Regular:h18
