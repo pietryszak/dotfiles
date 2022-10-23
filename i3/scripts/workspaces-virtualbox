@@ -85,7 +85,10 @@ exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agen
 # Flameshot
 exec --no-startup-id flameshot
 
-# Vivaldi
+# Copyq
+exec --no-startup-id copyq
+
+# Firefox
 exec --no-startup-id i3-msg 'workspace $primary1; exec firefox; workspace $primary1'
 
 # Alacritty
