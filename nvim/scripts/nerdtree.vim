@@ -2,7 +2,7 @@
 " Plugins settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Open NERDTree on right ride
-let g:NERDTreeWinPos = "right"
+let g:NERDTreeWinPos = "left"
 
 " Show dotfiles in NERDTree
 let NERDTreeShowHidden=1

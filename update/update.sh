@@ -1,13 +1,3 @@
-mkdir ~/.gc/update
-touch ~/.gc/update/install-log
-touch ~/.gc/update/warnings-log
-
-# Echo colors
-magenta=`tput setaf 5`
-green=`tput setaf 2`
-bold=`tput bold`
-reset=`tput sgr0`
-
 # Update system
 echo "${green}${bold}CHECK LIST OF UPDATES${reset}"
 sudo dnf upgrade --refresh >> ~/.gc/update/install-log 2>> ~/.gc/fedora-installer/warnings-log

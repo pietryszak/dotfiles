@@ -9,7 +9,7 @@
  */
 
 configuration {
-    font:			                "Ubuntu Regular 18";
+    font:			                "Ubuntu Regular 20";
     show-icons:                     true;
     icon-theme: 		            "Papirus-Dark";
     display-drun: 	                "";
@@ -41,7 +41,7 @@ prompt {
    padding: 			            0px;
    background-color: 	            @al;
    text-color: 			            @ac;
-   font:              	            "Ubuntu Regular 18";
+   font:              	            "Ubuntu Regular 20";
 }
 
 entry {
