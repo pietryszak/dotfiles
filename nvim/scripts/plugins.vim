@@ -8,7 +8,7 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 
-" Gruvbox-  color scheme
+" Gruvbox - color scheme
 Plug 'morhetz/gruvbox'
 
 " NerdTree - file manager for vim
