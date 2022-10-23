@@ -27,7 +27,7 @@
   # Window dimensions (changes require restart)
   #
   # Number of lines/columns (not pixels) in the terminal. Both lines and columns
-  # must be non-zero for this to take effect. The number of columns must be at
+    # must be non-zero for this to take effect. The number of columns must be at
   # least `2`, while using a value of `0` for columns and lines will fall back
   # to the window manager's recommended size
   #dimensions:
@@ -101,40 +101,46 @@
   # the default theme variant.
   #decorations_theme_variant: None
 
-#scrolling:
+scrolling:
   # Maximum number of lines in the scrollback buffer.
   # Specifying '0' will disable scrolling.
-  #history: 10000
+  history: 5000
 
   # Scrolling distance multiplier.
   #multiplier: 3
 
+#########################################################################
+
 # Font configuration
+
+#########################################################################
+
 font:
   normal:
-    family: monospace
+    family: Ubuntu Mono Nerd Font
     style: Regular
 
   bold:
-    family: monospace
+    family: Ubuntu Mono Nerd Font
     style: Bold
 
   italic:
-    family: monopace
+    family: Ubuntu Mono Nerd Font
     style: Italic
 
   bold_italic:
-    family: monospace
+    family: Ubuntu Mono Nerd Font
     style: Bold Italic
 
-  size: 11.0
+  size: 24.0
+
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
   # spacing.
-  #offset:
-  #  x: 0
-  #  y: 0
+  offset:
+    x: 0
+    y: 1
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the
@@ -151,25 +157,35 @@ font:
   #builtin_box_drawing: true
 
 # If `true`, bold text is drawn using the bright color variants.
-#draw_bold_text_with_bright_colors: false
+draw_bold_text_with_bright_colors: true
 
-# Colors (Tomorrow Night)
-#colors:
-  # Default colors
-  #primary:
-  #  background: '#1d1f21'
-  #  foreground: '#c5c8c6'
 
-    # Bright and dim foreground colors
-    #
-    # The dimmed foreground color is calculated automatically if it is not
-    # present. If the bright foreground color is not set, or
-    # `draw_bold_text_with_bright_colors` is `false`, the normal foreground
-    # color will be used.
-    #dim_foreground: '#828482'
-    #bright_foreground: '#eaeaea'
+#########################################################################
 
-  # Cursor colors
+# Colors
+
+#########################################################################
+
+# Colors (Gruvbox dark)
+
+colors:
+
+  primary:
+    background: '#282828'
+    foreground: '#ebdbb2'
+
+# Normal colors
+  normal:
+    black:   '#282828'
+    red:     '#cc241d'
+    green:   '#98971a'
+    yellow:  '#d79921'
+    blue:    '#458588'
+    magenta: '#b16286'
+    cyan:    '#689d6a'
+    white:   '#a89984'
+
+# Cursor colors
   #
   # Colors which should be used to draw the terminal cursor.
   #
