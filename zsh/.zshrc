@@ -128,9 +128,5 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 export PAGER='most'
 export BAT_PAGER="less -RF"
 
-# Add PATH
-export -U PATH=$HOME/.cargo/bin${PATH:+:$PATH}
-export -U PATH=$HOME/.local/bin${PATH:+:$PATH}
-
 # Bash aliases
 source ~/.bash_aliases
