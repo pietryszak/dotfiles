@@ -54,7 +54,7 @@ alias gc="git clone"
 alias c="clear"
 
 # Command history
-alias h="history"
+alias h="history | fzf"
 
 # Cd 
 alias .='cd'
@@ -62,7 +62,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 
 # Logout
-alias pku="exec i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+alias logout="exec i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # Exit
 alias ext="exit"
