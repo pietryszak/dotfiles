@@ -28,7 +28,6 @@ for_window [title="Please choose a virtual optical disk file"] border none
 for_window [title="Close Virtual Machine"] border none
 
 # Popups
-for_window [title="About"] floating enable, border none
 for_window [title="Progress"] floating enable, border none
 for_window [title="Error"] floating enable, border none
 for_window [title="Authenticate"] floating enable, border none
