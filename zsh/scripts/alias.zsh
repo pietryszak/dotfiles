@@ -14,7 +14,6 @@ alias sv="sudo nvim"
 
 #Top
 alias top="htop"
-alias btop="/usr/local/bin/btop"
 
 # Neofetch
 alias neo="neofetch"
