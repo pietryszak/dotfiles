@@ -114,8 +114,8 @@ exec --no-startup-id blueman-applet
 # Redshift
 exec --no-startup-id redshift-gtk
 
-# Volume control
-exec --no-startup-id sleep 10 && volumeicon
+# Xfce4-clipman
+exec --no-startup-id xfce4-clipman
 
 # Dunst
 exec --no-startup-id dunst

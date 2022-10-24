@@ -85,8 +85,8 @@ exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agen
 # Flameshot
 exec --no-startup-id flameshot
 
-# Copyq
-exec --no-startup-id copyq
+# Xfce4-clipman
+exec --no-startup-id xfce4-clipman
 
 # Firefox
 exec --no-startup-id i3-msg 'workspace $primary1; exec firefox; workspace $primary1'
