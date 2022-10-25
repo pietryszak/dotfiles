@@ -117,23 +117,14 @@ scrolling:
 
 font:
   normal:
-    family: Ubuntu Mono Nerd Font
+    family: FiraCode Nerd Font
     style: Regular
 
   bold:
-    family: Ubuntu Mono Nerd Font
+    family: FiraCode Nerd Font
     style: Bold
 
-  italic:
-    family: Ubuntu Mono Nerd Font
-    style: Italic
-
-  bold_italic:
-    family: Ubuntu Mono Nerd Font
-    style: Bold Italic
-
   size: 26.0
-
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
