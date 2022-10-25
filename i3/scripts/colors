@@ -1,18 +1,19 @@
 # set primary gruvbox colorscheme colors
-set $bg         #282828
-set $red        #cc241d
-set $green      #98971a
-set $yellow     #d79921
-set $blue       #458588
-set $purple     #b16286
-set $aqua       #689d68
-set $gray       #a89984
-set $darkgray   #1d2021
-set $fg         #ebdbb2
-set $orange     #d65d0e
+#  Gruvbox material
+set $base00 #282828
+set $base01 #3c3836
+set $base02 #665c54
+set $base03 #d4be98
+set $base04 #ea6962
+set $base05 #e78a4e
+set $base06 #a9b665
+set $base07 #7daea3
 
-# set window colors     	border          backgr.        	text       	indicator    	child_border
-client.focused          	$green 		    $orange  	    $fg 		$yellow	 	    $green
-client.focused_inactive 	$darkgray 	    $purple 	    $fg	 	    $yellow	 	    $darkgray
-client.unfocused        	$darkgray 	    $bg	 	        $fg 		$yellow	 	    $darkgray
-client.urgent           	$red 		    $red 		    $white 		$yellow 	    $red    
+# Basic color configuration using the Base16 variables for windows and borders.
+# Property Name         Border  BG      Text    Indicator Child Border
+client.focused          $base06 $base06 $base00 $base05 $base06
+client.focused_inactive $base01 $base01 $base07 $base02 $base02
+client.unfocused        $base01 $base00 $base07 $base01 $base01
+client.urgent           $base04 $base04 $base00 $base04 $base04
+client.placeholder      $base00 $base00 $base03 $base00 $base00
+client.background       $base07
