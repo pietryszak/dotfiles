@@ -5,11 +5,11 @@
 * {
     background-color:       @bga;
     text-color:             @fg;
-    font:	                "Ubuntu Regular 20";
+    font:	                "Fira Code 24";
 }
 
 window {
-    width:      	        325px;
+    width:      	        400px;
     padding:                25px;
     border:		            0px;
     border-radius:          0px;

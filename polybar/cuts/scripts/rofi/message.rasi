@@ -5,7 +5,7 @@
 * {
     background-color:       @bga;
     text-color:             @fg;
-    font:		            "Ubuntu Regular 20";
+    font:		            "Fira Code 24";
 }
 
 window {

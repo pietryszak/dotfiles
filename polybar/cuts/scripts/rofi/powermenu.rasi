@@ -9,7 +9,7 @@
  */
 
 configuration {
-    font:		                    "Ubuntu Regular 20";
+    font:		                    "Fira Code 24";
     show-icons:                     true;
     icon-theme: 		            "Papirus-Dark";
     display-drun: 	                "";
@@ -48,7 +48,7 @@ textbox-prompt-colon {
     text-color: 		            @ac;
     expand: 			            false;
     str:  			                "";
-    font:	 		                "Ubuntu Regular 20";
+    font:	 		                "Fira Code 24";
 }
 
 entry {
