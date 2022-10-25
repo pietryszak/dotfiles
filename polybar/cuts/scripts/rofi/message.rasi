@@ -5,7 +5,7 @@
 * {
     background-color:       @bga;
     text-color:             @fg;
-    font:		            "Fira Code Nerd Font 24";
+    font:		            "Fira Code Nerd Font 22";
 }
 
 window {
