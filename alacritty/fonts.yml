@@ -1,0 +1,16 @@
+#########################################################################
+
+# Font configuration
+
+#########################################################################
+
+font:
+  normal:
+    family: FiraCode Nerd Font
+    style: Regular
+
+  bold:
+    family: FiraCode Nerd Font
+    style: Bold
+
+  size: 22.0

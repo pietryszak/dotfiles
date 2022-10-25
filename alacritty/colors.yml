@@ -1,0 +1,24 @@
+#########################################################################
+
+# Colors configuration
+
+#########################################################################
+
+# Colors (Gruvbox dark)
+
+colors:
+
+  primary:
+    background: '#282828'
+    foreground: '#D4BE98'
+
+# Normal colors
+  normal:
+    black:   '#3C3836'
+    red:     '#EA6962'
+    green:   '#A9B665'
+    yellow:  '#D8A657'
+    blue:    '#7DAEA3'
+    magenta: '#D3869B'
+    cyan:    '#89B482'
+    white:   '#D4BE98'
