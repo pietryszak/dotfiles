@@ -163,18 +163,18 @@ colors:
 
   primary:
     background: '#282828'
-    foreground: '#d4be98'
+    foreground: '#D4BE98'
 
 # Normal colors
   normal:
-    black:   '#3c3836'
-    red:     '#ea6962'
-    green:   '#a9b665'
-    yellow:  '#d8a657'
-    blue:    '#7daea3'
-    magenta: '#d3869b'
-    cyan:    '#89b482'
-    white:   '#d4be98'
+    black:   '#3C3836'
+    red:     '#EA6962'
+    green:   '#A9B665'
+    yellow:  '#D8A657'
+    blue:    '#7DAEA3'
+    magenta: '#D3869B'
+    cyan:    '#89B482'
+    white:   '#D4BE98'
 
 # Cursor colors
   #
