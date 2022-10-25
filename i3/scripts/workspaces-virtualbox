@@ -88,8 +88,8 @@ exec --no-startup-id flameshot
 # Xfce4-clipman
 exec --no-startup-id xfce4-clipman
 
-# Firefox
-exec --no-startup-id i3-msg 'workspace $primary1; exec firefox; workspace $primary1'
+# Vivaldi
+exec --no-startup-id i3-msg 'workspace $primary1; exec vivaldi; workspace $primary1'
 
 # Alacritty
 exec --no-startup-id i3-msg 'workspace $primary2; exec alacritty --class="terminal" --title="terminal";'
