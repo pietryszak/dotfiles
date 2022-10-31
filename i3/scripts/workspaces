@@ -118,7 +118,7 @@ exec --no-startup-id redshift-gtk
 exec --no-startup-id volumeicon
 
 # Xfce4-clipman
-exec --no-startup-id xfce4-clipman
+exec --no-startup-id xfce4-clipman &
 
 # Dunst
 exec --no-startup-id dunst
@@ -155,10 +155,6 @@ for_window [title="shortcuts-vim"] floating enable, resize set 1366 766, move sc
 exec --no-startup-id i3-msg 'workspace $primary1; exec alacritty --class="shortcuts-zsh" --title="shortcuts-zsh" -e bat ~/.config/shortcuts/zsh;' 
 for_window [title="shortcuts-zsh"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
 
-# Thunderbird
-exec --no-startup-id i3-msg 'workspace $secondary2; exec thunderbird; workspace $primary1'
-for_window [class="Spotify"] move to workspace $secondary1
-
 # VSCode
 exec --no-startup-id i3-msg 'workspace $primary5; exec code; workspace $primary1'
 for_window [class="Code"] move to workspace $primary5
@@ -169,22 +165,26 @@ for_window [class="GitHub Desktop"] move to workspace $secondary5
 
 # Virtualbox
 exec --no-startup-id i3-msg 'workspace $secondary6; exec virtualbox; workspace $primary1'
-for_window [class="GitHub Desktop"] move to workspace $secondary6
+for_window [class="VirtualBox Manager"] move to workspace $secondary6
 
 # Spotify
-exec --no-startup-id sleep 20 && i3-msg 'workspace $secondary10; exec spotify; workspace $primary1'
+exec --no-startup-id sleep 18 && i3-msg 'workspace $secondary10; exec flatpak run com.spotify.Client; workspace $primary1'
 for_window [class="Spotify"] move to workspace $secondary10
+
+# Thunderbird
+exec --no-startup-id sleep 25 && i3-msg 'workspace $secondary2; exec thunderbird; workspace $primary1'
+for_window [class="Spotify"] move to workspace $secondary1
 
 ######################################
 # Flatpaks
-######################################
+######################################s
 
 # Ferdi
-exec --no-startup-id sleep 15 && i3-msg 'workspace $secondary1; exec flatpak run org.ferdium.Ferdium; workspace $primary1'
+exec --no-startup-id i3-msg 'workspace $secondary1; exec flatpak run org.ferdium.Ferdium; workspace $primary1'
 for_window [class="Ferdium"] move to workspace $secondary1
 
 # TickTick
-exec --no-startup-id sleep 10 && i3-msg 'workspace $secondary4; exec flatpak run com.ticktick.TickTick; workspace $primary1'
+exec --no-startup-id i3-msg 'workspace $secondary4; exec flatpak run com.ticktick.TickTick; workspace $primary1'
 for_window [class="ticktick"] move to workspace $secondary4
 
 # Joplin
