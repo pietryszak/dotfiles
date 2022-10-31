@@ -9,7 +9,7 @@
  */
 
 configuration {
-    font:			                "Fira Code Nerd Font 22";
+    font:			                "FiraCode Nerd Font 20";
     show-icons:                     true;
     icon-theme: 		            "Papirus-Dark";
     display-drun: 	                "";
@@ -29,8 +29,8 @@ window {
     border:                         0px;
     border-color:		            @ac;
     border-radius:                  0px;
-    width:                          600px;
-    height:	                        500px;			
+    width:                          700px;
+    height:	                        500px;		
     location:                       center;
     x-offset:                       0;
     y-offset:                       0;
@@ -41,7 +41,7 @@ prompt {
    padding: 			            0px;
    background-color: 	            @al;
    text-color: 			            @ac;
-   font:              	            "Fira Code Nerd Font 22";
+   font:              	            "FiraCode Nerd Font 20";
 }
 
 entry {

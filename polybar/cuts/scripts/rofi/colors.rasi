@@ -4,7 +4,7 @@
           al:   #00000000;
           bg:   #282828;
           bga:  #282828FF;
-          fg:   #D4BE98FF;
-          ac:   #EA6962FF;
-          se:   #EA69621A;
+          fg:   #EBDBB2FF;
+          ac:   #FB4934FF;
+          se:   #FB49341A;
   }
