@@ -28,14 +28,6 @@ for_window [title="Please choose a virtual optical disk file"] border none
 for_window [title="Close Virtual Machine"] border none
 
 # Popups
-for_window [title="Progress"] floating enable, border none
-for_window [title="Error"] floating enable, border none
-for_window [title="Authenticate"] floating enable, border none
-for_window [title="Opening"] floating enable, border none
-for_window [title="File Upload"] floating enable, border none, resize set 600 800, move position 900 400
-for_window [title="Preferences"] floating enable, border none
-for_window [title="Save As"] floating enable, border none
-for_window [title="Info"] floating enable, border none
-for_window [title="Select local folder"] floating enable, border none
 for_window [class="Yad" title="yad-calendar"] floating enable
 for_window [class="Nextcloud" title="Add Nextcloud account"] floating enable, border none, resize set 600 800, move position 900 400
+for_window [class="File-roller" title="Extract"] floating enable, border none, resize set 600 800, move position 900 400
