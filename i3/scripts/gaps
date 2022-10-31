@@ -121,7 +121,7 @@ mode "$mode_gaps_left" {
         bindsym Escape mode "default"
 }
 
-gaps inner 4
-gaps outer 4
+gaps inner 6
+gaps outer 6
 hide_edge_borders smart
 smart_gaps on
