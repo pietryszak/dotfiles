@@ -114,6 +114,9 @@ exec --no-startup-id blueman-applet
 # Redshift
 exec --no-startup-id redshift-gtk
 
+# Volume control
+exec --no-startup-id sleep 10 && volumeicon
+
 # Xfce4-clipman
 exec --no-startup-id xfce4-clipman
 
@@ -125,9 +128,6 @@ exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agen
 
 # Flameshot
 exec --no-startup-id flameshot
-
-# Copyq
-exec --no-startup-id copyq
 
 # Vivaldi
 exec --no-startup-id i3-msg 'workspace $primary1; exec vivaldi; workspace $primary1'
