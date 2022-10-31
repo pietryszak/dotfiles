@@ -1,7 +1,7 @@
 # vim: filetype=i3config
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id alacritty
+bindsym $mod+Return exec --no-startup-id terminator --no-dbus
 
 # kill focused window
 bindsym $mod+mod1+q kill
