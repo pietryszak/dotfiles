@@ -10,15 +10,15 @@ colors:
 
   primary:
     background: '#282828'
-    foreground: '#D4BE98'
+    foreground: '#ebdbb2'
 
 # Normal colors
   normal:
-    black:   '#3C3836'
-    red:     '#EA6962'
-    green:   '#A9B665'
-    yellow:  '#D8A657'
-    blue:    '#7DAEA3'
-    magenta: '#D3869B'
-    cyan:    '#89B482'
-    white:   '#D4BE98'
+    black:   '#1d2021'
+    red:     '#cc241d'
+    green:   '#98971a'
+    yellow:  '#d79921'
+    blue:    '#458588'
+    magenta: '#b16286'
+    cyan:    '#689d68'
+    white:   '#ebdbb2'
