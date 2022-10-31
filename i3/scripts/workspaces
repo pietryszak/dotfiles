@@ -24,8 +24,8 @@ set $secondary9 "19: "
 set $secondary10 "20: "
 
 # Define outputs
-set $output-primary DP-1-8
-set $output-secondary HDMI-2
+set $output-primary HDMI-A-0
+set $output-secondary DisplayPort-0
 
 workspace $primary1 output $output-primary
 workspace $primary2 output $output-primary
