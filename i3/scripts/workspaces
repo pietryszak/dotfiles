@@ -132,27 +132,27 @@ exec --no-startup-id flameshot
 # Vivaldi
 exec --no-startup-id i3-msg 'workspace $primary1; exec vivaldi; workspace $primary1'
 
-# Alacritty
-exec --no-startup-id i3-msg 'workspace $primary2; exec alacritty --class="terminal" --title="terminal";'
+# Terminator
+exec --no-startup-id i3-msg 'workspace $primary2; exec terminator --no-dbus --class="terminal" --title="terminal";'
 for_window [class="terminal" title="terminal"] move to workspace $primary2;
 
-exec --no-startup-id i3-msg 'workspace $primary3; exec alacritty --class="btop" --title="btop" -e btop;' 
+exec --no-startup-id i3-msg 'workspace $primary3; exec terminator --no-dbus --class="btop" --title="btop" -e btop;' 
 for_window [class="btop" title="btop"] move to workspace $primary3;
 
-exec --no-startup-id i3-msg 'workspace $primary4; exec alacritty --class="nnn" --title="nnn" -e nnn;'
+exec --no-startup-id i3-msg 'workspace $primary4; exec terminator --no-dbus --class="nnn" --title="nnn" -e nnn;'
 for_window [class="nnn" title="nnn"] move to workspace $primary4;
 
-exec --no-startup-id i3-msg 'workspace $secondary7; exec alacritty --class="terminal-secondary" --title="terminal-secondary";'
+exec --no-startup-id i3-msg 'workspace $secondary7; exec terminator --no-dbus --class="terminal-secondary" --title="terminal-secondary";'
 for_window [class="terminal-secondary" title="terminal-secondary"] move to workspace $secondary7;
 
 # Scratchpad
-exec --no-startup-id i3-msg 'workspace $primary1; exec alacritty --class="shortcuts-i3" --title="shortcuts-i3" -e bat ~/.config/shortcuts/i3;' 
+exec --no-startup-id i3-msg 'workspace $primary1; exec terminator --no-dbus --class="shortcuts-i3" --title="shortcuts-i3" -e bat ~/.config/shortcuts/i3;' 
 for_window [title="shortcuts-i3"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
 
-exec --no-startup-id i3-msg 'workspace $primary1; exec alacritty --class="shortcuts-vim" --title="shortcuts-vim" -e bat ~/.config/shortcuts/vim;' 
+exec --no-startup-id i3-msg 'workspace $primary1; exec terminator --no-dbus --class="shortcuts-vim" --title="shortcuts-vim" -e bat ~/.config/shortcuts/vim;' 
 for_window [title="shortcuts-vim"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
 
-exec --no-startup-id i3-msg 'workspace $primary1; exec alacritty --class="shortcuts-zsh" --title="shortcuts-zsh" -e bat ~/.config/shortcuts/zsh;' 
+exec --no-startup-id i3-msg 'workspace $primary1; exec terminator --no-dbus --no-dbus --class="shortcuts-zsh" --title="shortcuts-zsh" -e bat ~/.config/shortcuts/zsh;' 
 for_window [title="shortcuts-zsh"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
 
 # VSCode
