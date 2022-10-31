@@ -14,9 +14,9 @@ for_window [class="calculator"] floating enable, resize set 600 800, move positi
 for_window [title="Printers - localhost"] floating enable, resize set 600 800, move position 900 400
 
 # Picture in picture
-for_window [title="Picture-in-Picture"] sticky enable, border none, resize set 880 495, move position 1680 945
-for_window [title="Picture in picture"] sticky enable, border none, resize set 880 495, move position 1680 945
-for_window [title="Picture in Picture"] sticky enable, border none, resize set 880 495, move position 1680 945
+for_window [title="Picture-in-Picture"] sticky enable, border none, resize set 880 490, move position 1680 945
+for_window [title="Picture in picture"] sticky enable, border none, resize set 880 490, move position 1680 945
+for_window [title="Picture in Picture"] sticky enable, border none, resize set 880 490, move position 1680 945
 
 # Blueman - bluetooth applet
 for_window [class="Blueman-applet"] floating enable, border none
