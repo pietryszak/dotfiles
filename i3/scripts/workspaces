@@ -20,7 +20,7 @@ set $secondary5 "15: "
 set $secondary6 "16: "
 set $secondary7 "17: "
 set $secondary8 "18: "
-set $secondary9 "19: "
+set $secondary9 "19: 墳"
 set $secondary10 "20: "
 
 # Define outputs
@@ -163,9 +163,13 @@ for_window [class="Code"] move to workspace $primary5
 exec --no-startup-id i3-msg 'workspace $secondary5; exec github-desktop; workspace $primary1'
 for_window [class="GitHub Desktop"] move to workspace $secondary5
 
-# Virtualbox
-exec --no-startup-id i3-msg 'workspace $secondary6; exec virtualbox; workspace $primary1'
-for_window [class="VirtualBox Manager"] move to workspace $secondary6
+# Virt-manager
+exec --no-startup-id i3-msg 'workspace $secondary6; exec virt-manager; workspace $primary1'
+for_window [class="Virt-manager"] move to workspace $secondary6
+
+# Pavucontrol
+exec --no-startup-id i3-msg 'workspace $secondary9; exec pavucontrol; workspace $primary1'
+for_window [class="Pavucontrol"] move to workspace $secondary9
 
 # Spotify
 exec --no-startup-id sleep 18 && i3-msg 'workspace $secondary10; exec flatpak run com.spotify.Client; workspace $primary1'
