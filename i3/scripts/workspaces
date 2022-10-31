@@ -100,7 +100,7 @@ bindsym $mod+mod1+l workspace next
 bindsym $Mod+Tab workspace back_and_forth
 
 # Screens and polybar layout
-exec --no-startup-id ~/.screenlayout/pc/horizontal.sh
+exec --no-startup-id ~/.screenlayout/horizontal.sh
 
 # Picom
 exec_always --no-startup-id picom --config ~/.config/picom.conf
@@ -115,7 +115,7 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id redshift-gtk
 
 # Volume control
-exec --no-startup-id sleep 10 && volumeicon
+exec --no-startup-id volumeicon
 
 # Xfce4-clipman
 exec --no-startup-id xfce4-clipman
@@ -133,38 +133,60 @@ exec --no-startup-id flameshot
 exec --no-startup-id i3-msg 'workspace $primary1; exec vivaldi; workspace $primary1'
 
 # Alacritty
-exec --no-startup-id i3-msg 'workspace $primary2; exec alacritty; workspace $primary1'
-exec --no-startup-id i3-msg 'workspace $primary3; exec alacritty --title=bpytop -e bpytop; workspace $primary1' 
-exec --no-startup-id i3-msg 'workspace $primary4; exec alacritty --title=nnn -e nnn;workspace $primary1'
-exec --no-startup-id i3-msg 'workspace $secondary7; exec alacritty; workspace $primary1'
+exec --no-startup-id i3-msg 'workspace $primary2; exec alacritty --class="terminal" --title="terminal";'
+for_window [class="terminal" title="terminal"] move to workspace $primary2;
+
+exec --no-startup-id i3-msg 'workspace $primary3; exec alacritty --class="btop" --title="btop" -e btop;' 
+for_window [class="btop" title="btop"] move to workspace $primary3;
+
+exec --no-startup-id i3-msg 'workspace $primary4; exec alacritty --class="nnn" --title="nnn" -e nnn;'
+for_window [class="nnn" title="nnn"] move to workspace $primary4;
+
+exec --no-startup-id i3-msg 'workspace $secondary7; exec alacritty --class="terminal-secondary" --title="terminal-secondary";'
+for_window [class="terminal-secondary" title="terminal-secondary"] move to workspace $secondary7;
 
 # Scratchpad
-exec --no-startup-id i3-msg 'workspace $primary1; exec alacritty --title=shortcuts-i3 -e bat ~/.config/shortcuts/i3; workspace $primary1' 
+exec --no-startup-id i3-msg 'workspace $primary1; exec alacritty --class="shortcuts-i3" --title="shortcuts-i3" -e bat ~/.config/shortcuts/i3;' 
 for_window [title="shortcuts-i3"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
-exec --no-startup-id i3-msg 'workspace $primary1; exec alacritty --title=shortcuts-vim -e bat ~/.config/shortcuts/vim; workspace $primary1' 
+
+exec --no-startup-id i3-msg 'workspace $primary1; exec alacritty --class="shortcuts-vim" --title="shortcuts-vim" -e bat ~/.config/shortcuts/vim;' 
 for_window [title="shortcuts-vim"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
-exec --no-startup-id i3-msg 'workspace $primary1; exec alacritty --title=shortcuts-zsh -e bat ~/.config/shortcuts/zsh; workspace $primary1' 
+
+exec --no-startup-id i3-msg 'workspace $primary1; exec alacritty --class="shortcuts-zsh" --title="shortcuts-zsh" -e bat ~/.config/shortcuts/zsh;' 
 for_window [title="shortcuts-zsh"] floating enable, resize set 1366 766, move scratchpad, move position 600 300
 
-# Ferdi
-exec --no-startup-id i3-msg 'workspace $secondary1; exec flatpak run com.getferdi.Ferdi; workspace $primary1'
-for_window [class="Ferdi"] move to workspace $secondary1
-
-# Joplin
-exec --no-startup-id i3-msg 'workspace $secondary3; exec flatpak run net.cozic.joplin_desktop; workspace $primary1'
-for_window [class="Joplin"] move to workspace $secondary3
+# Thunderbird
+exec --no-startup-id i3-msg 'workspace $secondary2; exec thunderbird; workspace $primary1'
+for_window [class="Spotify"] move to workspace $secondary1
 
 # VSCode
 exec --no-startup-id i3-msg 'workspace $primary5; exec code; workspace $primary1'
 for_window [class="Code"] move to workspace $primary5
 
 # GitHub Desktop
-exec --no-startup-id i3-msg 'workspace $secondary5; exec flatpak run io.github.shiftey.Desktop; workspace $primary1'
+exec --no-startup-id i3-msg 'workspace $secondary5; exec github-desktop; workspace $primary1'
 for_window [class="GitHub Desktop"] move to workspace $secondary5
 
+# Virtualbox
+exec --no-startup-id i3-msg 'workspace $secondary6; exec virtualbox; workspace $primary1'
+for_window [class="GitHub Desktop"] move to workspace $secondary6
+
 # Spotify
-exec --no-startup-id sleep 18 && i3-msg 'workspace $secondary10; exec flatpak run com.spotify.Client; workspace $primary1'
+exec --no-startup-id sleep 20 && i3-msg 'workspace $secondary10; exec spotify; workspace $primary1'
 for_window [class="Spotify"] move to workspace $secondary10
 
-# Thunderbird
-exec --no-startup-id sleep 22 && i3-msg 'workspace $secondary2; exec thunderbird; workspace $primary1'
+######################################
+# Flatpaks
+######################################
+
+# Ferdi
+exec --no-startup-id sleep 15 && i3-msg 'workspace $secondary1; exec flatpak run org.ferdium.Ferdium; workspace $primary1'
+for_window [class="Ferdium"] move to workspace $secondary1
+
+# TickTick
+exec --no-startup-id sleep 10 && i3-msg 'workspace $secondary4; exec flatpak run com.ticktick.TickTick; workspace $primary1'
+for_window [class="ticktick"] move to workspace $secondary4
+
+# Joplin
+exec --no-startup-id i3-msg 'workspace $secondary3; exec flatpak run net.cozic.joplin_desktop; workspace $primary1'
+for_window [class="Joplin"] move to workspace $secondary3
