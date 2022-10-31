@@ -15,6 +15,7 @@ shutdown=" Shutdown"
 reboot=" Restart"
 lock=" Lock"
 suspend=" Sleep"
+hibernate="鈴 Hibernate"
 logout=" Logout"
 
 # Confirmation
@@ -32,7 +33,7 @@ msg() {
 }
 
 # Variable passed to rofi
-options="$lock\n$suspend\n$logout\n$reboot\n$shutdown"
+options="$lock\n$suspend\n$hibernate\n$logout\n$reboot\n$shutdown"
 
 chosen="$(echo -e "$options" | $rofi_command -p "Uptime: $uptime" -dmenu -selected-row 0)"
 case $chosen in
@@ -69,6 +70,18 @@ case $chosen in
 			mpc -q pause
 			amixer set Master mute
 			systemctl suspend
+		elif [[ $ans == "no" || $ans == "NO" || $ans == "n" || $ans == "N" ]]; then
+			exit 0
+        else
+			msg
+        fi
+        ;;
+	$hibernate)
+		ans=$(confirm_exit &)
+		if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
+			mpc -q pause
+			amixer set Master mute
+			systemctl hibernate
 		elif [[ $ans == "no" || $ans == "NO" || $ans == "n" || $ans == "N" ]]; then
 			exit 0
         else
