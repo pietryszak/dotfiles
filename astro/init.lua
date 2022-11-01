@@ -11,7 +11,7 @@ return {
   
     plugins = {
       init = {
-        ["ellisonleao/gruvbox.nvim"] = { version = "1.0.0" },
+        { "ellisonleao/gruvbox.nvim" },
       },
     },
   }
