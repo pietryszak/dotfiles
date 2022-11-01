@@ -13,7 +13,7 @@
     "terminal.integrated.fontSize": 20,
     "workbench.startupEditor": "none",
     "markdown.preview.fontSize": 20,
-    "debug.console.fontSize": 22,
+    "debug.console.fontSize": 20,
     "scm.inputFontSize": 20,
     "scm.inputFontFamily": "FiraCode Nerd Font, Regular",
     "debug.console.fontFamily": "FiraCode Nerd Font, Regular",
