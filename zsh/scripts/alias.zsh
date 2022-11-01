@@ -78,8 +78,8 @@ alias shz="nvim $HOME/.config/shortcuts/zsh"
 # Window properies
 alias xpr="bash -c xprop"
 
-# Alsamixer
-alias alx="bash -c alsamixer"
+# Pavucontrol
+alias pvc="bash -c pavucontrol"
 
 # Folders
 alias dwn="cd Downloads"
