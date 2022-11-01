@@ -7,15 +7,21 @@ alias alse="nvim $HOME/.oh-my-zsh/custom/alias.zsh"
 
 # Neovim
 alias v="lvim"
-alias vi="lvim"
+alias vi="vim"
 alias neovim="lvim"
+alias nvim="lvim"
 alias vim="lvim"
-alias sv="sudo nvim"
+alias sv="sudo /usr/local/bin/nvim"
 
 # Micro
 alias nano="micro"
 alias mc="micro"
 alias sm="sudo micro"
+
+# Search in man instruction, first a command name, second searched word
+search_man() {
+    man $1 | grep -- $2
+}
 
 #Top
 alias top="htop"
