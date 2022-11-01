@@ -12,6 +12,11 @@ alias neovim="lvim"
 alias vim="lvim"
 alias sv="sudo nvim"
 
+# Micro
+alias nano="micro"
+alias mc="micro"
+alias sm="sudo micro"
+
 #Top
 alias top="htop"
 
