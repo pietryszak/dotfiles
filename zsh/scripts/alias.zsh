@@ -6,10 +6,10 @@ alias rld='source $HOME/.zshrc'
 alias alse="nvim $HOME/.oh-my-zsh/custom/alias.zsh"
 
 # Neovim
-alias v="nvim"
-alias vi="nvim"
-alias neovim="nvim"
-alias vim="nvim"
+alias v="lvim"
+alias vi="lvim"
+alias neovim="lvim"
+alias vim="lvim"
 alias sv="sudo nvim"
 
 #Top
