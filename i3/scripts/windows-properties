@@ -29,7 +29,8 @@ for_window [title="Close Virtual Machine"] border none
 
 # Popups
 for_window [class="Yad" title="yad-calendar"] floating enable
-for_window [class="Nextcloud" title="Add Nextcloud account"] floating enable, border none, resize set 600 800, move position 900 400
-for_window [class="File-roller" title="Extract"] floating enable, border none, resize set 600 800, move position 900 400
-for_window [class="guiscrcpy"] floating enable, border none
-for_window [class="scrcpy"] floating enable, border none
+for_window [class="Nextcloud" title="Add Nextcloud account"] floating enable, resize set 600 800, move position 900 400
+for_window [class="File-roller" title="Extract"] floating enable, resize set 600 800, move position 900 400
+for_window [class="guiscrcpy"] floating enable
+for_window [class="scrcpy"] floating enable
+for_window [class="Xdg-desktop-portal-gtk" title="Select Custom Image"] floating enable, resize set 600 800, move position 900 400
