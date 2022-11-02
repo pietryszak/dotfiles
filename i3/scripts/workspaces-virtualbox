@@ -1,5 +1,3 @@
-# vim: filetype=i3config
-
 # Workspaces
 
 set $primary1 "1: "

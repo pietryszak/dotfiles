@@ -1,6 +1,4 @@
-# vim: filetype=i3config
-
-# Window borders to pixel 1
+# Window borders to pixel 6
 
 new_window pixel 6
 new_float pixel 6
