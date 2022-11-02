@@ -1,5 +1,3 @@
-# vim: filetype=i3config
-
 # start a terminal
 bindsym $mod+Return exec --no-startup-id terminator --no-dbus
 
@@ -17,7 +15,6 @@ bindsym $mod+d exec --no-startup-id ~/.config/polybar/cuts/scripts/launcher.sh &
 
 # Shutdown menu
 bindsym $mod+mod1+Shift+q exec --no-startup-id ~/.config/polybar/cuts/scripts/powermenu.sh &
-
 
 # change focus
 bindsym $mod+h focus left
@@ -138,3 +135,7 @@ bindsym $mod+ Print exec flameshot gui -d 5000
 bindsym $mod+mod1+i [title="shortcuts-i3"] scratchpad show
 bindsym $mod+mod1+v [title="shortcuts-vim"] scratchpad show
 bindsym $mod+mod1+z [title="shortcuts-zsh"] scratchpad show
+
+# Over volume more than 100%
+bindsym $mod+mod1+plus exec pactl set-sink-volume alsa_output.pci-0000_31_00.4.analog-stereo +5%
+bindsym $mod+mod1+minus exec pactl set-sink-volume alsa_output.pci-0000_31_00.4.analog-stereo -5%
