@@ -33,4 +33,4 @@ for_window [class="Nextcloud" title="Add Nextcloud account"] floating enable, re
 for_window [class="File-roller" title="Extract"] floating enable, resize set 600 800, move position 900 400
 for_window [class="guiscrcpy"] floating enable
 for_window [class="scrcpy"] floating enable
-for_window [class="Xdg-desktop-portal-gtk" title="Select Custom Image"] floating enable, resize set 600 800, move position 900 400
+for_window [class="Xdg-desktop-portal-gtk" title="Select Custom Image"] floating enable, resize set 1100 800, move position 900 400
