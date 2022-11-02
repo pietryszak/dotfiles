@@ -112,7 +112,7 @@ exec --no-startup-id numlockx
 exec --no-startup-id blueman-applet
 
 # Gammashift
-exec --no-startup-id $HOME/opt/gammastep/bin/gammastep-indicator
+exec --no-startup-id gammastep-indicator
 
 # Volume control
 exec --no-startup-id volumeicon
