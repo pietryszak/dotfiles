@@ -52,7 +52,7 @@ get_duration() {
 
 }
 
-KEY=""
+KEY="46ba0d65e85e83650b723bf7d835567c"
 CITY=""
 UNITS="metric"
 SYMBOL="°"
@@ -111,3 +111,4 @@ if [ -n "$current" ] && [ -n "$forecast" ]; then
 
     echo "$(get_icon "$current_icon") $current_temp$SYMBOL  $trend  $(get_icon "$forecast_icon") $forecast_temp$SYMBOL   $daytime"
 fi
+

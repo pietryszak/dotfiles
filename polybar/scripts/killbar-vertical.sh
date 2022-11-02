@@ -5,5 +5,5 @@
 killall -q dropbox
 	dropbox start &
 
-u=$(xprop -name "polybar-tray_DisplayPort-0" _NET_WM_PID | grep -o '[[:digit:]]*')
+u=$(xprop -name "polybar-tray-vertical_DisplayPort-0" _NET_WM_PID | grep -o '[[:digit:]]*')
 kill $u

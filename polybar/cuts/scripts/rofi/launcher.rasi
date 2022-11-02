@@ -30,7 +30,7 @@ window {
     border-color:		            @ac;
     border-radius:                  0px;
     width:                          700px;
-    height:	                        500px;		
+    height:	                        500px;			
     location:                       center;
     x-offset:                       0;
     y-offset:                       0;
