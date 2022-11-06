@@ -7,4 +7,4 @@ xrandr --output DisplayPort-0 --off --output HDMI-A-0 --primary --mode 2560x1440
 		polybar -q one-monitor -c "~/.config/polybar/cuts/config.ini" &
 	
 	killall -q picom && sleep 1
-	picom --config ~/.config/picom.conf
+	picom --experimental-backends --config ~/.config/picom.conf
